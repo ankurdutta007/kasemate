@@ -7,10 +7,15 @@ import img2 from '@/imports/image-2.webp'
 import img3 from '@/imports/image-3.webp'
 import img4 from '@/imports/image-4.webp'
 import img6 from '@/imports/image-6.webp'
+import imgRoadmapStep from '@/imports/roadmap-step.png'
+import imgStudyStep from '@/imports/study-step.png'
+import imgTrackStep from '@/imports/track-step.png'
 import img10 from '@/imports/image-10.webp'
 import logo from '@/imports/logo.webp'
 import imgConsultingRole from '@/imports/consulting.webp'
 import imgProductRole from '@/imports/product.webp'
+import ctaHero from '@/imports/cta-hero.png'
+import heroIllustration from '@/imports/hero-illustration-new.png'
 
 import logoMckinsey from '@/imports/logos/mckinsey.png'
 import logoAccenture from '@/imports/logos/accenture.png'
@@ -102,22 +107,22 @@ const STEPS = [
     n: '01', title: 'Build your roadmap',
     body: 'Choose your track(s) and a 4/8/12-week timeline. KaseMate compiles a week-by-week plan from real curated resources, with no generic filler and no hardcoded template.',
     color: '#7C3AED', bg: '#f4f0ff', darkBg: 'rgba(124,58,237,0.08)',
-    img: img6, side: 'right' as const,
-    tag: 'Roadmap',
+    img: imgRoadmapStep, side: 'right' as const,
+    tag: 'Roadmap', contain: true,
   },
   {
     n: '02', title: 'Study or go live',
     body: "Open any case's full breakdown (framework, structure, sample reasoning) before you ever speak. When you're ready, enter a live case and get pushed the way a real interviewer would push you.",
     color: '#0891b2', bg: '#e0f7fa', darkBg: 'rgba(8,145,178,0.08)',
-    img: img2, side: 'left' as const,
-    tag: 'Live practice',
+    img: imgStudyStep, side: 'left' as const,
+    tag: 'Live practice', contain: true,
   },
   {
     n: '03', title: "Track what's actually improving",
     body: "Every scored response feeds your Performance dashboard (skill radar, score trend, streak) so your next case targets exactly what you're weakest at.",
     color: '#d97706', bg: '#fef3c7', darkBg: 'rgba(217,119,6,0.08)',
-    img: img4, side: 'right' as const,
-    tag: 'Performance',
+    img: imgTrackStep, side: 'right' as const,
+    tag: 'Performance', contain: true,
   },
 ]
 
@@ -146,13 +151,7 @@ const TRACK_CARDS = [
     desc: 'Learn quant reasoning, SQL, and case-based business analysis — targeting roles at JPMorgan Chase, Capital One, American Express, and Kotak Mahindra Bank.',
     color: '#3b82f6', lightBg: '#eff6ff', darkBg: 'rgba(59,130,246,0.1)',
     tags: ['Quant Reasoning', 'SQL', 'Business Analysis'],
-    iconNode: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <ellipse cx="12" cy="5" rx="9" ry="3" />
-        <path d="M3 5V19A9 3 0 0 0 21 19V5" />
-        <path d="M3 12A9 3 0 0 0 21 12" />
-      </svg>
-    )
+    iconNode: <img src={img3} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
   },
   {
     title: 'General Management',
@@ -160,21 +159,7 @@ const TRACK_CARDS = [
     desc: 'Learn company research, case fundamentals, and role-specific prep — targeting roles at ITC, ICICI Bank, Swiggy, Tata Steel, and Jio Financial Services.',
     color: '#10b981', lightBg: '#ecfdf5', darkBg: 'rgba(16,185,129,0.1)',
     tags: ['Banking', 'Operations', 'MT Roles'],
-    iconNode: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
-        <path d="M9 22v-4h6v4" />
-        <path d="M8 6h.01" />
-        <path d="M16 6h.01" />
-        <path d="M12 6h.01" />
-        <path d="M12 10h.01" />
-        <path d="M12 14h.01" />
-        <path d="M16 10h.01" />
-        <path d="M16 14h.01" />
-        <path d="M8 10h.01" />
-        <path d="M8 14h.01" />
-      </svg>
-    )
+    iconNode: <img src={img2} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
   },
 ]
 
@@ -358,20 +343,19 @@ export default function Landing() {
 
           {/* Illustration — aligned top with headline, bottom with buttons, right toward nav edge */}
           <div id="hero-image-container" style={{ position: 'relative', animation: 'float 6s ease-in-out infinite', alignSelf: 'stretch', display: 'flex', flexDirection: 'column' }}>
-            <div style={{ position: 'relative', flex: 1, minHeight: 0, borderRadius: 32, overflow: 'hidden', background: isDark ? 'linear-gradient(145deg,#1c2330,#252f3d)' : 'linear-gradient(145deg,#ece5ff,#f5f0ff)', boxShadow: isDark ? '0 40px 100px rgba(0,0,0,0.5)' : `0 40px 100px ${VG}` }}>
-              <img src={img3} alt="KaseMate live case interview simulation" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
-            </div>
+            {/* New illustration — has built-in white BG + transparent surround, no card wrapper needed */}
+            <img src={heroIllustration} alt="KaseMate placement prep illustration" style={{ width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center', display: 'block' }} />
 
-            {/* Floating stat: Cases (real number) */}
-            <div style={{ position: 'absolute', bottom: 16, left: -24, backgroundColor: isDark ? 'var(--bg2)' : '#fff', padding: '12px 16px', borderRadius: 14, boxShadow: 'var(--card-shadow-lg)', maxWidth: 200, border: `1px solid ${border}`, display: 'flex', flexDirection: 'column', gap: 3 }}>
+            {/* Floating stat: Cases — moved to bottom-right to stay clear of laptop body centre */}
+            <div style={{ position: 'absolute', bottom: 32, left: 0, backgroundColor: isDark ? 'var(--bg2)' : '#fff', padding: '12px 16px', borderRadius: 14, boxShadow: 'var(--card-shadow-lg)', maxWidth: 200, border: `1px solid ${border}`, display: 'flex', flexDirection: 'column', gap: 3 }}>
               <div style={{ fontSize: 34, fontWeight: 800, color: 'var(--coral)', lineHeight: 1, letterSpacing: '-0.03em' }}>271</div>
               <p style={{ margin: 0, fontSize: 12, color: text, fontWeight: 500, lineHeight: 1.4 }}>
                 hand-curated cases, not scraped
               </p>
             </div>
 
-            {/* Floating stat: Modules (real number) */}
-            <div style={{ position: 'absolute', top: 16, right: -24, backgroundColor: isDark ? 'var(--bg2)' : '#fff', padding: '12px 16px', borderRadius: 14, boxShadow: 'var(--card-shadow-lg)', maxWidth: 200, border: `1px solid ${border}`, display: 'flex', flexDirection: 'column', gap: 3 }}>
+            {/* Floating stat: Modules */}
+            <div style={{ position: 'absolute', top: 24, right: -16, backgroundColor: isDark ? 'var(--bg2)' : '#fff', padding: '12px 16px', borderRadius: 14, boxShadow: 'var(--card-shadow-lg)', maxWidth: 200, border: `1px solid ${border}`, display: 'flex', flexDirection: 'column', gap: 3 }}>
               <div style={{ fontSize: 34, fontWeight: 800, color: 'var(--primary-bright)', lineHeight: 1, letterSpacing: '-0.03em' }}>57</div>
               <p style={{ margin: 0, fontSize: 12, color: text, fontWeight: 500, lineHeight: 1.4 }}>
                 roadmap modules across all tracks
@@ -514,10 +498,9 @@ export default function Landing() {
 
             </div>
           </Reveal>
-          {/* Single placeholder — direct grid child so alignSelf:stretch works. Replace with real image when ready. */}
-          <div id="cta-image-placeholder" style={{ borderRadius: 24, overflow: 'hidden', alignSelf: 'stretch', background: 'rgba(255,255,255,0.10)', border: '2px dashed rgba(255,255,255,0.30)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 }}>
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-            <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', fontWeight: 500 }}>Image placeholder — drop your Canva export here</span>
+          {/* CTA hero image — direct grid child so alignSelf:stretch works */}
+          <div id="cta-image-container" style={{ alignSelf: 'stretch', borderRadius: 24, overflow: 'hidden', minHeight: 200 }}>
+            <img src={ctaHero} alt="KaseMate placement prep" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }} />
           </div>
         </div>
       </section>
@@ -540,8 +523,8 @@ export default function Landing() {
             {STEPS.map((step, i) => {
               const isRight = step.side === 'right'
               const imgEl = (
-                <div style={{ borderRadius: 24, overflow: 'hidden', aspectRatio: '4/3', background: isDark ? step.darkBg : step.bg, position: 'relative', ...(isRight ? { marginLeft: 56 } : { marginRight: 56 }) }}>
-                  <img src={step.img} alt={step.title} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center', display: 'block' }} />
+                <div style={{ borderRadius: 24, overflow: 'hidden', aspectRatio: '4/3', background: (step as any).contain ? 'transparent' : (isDark ? step.darkBg : step.bg), position: 'relative', ...(isRight ? { marginLeft: 56 } : { marginRight: 56 }) }}>
+                  <img src={step.img} alt={step.title} style={{ width: '100%', height: '100%', objectFit: (step as any).contain ? 'contain' : 'cover', objectPosition: 'center', display: 'block' }} />
                   <div style={{ position: 'absolute', top: 16, ...(isRight ? { right: 16 } : { left: 16 }), background: step.color, color: '#fff', fontSize: 10, fontWeight: 700, padding: '5px 12px', borderRadius: 100, letterSpacing: '0.05em' }}>{step.tag}</div>
                 </div>
               )
