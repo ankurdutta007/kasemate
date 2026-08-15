@@ -266,13 +266,8 @@ export default function Landing() {
 
   useEffect(() => {
     if (window.location.hash) {
-      const id = window.location.hash.substring(1)
-      setTimeout(() => {
-        const el = document.getElementById(id)
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth' })
-        }
-      }, 100)
+      window.history.replaceState(null, '', window.location.pathname + window.location.search)
+      window.scrollTo(0, 0)
     }
   }, [])
   if (isLoading) return null
