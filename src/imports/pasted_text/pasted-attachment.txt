@@ -1,0 +1,292 @@
+# Bullpen — Product Requirements Document
+
+**What this is:** a case-interview practice platform for college students prepping for consulting and product placements. Built by one student for their own college batch — not a scaled commercial product. This PRD is written to be handed to a design tool (Snitch) page by page, and to double as the build spec for the engineering side.
+
+---
+
+## 1. Product summary
+
+**Core loop:** a student opens the app, is inside a live case within seconds (voice or text), gets interviewed the way a real interviewer would — clarifying questions, data revealed only when asked, no answers handed over — and walks away with rubric-scored, specific feedback plus a dashboard that tracks exactly where they're weak over time.
+
+**What makes it different from just prompting Gemini/Claude:**
+- A real interviewer persona with consistent behavior rules (below), not generic roleplay
+- A structured, tagged case bank (consulting + product, subtyped) instead of one-off invented cases
+- No-repeat logic so a user never gets the identical case twice
+- Rubric-based grading with transcript-specific feedback
+- Weakness-driven suggestions that improve as the user builds history
+- Voice-mode interview (speech-to-text in, text-to-speech out) that feels closer to a real call than a chat window
+
+---
+
+## 2. User & context
+
+- **Primary user:** a student at the founder's college prepping for consulting/product interviews, ranging from "never done a mock case" to "sharpening specific gaps before the interview."
+- **Distribution:** shared directly by the founder (a student executive/CR) to their batch and incoming juniors — no public marketing, no payment.
+- **Scale expectation:** tens to low hundreds of real users, not a scaled SaaS product. Design and engineering choices below are made for that scale — simple, fast to ship, not over-engineered.
+
+---
+
+## 3. Case taxonomy
+
+This is the backbone of both the case bank and the browse UI. Every case belongs to exactly one track and one subtype.
+
+### Consulting track
+| Subtype | What it tests |
+|---|---|
+| Profitability (P&L) | Diagnosing a profit or loss problem — revenue vs. cost drivers |
+| Market entry | Should a company enter a new market/geography/segment |
+| Market sizing / segmentation | Sizing a market and breaking it into addressable segments |
+| M&A / growth strategy | Evaluating an acquisition, partnership, or growth path |
+| Pricing | Setting or changing price for a product/service |
+| Operations | Fixing an operational bottleneck (cost, time, quality) |
+| Guesstimate (consulting-flavored) | Numeric estimation under uncertainty, business-context framed |
+
+### Product track
+| Subtype | What it tests |
+|---|---|
+| Product design | Design a product/feature for a given user and problem |
+| Product improvement | Improve an existing product's weak metric or experience |
+| Metrics / root-cause | A metric moved — diagnose why, using structured hypotheses |
+| Prioritization / tradeoff | Rank or choose between competing features/initiatives |
+| Strategy / go-to-market | Should we launch, expand, or reposition a product |
+| Guesstimate (product-flavored) | Estimation questions framed around product/market usage |
+
+Every case object also carries: `difficulty` (Easy/Medium/Hard), `estimated_minutes`, and a `used_by` list (user IDs who've completed it) — the field that powers no-repeat logic (see §5.3).
+
+---
+
+## 4. Full feature list
+
+### 4.1 Onboarding & personalization
+- Sign up (college email, keeps it closed to the batch)
+- Role selection: Consulting / Product / Both
+- Starting-point selection: New / Some practice / Interview-ready soon — sets initial difficulty mix, not a hard gate
+- Cold-start state acknowledged explicitly (see §7, Dashboard)
+
+### 4.2 Practice Hub
+- **Random practice** (primary, default): one tap starts a live case, auto-selected from the eligible pool
+- **Browse all**: full case library, filterable by track → subtype → difficulty
+- Both pull from the same tagged case pool — one data source, two entry points
+
+### 4.3 Case interview engine (the core feature)
+- **Two input modes**: Voice (speech-to-text in, text-to-speech interviewer voice out) and Text (typed chat) — user can switch mid-case if voice fails or they're in a public space
+- **AI interviewer behavior contract** (this is what makes it "not generic AI roleplay" — see §6 for the full spec)
+- **Tiered hint system**: nudge → partial structure → full approach, logged per use
+- **Live timer**, matched to the case's estimated duration
+- **No-repeat enforcement**: a completed case is removed from that user's eligible pool permanently; subtype and track remain available via new cases
+
+### 4.4 Feedback engine
+- Rubric-scored on 4 dimensions: Structuring, Quant reasoning, Business judgment, Communication
+- Feedback cites specific transcript moments, not generic praise
+- Immediate "what to practice next" recommendation, linked directly into a filtered case list
+
+### 4.5 Dashboard
+- Cold-start state for new users (0 reps) — explicit placeholder, not a broken-looking empty chart
+- Warm state (once enough reps exist) — skill radar, score trend, weakness callout, streak/rep counters
+- Recommendation logic that gets more specific as history accumulates
+
+### 4.6 Case content pipeline (founder-facing, not end-user facing)
+- Founder uploads cases via a structured template (see §8) — not raw PDF/book uploads
+- Each case is tagged by track/subtype/difficulty before it enters the pool
+
+---
+
+## 5. Detailed feature specs
+
+### 5.1 Voice interview mode
+
+**Flow:**
+1. User taps the mic (push-to-talk) or enables "always listening" mode
+2. Speech-to-text transcribes in real time, shown as live captions under the interviewer's last line, so the user can see what was captured
+3. On pause/end-of-turn detection (or manual "done talking" tap), the transcript is sent to the interviewer engine
+4. Interviewer response is generated, then converted to speech and played, while the text also appears in the transcript (accessibility + so the user can re-read a line they misheard)
+5. Turn returns to the user
+
+**States to design for:**
+- Idle (waiting for user to start talking)
+- Listening (mic active, live waveform/caption)
+- Processing (brief "thinking" state — interviewer engine generating a response; keep this under ~2-3 seconds of perceived wait with a subtle animation, not a spinner that feels broken)
+- Speaking (interviewer's voice playing, captions highlighting in sync)
+- Error/fallback (mic permission denied, poor transcription, or timeout — offer a one-tap switch to text mode without losing case progress)
+
+**Design note:** this is the single highest-risk feature technically (latency, transcription accuracy, natural-sounding TTS). Recommend shipping text mode first, voice as a fast-follow — but design both now so the layout doesn't need rework later.
+
+### 5.2 AI interviewer behavior contract
+
+The interviewer must **not** behave like a generic helpful chatbot. Concretely, the system prompt / behavior rules should enforce:
+
+- **Never volunteers data the user hasn't asked for.** Hidden data is revealed only when the user asks the specific right question (matched against the case's `hidden_data.trigger` fields).
+- **Asks clarifying questions back**, the way a real interviewer probes ("What do you mean by 'the market'? All of India, or a specific segment?") when the user is vague — this is itself a skill the user needs to practice responding to.
+- **Doesn't solve the case or hand over structure** unless the user has explicitly used a hint.
+- **Pushes back on weak logic** ("Why fuel and not labor?") rather than accepting every answer neutrally.
+- **Stays in character for the full case** — doesn't break into "helpful assistant" tone mid-case; that shift is reserved for the feedback screen after the case ends.
+- **Redirects, doesn't lecture**, when the user goes off-track — a short in-character nudge, not an out-of-case explanation.
+
+### 5.3 Random practice + no-repeat logic
+
+- Each case has a `used_by: [user_id]` list. When a user completes a case (reaches the feedback screen), their ID is added.
+- Random practice draws only from cases where the user's ID is **not** in `used_by`, filtered further by their track and (once enough data exists) weighted toward their weakest rubric dimension's subtypes.
+- A user can still get **a different case of the same subtype** (e.g., a second, different P&L case) — only the exact same case is excluded, matching what you described.
+- If a user exhausts every case in a subtype, random practice simply stops drawing from that subtype until new cases are added — it should never throw an error or loop a repeat; design an honest empty state ("You've done every profitability case we have — nice work. Try a different type, or check back as new cases are added.")
+
+### 5.4 Feedback specificity
+
+Each of the 4 rubric dimensions gets a score (0-100) and a 1-2 sentence note that references something concrete from the transcript (a turn number, a question asked or not asked, a number used or missed) — never a generic "good job" or "needs improvement" with no anchor.
+
+---
+
+## 6. AI system design (for engineering, informs UI states)
+
+- **Interviewer prompt** = case's structured fields (`prompt`, `hidden_data`, `ideal_approach`) + the behavior contract in §5.2 + 1-2 few-shot examples of correct interviewer tone. Built fresh per case — the model never sees the "answer" beyond what's in that case's own data.
+- **Grading prompt** = full transcript + the case's `rubric` field, run as a separate call after the case ends, instructed to cite specific transcript moments.
+- **Content is founder-authored, not book-uploaded.** Cases are written by the founder (in their own words, informed by known frameworks/case books) into the structured schema below — this avoids both a copyright problem and inconsistent AI behavior from being fed raw book text.
+
+**Case schema (unchanged core, extended for subtype/voice):**
+```
+{
+  id, track (consulting/product), subtype, difficulty, estimated_minutes,
+  prompt, context, hidden_data: [{trigger, data}],
+  ideal_approach, rubric: {structuring, quant_reasoning, business_judgment, communication},
+  hints: [tier1_nudge, tier2_partial_structure, tier3_full_approach],
+  used_by: [user_id]
+}
+```
+
+---
+
+## 7. Dashboard — cold-start vs. warm state (explicit design requirement)
+
+**Cold-start (0-2 reps):** Do not show a radar chart with fabricated/flat data or an empty-looking broken chart. Show a direct message instead: *"Do a couple more reps and we'll show you exactly where you're strong and where you're not."* Replace the radar/trend area with a simple rep counter and a single clear CTA back into random practice.
+
+**Warm state (3+ reps, recommend the radar unlocking around here):** Full skill radar, score trend line, weakest-dimension callout with a direct link to targeted cases, streak and rep counters.
+
+**Transition:** design a short, low-key moment when the dashboard "unlocks" the radar for the first time (e.g., a one-time subtle highlight) — it's a natural motivational beat, not a feature to over-animate.
+
+---
+
+## 8. Founder content-upload template (not user-facing, but needed for the design of any admin/upload screen if you want one)
+
+A simple structured form or spreadsheet-to-JSON pipeline with fields matching the case schema in §6. Recommend a spreadsheet for v1 (Google Sheet with one row per case, columns matching schema fields) rather than building an admin UI — faster to ship, and you're the only author.
+
+---
+
+## 9. Sitemap / page list
+
+1. Landing page (public)
+2. Sign up / Login
+3. Onboarding — Role select
+4. Onboarding — Starting point select
+5. Practice Hub — Random practice (default view)
+6. Practice Hub — Browse all (subtype-filtered library)
+7. Case detail preview (browse mode only — see a case's title/subtype/difficulty/est. time before starting)
+8. Live Case Interview — Voice mode
+9. Live Case Interview — Text mode
+10. Feedback / Results
+11. Dashboard — Cold-start state
+12. Dashboard — Warm state
+13. Profile / Settings (mode preference, track preference, account)
+14. Empty-state screens (subtype exhausted, no cases match filter)
+
+---
+
+## 10. Page-by-page detail (for Snitch prompts)
+
+Each entry below is written so you can hand it to Snitch nearly as-is: purpose, layout, key components, states, and where it connects.
+
+### Page 1 — Landing
+**Purpose:** convert a batchmate link-click into a signup in under a minute.
+**Layout:** light ivory background, soft indigo/violet gradient glow behind the hero; centered hero headline + subhead; avatar-strip social proof row below the CTA; category-chip row (subtypes as pills); 3-card "why this, not a chatbot" section; "where reviewers placed" text-badge row; 3-step "how it works"; 3-card testimonial section (batchmate name, placed role/company, quote); FAQ accordion; closing CTA banner with gradient background; simple footer.
+**Key components:** primary CTA button (repeated 3x down the page), avatar stack, pill chips, testimonial card, accordion item.
+**Connects to:** Sign up / Login (all CTAs).
+
+### Page 2 — Sign up / Login
+**Purpose:** low-friction entry restricted to college email.
+**Layout:** centered single-column card on the ivory background; college email field, simple password or magic-link; toggle between sign up and login.
+**States:** default, invalid-email error, "check your inbox" (if magic link).
+**Connects to:** Onboarding (new users) or straight to Practice Hub (returning users).
+
+### Page 3 — Onboarding: Role select
+**Purpose:** capture track preference to drive all future case suggestions.
+**Layout:** progress bar (step 1 of 2) top; three large selectable cards — Consulting / Product / Both — each with a one-line description and a track-color accent (coral for consulting, teal for product).
+**Connects to:** Onboarding: Starting point.
+
+### Page 4 — Onboarding: Starting point
+**Purpose:** set initial difficulty mix without gatekeeping access.
+**Layout:** progress bar (step 2 of 2); three selectable rows — New / Some practice / Interview-ready soon; primary CTA "Build my practice mix" enabled once a selection is made.
+**Connects to:** Practice Hub (Random practice view, default landing tab).
+
+### Page 5 — Practice Hub: Random practice
+**Purpose:** the primary, lowest-friction entry into a case — this is the page most sessions start from after day one.
+**Layout:** top mode-switcher pill ("Random practice" / "Browse all"); centered card with a shuffle icon, a short line naming what the next case will likely draw from (track + current weak subtype once known), and a single large "Start random case" button; a small reassurance line ("bank keeps growing — you won't run out").
+**States:** default (data exists to weight toward a weak spot), cold-start (no weighting message yet, just "Start random case"), pool-exhausted for user's track (rare — honest message, redirect to Browse all).
+**Connects to:** Live Case Interview (on tap).
+
+### Page 6 — Practice Hub: Browse all
+**Purpose:** intentional selection for a user who wants a specific subtype.
+**Layout:** track filter chips (All/Consulting/Product) then a subtype filter row (Profitability, Market Entry, Guesstimate, etc. — only the subtypes relevant to the selected track); grid of case cards (track pill, title, subtype, difficulty dots, est. minutes, rep count if previously attempted — though a fully completed case should not reappear per no-repeat logic, so completed cases are simply absent from this grid, not shown greyed out).
+**Connects to:** Case detail preview, or directly into Live Case Interview if you skip the preview step.
+
+### Page 7 — Case detail preview (optional but recommended)
+**Purpose:** let the user know what they're walking into (duration, difficulty, subtype) before committing, since browse mode implies intentional choice.
+**Layout:** case title, track + subtype pills, difficulty dots, estimated time, a one-line premise (not the full case prompt — that's revealed once the interview starts), "Begin" CTA, mode toggle (Voice/Text) visible here so the user picks input mode before entering.
+**Connects to:** Live Case Interview (Voice or Text, per selection).
+
+### Page 8 — Live Case Interview: Voice mode
+**Purpose:** the core product experience — a live-feeling case interview.
+**Layout:** top bar with track pill, case title, running timer, "Wrap up" exit action; center stage dominated by a large mic/waveform state indicator (not a chat log as the primary visual — captions scroll beneath it, smaller, for reference); tiered hint access as a side or bottom drawer, not blocking the main view; mode-switch-to-text as a small persistent link, never hidden behind a menu.
+**States:** Idle / Listening / Processing / Speaking / Error-fallback (see §5.1) — each needs a distinct, calm visual treatment; avoid a spinner for Processing, prefer a subtle pulsing or breathing animation on the interviewer avatar/waveform.
+**Connects to:** Feedback (on Wrap up), Live Case Interview: Text mode (on mode switch, preserving transcript).
+
+### Page 9 — Live Case Interview: Text mode
+**Purpose:** fallback and preference option — same case engine, chat UI.
+**Layout:** as in the current prototype — scrolling transcript, hint button, message input, timer and wrap-up in the top bar; mode-switch-to-voice link persistent.
+**Connects to:** Feedback (on Wrap up).
+
+### Page 10 — Feedback / Results
+**Purpose:** turn one rep into a specific, actionable takeaway.
+**Layout:** overall score ring + case title + rep metadata (hints used, time taken, rep number) up top; 4 rubric-dimension cards, each with score, progress bar, and a transcript-anchored note; a callout box naming the user's persistent weak dimension across recent reps, with a direct CTA into a filtered case list targeting it; secondary "back to hub" link.
+**Connects to:** Practice Hub (targeted subtype pre-filtered, or default hub).
+
+### Page 11 — Dashboard: Cold-start
+**Purpose:** honest, motivating placeholder for a 0-2 rep user — never a broken-looking empty chart.
+**Layout:** simple rep counter, a direct explanatory line about needing a couple more reps before insights unlock, single CTA back into random practice; no radar or trend chart shown at all in this state (an empty chart shell reads as broken, not "coming soon").
+**Connects to:** Practice Hub.
+
+### Page 12 — Dashboard: Warm state
+**Purpose:** the ongoing "coach" view a returning user checks.
+**Layout:** top row — average score ring + scoreboard strip (streak/total reps/weekly target) + track split (consulting vs. product rep counts); two-column chart row — skill radar (4 rubric dimensions) and score trend line; weakness callout bar naming the lowest dimension with a direct link into targeted practice; streak/milestone note at the bottom.
+**Connects to:** Practice Hub (targeted subtype), Case library filtered by weak subtype.
+
+### Page 13 — Profile / Settings
+**Purpose:** let a user adjust track/mode preferences without re-onboarding.
+**Layout:** simple settings list — track preference (Consulting/Product/Both), default interview mode (Voice/Text), account/email, sign out.
+**Connects to:** all onboarding-equivalent settings update in place, no forced re-flow.
+
+### Page 14 — Empty states
+**Purpose:** handle the edges honestly instead of erroring.
+**Cases to design:** subtype fully completed by this user (Browse all, per subtype filter), random pool exhausted for user's track, no cases match a filter combination. Each should explain what happened in plain language and offer one clear next action (switch subtype, check back later, go to a different track).
+
+---
+
+## 11. Flow summary (text form)
+
+```
+Landing → Sign up/Login → Onboarding (Role → Starting point)
+   → Practice Hub (Random practice, default)
+        → Live Case Interview (Voice or Text)
+             → Feedback → Practice Hub (targeted or default)
+   → Practice Hub (Browse all)
+        → Case detail preview
+             → Live Case Interview → Feedback → Practice Hub
+
+Dashboard is reachable from the top nav at any point once past onboarding,
+and is also the natural link-out from Feedback's weakness callout.
+```
+
+---
+
+## 12. What's still open / needs a decision before build
+
+- Voice mode is the highest-effort, highest-risk piece technically (latency, transcription accuracy) — worth confirming whether v1 ships with voice or text-first with voice as a fast follow, since the PRD above designs for both but they don't have to launch together.
+- Whether the case-detail preview page (Page 7) is worth the extra tap, or whether Browse all should go straight into the interview.
+- How many reps should gate the dashboard's cold-start → warm-state transition (this doc suggests 3 as a starting point, adjust based on real usage once you have data).

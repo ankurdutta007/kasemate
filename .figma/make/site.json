@@ -1,0 +1,11 @@
+{
+  "title": "vantge",
+  "description": "This web application offers a modern platform for users to create and customize visually appealing websites, enhancing design flexibility and user engagement.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

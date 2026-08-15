@@ -1,0 +1,226 @@
+Fetching cases...
+Embedding 166 cases for consulting - Profitability...
+Successfully embedded 166/166 cases.
+Clustering consulting - Profitability into 30 clusters...
+Embedding 102 cases for consulting - Market Entry...
+Successfully embedded 102/102 cases.
+Clustering consulting - Market Entry into 25 clusters...
+Embedding 154 cases for consulting - Guesstimate...
+Successfully embedded 154/154 cases.
+Clustering consulting - Guesstimate into 40 clusters...
+Embedding 153 cases for consulting - M&A / Growth Strategy...
+Successfully embedded 153/153 cases.
+Clustering consulting - M&A / Growth Strategy into 15 clusters...
+Embedding 76 cases for consulting - Pricing...
+Successfully embedded 76/76 cases.
+Clustering consulting - Pricing into 15 clusters...
+Embedding 100 cases for consulting - Operations...
+Successfully embedded 100/100 cases.
+Clustering consulting - Operations into 15 clusters...
+Embedding 171 cases for product - Product Design...
+Successfully embedded 171/171 cases.
+Clustering product - Product Design into 30 clusters...
+Embedding 134 cases for product - Metrics / Root-Cause...
+Successfully embedded 134/134 cases.
+Clustering product - Metrics / Root-Cause into 25 clusters...
+Embedding 88 cases for product - Product Improvement...
+Successfully embedded 88/88 cases.
+Clustering product - Product Improvement into 20 clusters...
+Embedding 112 cases for product - Strategy / Go-to-Market...
+Successfully embedded 112/112 cases.
+Clustering product - Strategy / Go-to-Market into 20 clusters...
+Embedding 46 cases for product - Guesstimate...
+Successfully embedded 46/46 cases.
+Clustering product - Guesstimate into 30 clusters...
+Embedding 10 cases for product - Prioritization / Tradeoff...
+Successfully embedded 10/10 cases.
+Clustering product - Prioritization / Tradeoff into 10 clusters...
+--- CURATION REPORT ---
+{
+  "consulting - Profitability": {
+    "total": 166,
+    "ineligible": 0,
+    "eligible": 166,
+    "target": 30,
+    "selected": 30,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 16,
+      "FMCG": 1,
+      "retail": 2,
+      "tech/software": 3,
+      "airline": 1,
+      "banking/finance": 2,
+      "manufacturing": 2,
+      "telecom": 1,
+      "coffee/restaurant": 1,
+      "healthcare": 1
+    }
+  },
+  "consulting - Market Entry": {
+    "total": 103,
+    "ineligible": 1,
+    "eligible": 102,
+    "target": 25,
+    "selected": 25,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 19,
+      "airline": 1,
+      "e-commerce": 1,
+      "manufacturing": 1,
+      "tech/software": 2,
+      "retail": 1
+    }
+  },
+  "consulting - Guesstimate": {
+    "total": 154,
+    "ineligible": 0,
+    "eligible": 154,
+    "target": 40,
+    "selected": 40,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 33,
+      "hospitality": 1,
+      "education": 2,
+      "banking/finance": 1,
+      "coffee/restaurant": 2,
+      "airline": 1
+    }
+  },
+  "consulting - M&A / Growth Strategy": {
+    "total": 153,
+    "ineligible": 0,
+    "eligible": 153,
+    "target": 15,
+    "selected": 15,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 11,
+      "e-commerce": 1,
+      "tech/software": 1,
+      "manufacturing": 1,
+      "education": 1
+    }
+  },
+  "consulting - Pricing": {
+    "total": 76,
+    "ineligible": 0,
+    "eligible": 76,
+    "target": 15,
+    "selected": 15,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 7,
+      "manufacturing": 2,
+      "banking/finance": 2,
+      "healthcare": 1,
+      "airline": 1,
+      "tech/software": 2
+    }
+  },
+  "consulting - Operations": {
+    "total": 100,
+    "ineligible": 0,
+    "eligible": 100,
+    "target": 15,
+    "selected": 15,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 9,
+      "banking/finance": 1,
+      "FMCG": 1,
+      "tech/software": 1,
+      "retail": 1,
+      "manufacturing": 1,
+      "education": 1
+    }
+  },
+  "product - Product Design": {
+    "total": 172,
+    "ineligible": 1,
+    "eligible": 171,
+    "target": 30,
+    "selected": 30,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 21,
+      "banking/finance": 2,
+      "tech/software": 5,
+      "education": 1,
+      "retail": 1
+    }
+  },
+  "product - Metrics / Root-Cause": {
+    "total": 134,
+    "ineligible": 0,
+    "eligible": 134,
+    "target": 25,
+    "selected": 25,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 22,
+      "tech/software": 2,
+      "e-commerce": 1
+    }
+  },
+  "product - Product Improvement": {
+    "total": 88,
+    "ineligible": 0,
+    "eligible": 88,
+    "target": 20,
+    "selected": 20,
+    "metTarget": true,
+    "industrySpread": {
+      "tech/software": 2,
+      "other/unclear": 17,
+      "coffee/restaurant": 1
+    }
+  },
+  "product - Strategy / Go-to-Market": {
+    "total": 112,
+    "ineligible": 0,
+    "eligible": 112,
+    "target": 20,
+    "selected": 20,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 18,
+      "tech/software": 2
+    }
+  },
+  "product - Guesstimate": {
+    "total": 46,
+    "ineligible": 0,
+    "eligible": 46,
+    "target": 30,
+    "selected": 30,
+    "metTarget": true,
+    "industrySpread": {
+      "tech/software": 4,
+      "other/unclear": 22,
+      "airline": 1,
+      "retail": 1,
+      "education": 1,
+      "e-commerce": 1
+    }
+  },
+  "product - Prioritization / Tradeoff": {
+    "total": 10,
+    "ineligible": 0,
+    "eligible": 10,
+    "target": 10,
+    "selected": 10,
+    "metTarget": true,
+    "industrySpread": {
+      "other/unclear": 9,
+      "tech/software": 1
+    }
+  }
+}
+
+Total Ineligible across all categories: 2
+Total Backfill Cases needed: 275
+Writing 275 selected IDs to DB...
+Done.

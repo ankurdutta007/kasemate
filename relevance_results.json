@@ -1,0 +1,5250 @@
+{
+  "c-0997": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1010": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1009": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0230": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0966": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1055": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0974": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1003": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1276": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0000": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1173": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1205": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0762": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0722": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1209": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1217": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0004": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0020": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0007": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-0029": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1137": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0003": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0002": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0001": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0011": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0010": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0034": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0012": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0041": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0009": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0014": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0013": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0045": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0069": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0025": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0043": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0018": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0056": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0016": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0021": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0017": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0864": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0065": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0028": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0047": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0027": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0051": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0046": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0306": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0052": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0053": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0290": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0321": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0286": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0054": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0202": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0413": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0370": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0410": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0353": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0405": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0473": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0469": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0358": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0485": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0493": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0480": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0475": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1341": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0474": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0478": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0497": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0583": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0507": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0518": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0532": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0568": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0005": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0591": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0529": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0764": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0738": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0708": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0638": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0022": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0741": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0796": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0015": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0828": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0865": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0802": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0818": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0049": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0972": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0852": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0799": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1027": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0996": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-1006": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0988": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-1014": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0042": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1038": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0055": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1327": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1092": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0229": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1329": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0289": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0044": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0048": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1048": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1345": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0574": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0008": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0983": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0985": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1377": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0442": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1338": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1096": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0024": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0050": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0040": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0177": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0572": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0135": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1207": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0427": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Pricing"
+  },
+  "c-0559": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0524": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0227": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0456": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0231": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0526": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0293": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0672": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0071": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0062": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0797": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0873": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0800": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0842": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0886": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0060": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0068": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1080": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1026": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Pricing"
+  },
+  "c-1114": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0899": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1020": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0090": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1257": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1375": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1200": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1249": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1241": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1133": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1361": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1250": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0063": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1399": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0106": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Improvement"
+  },
+  "c-0096": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1389": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1407": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0097": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1414": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0200": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1494": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1484": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1479": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0117": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0064": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1428": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0113": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0127": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0223": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Design"
+  },
+  "c-0204": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0211": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0233": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0464": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0066": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0137": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0902": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1185": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1128": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1126": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1090": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1000": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0908": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1103": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-1284": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1225": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0072": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1204": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0067": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0300": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1283": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1224": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0074": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1286": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1307": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1308": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0075": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1285": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1298": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1309": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1474": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1434": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1310": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1432": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0078": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1311": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0077": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0076": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0193": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0079": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0215": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0082": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0081": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0092": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0232": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0083": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0107": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0095": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0098": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0094": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0093": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0099": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0091": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0087": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0103": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0108": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0111": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0110": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0109": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0102": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0101": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Improvement"
+  },
+  "c-0100": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0115": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0121": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0118": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-0120": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0122": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0123": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0114": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0119": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0133": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0125": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0128": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-0131": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0126": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0124": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0130": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0132": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0146": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0129": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0144": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0142": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0134": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0145": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0140": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0143": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0147": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0152": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0148": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1394": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0150": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0105": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0149": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0151": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0158": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0829": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0153": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0467": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0155": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0160": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0154": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-0159": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0162": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0168": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0171": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0161": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0167": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0165": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0164": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0163": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0176": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0136": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0172": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0175": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0821": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0173": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0178": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0174": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0185": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0184": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0182": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0181": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0180": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0186": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0179": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0187": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0190": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0194": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0197": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0191": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0188": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0196": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0189": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0192": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0207": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-0203": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0195": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0206": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0199": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0234": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0201": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0978": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0212": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0210": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0837": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0213": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0208": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-0216": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0218": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0209": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0220": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0170": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0217": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0219": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-0991": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0221": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-1144": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0235": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0980": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1093": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0239": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0236": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0237": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0992": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0222": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0840": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0245": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0243": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0242": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0240": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Prioritization / Tradeoff"
+  },
+  "c-0252": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0244": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0262": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0241": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0256": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0255": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0254": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0248": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0253": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0259": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0258": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0403": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0268": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0257": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0265": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0261": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0263": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0266": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0269": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0260": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-1002": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1049": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0270": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1017": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0271": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1037": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1013": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1160": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1083": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0273": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1091": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1104": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-0272": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0274": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0400": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0275": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0402": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1139": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1131": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1125": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0277": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0276": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0401": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0471": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0284": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0279": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0278": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0291": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0285": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0280": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0287": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1169": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0298": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1203": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0296": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0292": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0295": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0297": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1387": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0294": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1223": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0303": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0301": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0304": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0305": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0302": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0308": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0299": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0313": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0310": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0309": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1202": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1095": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0307": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0312": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1359": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0317": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0327": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0326": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0314": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0328": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0322": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0320": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0911": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0330": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0329": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0340": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0331": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0345": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0332": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0344": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0341": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0352": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0343": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0356": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0350": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0351": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0349": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0347": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1366": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0360": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0357": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1470": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0361": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-1166": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0359": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1406": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1441": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0366": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0362": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0365": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0784": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0368": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0363": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0070": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0364": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0384": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0432": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0385": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0375": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0835": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0388": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0372": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0373": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0396": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0395": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0390": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0967": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1174": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0394": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0500": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0392": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0423": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0406": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0407": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0398": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0408": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0397": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0404": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0006": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0414": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0409": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0470": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0412": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0416": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0411": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0417": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0415": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0420": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Pricing"
+  },
+  "c-0426": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0419": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0428": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0421": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0425": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0424": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0429": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0431": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0436": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0430": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0434": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0435": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0437": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0438": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0433": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0443": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0445": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0444": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0439": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0440": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0112": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0448": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0446": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0455": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0454": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0451": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0452": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0449": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0458": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0450": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0457": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0462": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0466": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0461": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0468": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0460": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0477": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0463": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0459": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0484": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0481": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0617": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0482": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0487": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0479": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0833": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0486": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0490": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0489": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0495": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0494": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0498": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0492": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0491": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0499": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0503": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0504": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0506": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0505": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0968": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0502": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0138": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0508": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0511": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0509": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0510": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0822": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0514": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0513": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0823": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0512": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0830": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0519": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0141": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0516": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0515": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Pricing"
+  },
+  "c-0139": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0520": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0226": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0528": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0247": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0537": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0523": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0535": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0533": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0525": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Pricing"
+  },
+  "c-0534": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0540": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0541": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0686": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0538": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0539": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0543": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Pricing"
+  },
+  "c-0544": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0542": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0547": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0548": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0156": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0545": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0552": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0551": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0549": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0550": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0554": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0157": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1385": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1188": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Improvement"
+  },
+  "c-0557": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0556": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0555": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0553": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0563": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0562": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0584": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0564": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0824": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0288": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0561": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0582": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0594": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0619": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0587": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0618": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0593": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0977": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0597": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0588": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0626": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0632": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0652": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0629": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0646": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0623": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0831": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0311": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0702": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0656": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0662": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0166": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0647": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0674": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0667": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0700": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0709": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0707": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0693": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0675": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0712": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0334": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0713": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0689": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0734": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0832": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0727": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0724": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0719": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0735": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0723": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0728": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0752": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0169": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0743": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0729": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0745": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0744": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0748": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0747": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0763": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0753": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0760": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0758": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0765": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0755": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0757": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0761": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0771": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0773": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0769": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0768": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0766": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0767": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0817": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0772": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0781": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0834": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0775": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0777": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0780": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0776": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0782": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0770": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0791": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0787": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0788": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0790": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0792": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0825": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0789": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0786": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0793": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0826": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0795": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0810": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0804": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0805": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0794": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0827": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0841": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1094": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0814": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0820": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0839": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0816": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Pricing"
+  },
+  "c-0815": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0808": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0851": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0846": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0845": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0847": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0843": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0848": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0844": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0849": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0857": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0853": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0801": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0855": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0858": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0854": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0850": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0856": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0868": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0861": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0867": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0981": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0860": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0993": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0859": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0866": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0869": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0877": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0872": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0871": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0874": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0876": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0870": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0875": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0887": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0898": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0880": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0883": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0884": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0881": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0882": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0885": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0893": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0889": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0888": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0895": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0894": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0890": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0892": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0896": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0910": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0905": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0917": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0915": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-0909": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0912": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0183": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0918": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0955": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-0933": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0935": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0930": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0924": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0937": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0916": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-0932": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0946": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0940": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0950": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0941": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0943": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0942": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0945": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0944": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0949": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0952": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0901": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0947": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0954": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0951": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0900": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0953": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0957": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0960": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0963": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0956": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0959": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0962": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-0958": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0961": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0971": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0970": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0964": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0984": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0975": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0976": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0973": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0969": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0994": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0995": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0987": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0986": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0999": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0989": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0990": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0998": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1015": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1007": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1018": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1012": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1004": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1011": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1016": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1005": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1024": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1023": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1028": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1025": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1030": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1021": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1022": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1029": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1032": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1035": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1034": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1031": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1040": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1039": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1036": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1033": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1041": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1051": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1046": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1045": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1042": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1050": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1043": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1047": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1058": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1062": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1052": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1053": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1054": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1059": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1057": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1056": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1072": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1066": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1068": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1063": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1069": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1067": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1073": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1074": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1086": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1079": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1077": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1001": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1075": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1076": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1078": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1082": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1098": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1105": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1099": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1108": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1087": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1106": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1084": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1097": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1118": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1116": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1115": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1111": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1177": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1113": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1109": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Improvement"
+  },
+  "c-1117": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1122": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1124": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-1123": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1120": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1127": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1129": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1121": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Design"
+  },
+  "c-1119": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1135": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1130": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1136": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1140": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1134": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1142": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-1138": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1132": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1147": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1149": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1148": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1145": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1141": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1146": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1060": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1143": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1153": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1151": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1155": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1152": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1150": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1165": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1064": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1154": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1101": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1102": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1100": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-1386": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1157": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1156": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1158": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1107": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1161": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1164": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1170": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1163": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1159": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1167": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Prioritization / Tradeoff"
+  },
+  "c-1162": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1171": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1180": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1178": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1176": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1172": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1181": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1175": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1182": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-1184": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1194": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1179": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1192": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1193": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1196": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1195": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1187": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1190": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1213": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1206": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1197": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1208": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1199": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1215": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1214": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1198": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1229": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1221": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1226": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1218": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1220": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1212": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1216": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1219": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1238": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1232": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1235": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1231": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1236": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1222": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1237": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1234": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1261": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1252": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1244": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1247": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1260": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1248": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1242": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1258": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Pricing"
+  },
+  "c-1271": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1266": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1267": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1268": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1264": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1270": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-1263": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1262": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1275": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1277": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1274": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1278": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1370": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1360": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1272": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1273": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1288": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1371": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1280": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1281": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0116": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1282": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1382": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-1279": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1297": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1291": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1296": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1110": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-1289": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1306": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1290": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1299": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1318": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1383": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1315": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1314": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1316": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1317": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1313": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1312": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1321": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1323": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1325": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1324": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1319": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1322": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1328": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-1320": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1333": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1384": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-1335": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1331": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1326": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1334": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1332": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1112": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0732": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1337": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1303": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1342": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-1339": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-1346": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1350": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1344": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1348": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1343": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1349": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1347": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1300": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1304": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1358": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1302": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1351": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1352": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1364": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1353": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1355": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1354": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1301": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1357": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1373": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1376": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1367": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1374": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1368": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1365": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Improvement"
+  },
+  "c-1369": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1363": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1392": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1388": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1395": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1391": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1379": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1390": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1380": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1393": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1409": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1405": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1402": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1404": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1396": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1403": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1397": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1408": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1412": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1413": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1411": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1417": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1418": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1415": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1416": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-1410": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1426": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1421": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1425": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1422": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1419": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Improvement"
+  },
+  "c-1431": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1420": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Design"
+  },
+  "c-1427": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1442": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1451": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1449": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1447": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1439": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1450": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1446": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1437": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1456": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1453": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1455": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1457": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1452": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1459": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1460": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1458": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1466": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1467": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1468": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1472": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1465": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1462": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1464": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1471": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1475": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0472": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1400": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1476": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0811": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1477": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1189": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1478": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1401": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1481": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-1482": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1480": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1487": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1483": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1485": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1488": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1498": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Design"
+  },
+  "c-1492": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1491": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1490": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0838": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1489": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-0774": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0862": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0088": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1423": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0023": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0059": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-1424": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0061": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0019": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0026": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0084": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0086": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0228": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0238": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0281": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0089": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0085": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0214": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0073": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0399": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0335": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-0318": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0348": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Pricing"
+  },
+  "c-0374": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0381": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0316": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0483": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0389": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0488": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0923": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0080": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0496": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0418": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0501": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0586": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0057": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0517": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0706": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0536": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0531": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0863": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0530": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0339": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0319": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0346": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0198": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0058": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0338": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0282": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0422": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0383": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0386": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0391": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0371": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0453": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0376": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-0965": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0354": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0571": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0521": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0621": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0565": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0578": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0441": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0546": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0569": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1008": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0585": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0581": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0595": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0604": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0616": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0836": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0622": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0694": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0687": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0670": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0628": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0640": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0651": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0683": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-0634": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0711": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0725": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0754": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0721": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0705": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0778": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0746": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0717": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0913": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0879": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0979": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Market Entry"
+  },
+  "c-1330": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Profitability"
+  },
+  "c-0982": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0929": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0807": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1061": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0264": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1071": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-1381": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0251": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0205": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0465": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1336": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1081": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0803": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-0653": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0558": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0657": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-1089": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0560": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1088": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0783": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Operations"
+  },
+  "c-0948": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0926": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0891": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1191": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1230": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Design"
+  },
+  "c-0897": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1044": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0914": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-1240": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1287": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0104": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1398": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1259": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1239": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1362": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-1372": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0250": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1183": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0906": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0907": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1186": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0267": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0903": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0224": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1493": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1228": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1210": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1168": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1201": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1243": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1251": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Metrics / Root-Cause"
+  },
+  "c-1454": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1486": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1265": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1340": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1295": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Strategy / Go-to-Market"
+  },
+  "c-1429": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1461": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1436": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Guesstimate"
+  },
+  "c-1443": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "M&A / Growth Strategy"
+  },
+  "c-1430": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1469": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1440": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-0904": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1496": {
+    "relevance": "IRRELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1378": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "Product Design"
+  },
+  "c-1495": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  },
+  "c-1356": {
+    "relevance": "RELEVANT",
+    "subtypeFit": "SUBTYPE_OK"
+  }
+}

@@ -1,0 +1,372 @@
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useTheme } from '../context/ThemeContext'
+import img7 from '@/imports/image-7.webp'
+import img8 from '@/imports/image-8.webp'
+import img9 from '@/imports/image-9.webp'
+import logo from '@/imports/logo.webp'
+import { supabase } from '../lib/supabase'
+
+const IconEye = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+    <circle cx="12" cy="12" r="3"></circle>
+  </svg>
+)
+
+const IconEyeOff = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+    <line x1="1" y1="1" x2="23" y2="23"></line>
+  </svg>
+)
+
+const IconGoogle = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24">
+    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+  </svg>
+)
+
+// v2, right panel redesigned with new illustrations
+
+const STATS = [
+  { value: '271', label: 'curated cases', color: '#7C3AED' },
+  // 33 distinct source_books in DB as of 2026-08-15 — using 30+ as conservative accurate figure
+  { value: '30+', label: 'curated sources', color: '#00d4a8' },
+  { value: '4', label: 'rubric dimensions', color: '#f59e0b' },
+  { value: 'Free', label: 'for placements', color: '#7C3AED' },
+]
+
+const FEATURES = [
+  {
+    img: null,
+    label: 'Personalized roadmap',
+    desc: 'A week-by-week plan built around your track and timeline',
+    dot: true,
+  },
+  {
+    img: null,
+    label: 'Structured case solutions',
+    desc: 'Full framework and reasoning for 271 curated cases, before you ever go live.',
+    dot: true,
+  },
+  {
+    img: img7,
+    label: 'Live AI interview',
+    desc: 'Real-time voice practice that pushes back, not a scripted quiz.',
+  },
+  {
+    img: img9,
+    label: 'Rubric-tied feedback',
+    desc: 'Cites the exact turn where you dropped points',
+  },
+]
+
+export default function Auth() {
+  const navigate = useNavigate()
+  const { theme } = useTheme()
+  const isDark = theme === 'dark'
+  const [mode, setMode] = useState<'login' | 'signup'>('login')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [showPassword, setShowPassword] = useState(false)
+  const [error, setError] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleGoogleSignIn = async (e: React.MouseEvent) => {
+    e.preventDefault()
+    setIsLoading(true)
+    setError('')
+    try {
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: `${window.location.origin}/roadmap`,
+          queryParams: {
+            hd: 'iitkgp.ac.in'
+          }
+        }
+      })
+      if (error) throw error
+    } catch (err: any) {
+      console.error('Google Auth Error:', err)
+      setError(err.message || 'Failed to sign in with Google.')
+      setIsLoading(false)
+    }
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    const isKgpEmail = email.endsWith('@iitkgp.ac.in') || email.endsWith('@kgpian.iitkgp.ac.in')
+    if (!email.includes('@') || !isKgpEmail) {
+      setError('Please use a valid @iitkgp.ac.in or @kgpian.iitkgp.ac.in email address.')
+      return
+    }
+
+    setIsLoading(true)
+    setError('')
+
+    try {
+      if (mode === 'signup') {
+        const { error: signUpError } = await supabase.auth.signUp({
+          email,
+          password,
+        })
+        if (signUpError) throw signUpError
+        navigate('/onboarding/role')
+      } else {
+        const { error: signInError } = await supabase.auth.signInWithPassword({
+          email,
+          password,
+        })
+        if (signInError) throw signInError
+        navigate('/roadmap')
+      }
+    } catch (err: any) {
+      setError(err.message || 'An error occurred during authentication.')
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
+  return (
+    <div className="auth-wrapper" style={{ minHeight: '100vh', display: 'flex', fontFamily: 'Inter, sans-serif', backgroundColor: 'var(--bg)', alignItems: 'stretch' }}>
+
+      {/* ── LEFT: Form pane ── */}
+      <div className="auth-form-pane" style={{
+        width: '46%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        padding: '40px 56px',
+        background: isDark
+          ? 'linear-gradient(145deg, var(--bg3) 0%, var(--bg2) 60%, var(--bg) 100%)'
+          : 'linear-gradient(145deg, #fdf5fd 0%, #fdfafd 100%)',
+        borderRight: '1px solid var(--border)',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        <div style={{ position: 'absolute', top: -100, right: -100, width: 350, height: 350, borderRadius: '50%', background: 'radial-gradient(circle, var(--primary-glow) 0%, transparent 65%)', pointerEvents: 'none' }} />
+
+        {/* Logo (clickable to return to landing page) */}
+        <div 
+          onClick={() => navigate('/')}
+          style={{ display: 'inline-flex', alignItems: 'center', gap: 8, marginBottom: 32, position: 'relative', cursor: 'pointer' }}
+          title="Back to home"
+        >
+          <img src={logo} alt="KaseMate Logo" style={{ width: 34, height: 34, borderRadius: 10, objectFit: 'cover' }} />
+          <span style={{ fontFamily: '"Newsreader", serif', fontStyle: 'italic', fontSize: 22, fontWeight: 500, color: 'var(--text-primary)' }}>KaseMate</span>
+        </div>
+
+        <h1 style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 36, fontWeight: 400, color: 'var(--text-primary)', margin: '0 0 8px', letterSpacing: '-0.02em', lineHeight: 1.15, position: 'relative' }}>
+          {mode === 'signup' ? 'Create your account' : 'Welcome back'}
+        </h1>
+        <p style={{ fontSize: 15, color: 'var(--text-muted)', margin: '0 0 24px', lineHeight: 1.6, position: 'relative' }}>
+          {mode === 'signup' ? 'Use your IIT KGP email to get full access.' : 'Sign in to continue your practice streak.'}
+        </p>
+
+        {/* Card */}
+        <div style={{ backgroundColor: 'var(--bg2)', borderRadius: 20, border: '1px solid var(--border)', padding: '32px', boxShadow: 'var(--card-shadow-lg)', position: 'relative' }}>
+          <div style={{ display: 'flex', backgroundColor: 'var(--bg3)', borderRadius: 10, padding: 3, marginBottom: 24 }}>
+            {(['signup', 'login'] as const).map(m => (
+              <button key={m} onClick={() => { setMode(m); setError('') }}
+                style={{ flex: 1, padding: '9px', borderRadius: 8, border: 'none', fontSize: 13, fontWeight: 600, fontFamily: 'Inter, sans-serif', cursor: 'pointer', backgroundColor: mode === m ? (isDark ? 'var(--primary-mid)' : '#fff') : 'transparent', color: mode === m ? (isDark ? '#fff' : 'var(--text-primary)') : 'var(--text-muted)', boxShadow: mode === m ? 'var(--card-shadow)' : 'none', transition: 'all 0.15s' }}>
+                {m === 'signup' ? 'Create account' : 'Sign in'}
+              </button>
+            ))}
+          </div>
+
+          <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {error && <div style={{ padding: '10px 14px', borderRadius: 8, backgroundColor: 'var(--coral-subtle)', border: '1px solid rgba(224,82,82,0.3)', color: 'var(--coral)', fontSize: 13, fontWeight: 500 }}>{error}</div>}
+            
+            <div>
+              <label style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', display: 'block', marginBottom: 6, letterSpacing: '0.04em', textTransform: 'uppercase' }}>IIT KGP Email</label>
+              <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError('') }}
+                placeholder="yourname@kgpian.iitkgp.ac.in"
+                style={{ width: '100%', padding: '12px 14px', borderRadius: 10, border: `1.5px solid ${error ? 'var(--coral)' : 'var(--border)'}`, backgroundColor: 'var(--bg3)', color: 'var(--text-primary)', fontSize: 14, fontFamily: 'Inter, sans-serif', outline: 'none', boxSizing: 'border-box', transition: 'border-color 0.15s' }}
+                onFocus={e => { if (!error) e.target.style.borderColor = 'var(--primary-mid)' }}
+                onBlur={e => { if (!error) e.target.style.borderColor = 'var(--border)' }}
+              />
+            </div>
+            <div>
+              <label style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', display: 'block', marginBottom: 6, letterSpacing: '0.04em', textTransform: 'uppercase' }}>Password</label>
+              <div style={{ position: 'relative' }}>
+                <input type={showPassword ? 'text' : 'password'} value={password} onChange={e => setPassword(e.target.value)} placeholder="••••••••"
+                  style={{ width: '100%', padding: '12px 40px 12px 14px', borderRadius: 10, border: '1.5px solid var(--border)', backgroundColor: 'var(--bg3)', color: 'var(--text-primary)', fontSize: 14, fontFamily: 'Inter, sans-serif', outline: 'none', boxSizing: 'border-box', transition: 'border-color 0.15s' }}
+                  onFocus={e => { e.target.style.borderColor = 'var(--primary-mid)' }}
+                  onBlur={e => { e.target.style.borderColor = 'var(--border)' }}
+                />
+                <button type="button" onClick={() => setShowPassword(p => !p)}
+                  style={{ position: 'absolute', right: 12, top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', color: 'var(--text-muted)', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 4 }}
+                >
+                  {showPassword ? <IconEyeOff /> : <IconEye />}
+                </button>
+              </div>
+            </div>
+            <button type="submit"
+              disabled={isLoading}
+              style={{ marginTop: 8, padding: '14px', borderRadius: 10, border: 'none', background: 'linear-gradient(135deg, var(--primary-mid), var(--primary))', color: '#fff', fontSize: 15, fontWeight: 700, cursor: isLoading ? 'not-allowed' : 'pointer', fontFamily: 'Inter, sans-serif', boxShadow: '0 4px 20px rgba(66,16,61,0.4)', opacity: isLoading ? 0.7 : 1 }}
+              onMouseEnter={e => { if (!isLoading) e.currentTarget.style.opacity = '0.88' }}
+              onMouseLeave={e => { if (!isLoading) e.currentTarget.style.opacity = '1' }}
+            >
+              {isLoading ? 'Processing...' : (mode === 'signup' ? 'Create account →' : 'Sign in →')}
+            </button>
+          </form>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, margin: '24px 0' }}>
+            <div style={{ flex: 1, height: 1, backgroundColor: 'var(--border)' }}></div>
+            <div style={{ fontSize: 12, color: 'var(--text-muted)', textTransform: 'uppercase', fontWeight: 600, letterSpacing: '0.05em' }}>OR</div>
+            <div style={{ flex: 1, height: 1, backgroundColor: 'var(--border)' }}></div>
+          </div>
+
+          <button type="button" onClick={handleGoogleSignIn} disabled={isLoading}
+            style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, padding: '12px 14px', borderRadius: 10, border: '1.5px solid var(--border)', backgroundColor: 'var(--bg3)', color: 'var(--text-primary)', fontSize: 14, fontWeight: 600, cursor: isLoading ? 'not-allowed' : 'pointer', fontFamily: 'Inter, sans-serif', transition: 'all 0.15s' }}
+            onMouseEnter={e => { if (!isLoading) e.currentTarget.style.backgroundColor = 'var(--bg2)' }}
+            onMouseLeave={e => { if (!isLoading) e.currentTarget.style.backgroundColor = 'var(--bg3)' }}
+          >
+            <IconGoogle />
+            Continue with Google
+          </button>
+
+          <p style={{ textAlign: 'center', fontSize: 11, color: 'var(--text-muted)', margin: '24px 0 0' }}>
+            IIT KGP email only · Free for placements · No paywall
+          </p>
+        </div>
+      </div>
+
+      {/* ── RIGHT: Social proof pane ── */}
+      <div className="auth-social-pane" style={{
+        flex: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        padding: '80px 56px',
+        background: isDark
+          ? 'linear-gradient(160deg, #130e2e 0%, #0d0f14 60%)'
+          : 'linear-gradient(160deg, #f0ebff 0%, #f8f6ff 50%, #ffffff 100%)',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+
+        {/* Background radial glow */}
+        <div style={{ position: 'absolute', top: '10%', right: '-5%', width: 380, height: 380, borderRadius: '50%', background: 'radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%)', pointerEvents: 'none' }} />
+        <div style={{ position: 'absolute', bottom: '5%', left: '10%', width: 240, height: 240, borderRadius: '50%', background: 'radial-gradient(circle, rgba(0,212,168,0.08) 0%, transparent 70%)', pointerEvents: 'none' }} />
+
+        {/* Illustration hero with Stats in corners */}
+        <div style={{ position: 'relative', width: '100%', maxWidth: 420, margin: '0 auto 24px', minHeight: 260, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <img
+            src={img8}
+            alt="Collaborative case practice"
+            style={{ width: '100%', maxHeight: 260, objectFit: 'contain', objectPosition: 'center', display: 'block', position: 'relative', zIndex: 2 }}
+          />
+          {STATS.map((s, i) => {
+            const positions: React.CSSProperties[] = [
+              { top: 10, left: -20, transform: 'rotate(-4deg)' },
+              { top: 10, right: -20, transform: 'rotate(4deg)' },
+              { bottom: 20, left: -20, transform: 'rotate(4deg)' },
+              { bottom: 20, right: -20, transform: 'rotate(-4deg)' }
+            ];
+            return (
+              <div key={i} style={{
+                position: 'absolute',
+                ...positions[i],
+                backgroundColor: isDark ? 'rgba(255,255,255,0.06)' : 'rgba(255,255,255,0.92)',
+                border: `1px solid ${isDark ? 'rgba(124,58,237,0.3)' : 'rgba(124,58,237,0.12)'}`,
+                borderRadius: 14,
+                padding: '14px 18px',
+                textAlign: 'center',
+                backdropFilter: 'blur(8px)',
+                boxShadow: isDark ? '0 8px 32px rgba(0,0,0,0.4)' : '0 8px 24px rgba(124,58,237,0.06)',
+                zIndex: 3,
+                minWidth: 120,
+              }}>
+                <div style={{
+                  fontFamily: 'JetBrains Mono, monospace',
+                  fontSize: 26,
+                  fontWeight: 800,
+                  color: s.color,
+                  lineHeight: 1,
+                  marginBottom: 6,
+                  letterSpacing: '-0.02em',
+                }}>{s.value}</div>
+                <div style={{
+                  fontSize: 10,
+                  color: 'var(--text-muted)',
+                  lineHeight: 1.3,
+                  fontWeight: 700,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.04em'
+                }}>{s.label}</div>
+              </div>
+            )
+          })}
+        </div>
+
+        {/* Tagline */}
+        <div style={{ marginBottom: 24 }}>
+          <h2 style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 26, fontWeight: 700, color: 'var(--text-primary)', margin: '0 0 8px', lineHeight: 1.25, letterSpacing: '-0.02em' }}>
+            Your edge in every placement round.
+          </h2>
+          <p style={{ fontSize: 13, color: 'var(--text-muted)', margin: 0, lineHeight: 1.6 }}>
+            Personalized roadmap · Curated case solutions · Live AI practice
+          </p>
+        </div>
+
+        {/* Feature list */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {FEATURES.map((f, i) => (
+            <div key={i} style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 14,
+              backgroundColor: isDark ? 'rgba(255,255,255,0.035)' : 'rgba(255,255,255,0.85)',
+              borderRadius: 12,
+              padding: '12px 16px',
+              border: `1px solid ${isDark ? 'rgba(255,255,255,0.06)' : 'rgba(124,58,237,0.1)'}`,
+              backdropFilter: 'blur(6px)',
+            }}>
+              {/* Icon area */}
+              <div style={{
+                width: 42,
+                height: 42,
+                borderRadius: 10,
+                background: isDark ? 'rgba(124,58,237,0.15)' : '#ede8ff',
+                border: `1px solid ${isDark ? 'rgba(124,58,237,0.25)' : 'rgba(124,58,237,0.18)'}`,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                flexShrink: 0,
+                overflow: 'hidden',
+              }}>
+                {f.img ? (
+                  <img src={f.img} alt="" style={{ width: 28, height: 28, objectFit: 'contain' }} />
+                ) : (
+                  /* Interviewer pushback, abstract dot grid icon */
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="5" cy="5" r="2" fill="#7C3AED" opacity="0.7" />
+                    <circle cx="10" cy="5" r="2" fill="#7C3AED" />
+                    <circle cx="15" cy="5" r="2" fill="#7C3AED" opacity="0.7" />
+                    <circle cx="5" cy="10" r="2" fill="#7C3AED" />
+                    <circle cx="10" cy="10" r="2" fill="#7C3AED" opacity="0.5" />
+                    <circle cx="15" cy="10" r="2" fill="#7C3AED" />
+                    <circle cx="5" cy="15" r="2" fill="#7C3AED" opacity="0.7" />
+                    <circle cx="10" cy="15" r="2" fill="#7C3AED" />
+                    <circle cx="15" cy="15" r="2" fill="#7C3AED" opacity="0.4" />
+                  </svg>
+                )}
+              </div>
+              <div>
+                <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-primary)', marginBottom: 2 }}>{f.label}</div>
+                <div style={{ fontSize: 11, color: 'var(--text-muted)', lineHeight: 1.45 }}>{f.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}

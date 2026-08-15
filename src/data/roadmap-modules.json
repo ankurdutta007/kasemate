@@ -1,0 +1,2256 @@
+[
+  {
+    "id": "FOUND-01",
+    "title": "Resume & One-Pager",
+    "stage": 1,
+    "tier": 1,
+    "family": "foundation",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 100,
+    "what": "Build your single-page CV in the standard KGP format. One page is a hard rule, not a target \u2014 the format is fixed; your job is to fill it well.",
+    "why": "Shortlisting at KGP is CV-driven. A weak CV means you never get to show your case skills.",
+    "good": "One page, no exceptions. Every bullet follows Action \u2192 Metric \u2192 Impact. No objective statement, no filler, no second page.",
+    "mistake": "Treating 'one page' as flexible, or listing responsibilities ('worked on X') instead of results ('cut X 30% by doing Y').",
+    "tasks": [
+      {
+        "label": "Set up your one-page CV in the KGP format",
+        "kind": "internal",
+        "href": "/roadmap?resource=resume-format",
+        "minutes": 120,
+        "detail": "Follow the standard one-page KGP CV format \u2014 section order, one-page limit and bullet density are fixed, not optional. Plenty of good reference templates are a quick search away if you need one. Fill it with your own experience; if it spills to a second page, cut, don't shrink the font.",
+        "action": "self"
+      },
+      {
+        "label": "Run the 10-point bullet audit on every line",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 90,
+        "detail": "Score every bullet 0/1 on: has a number, has an action verb, states an outcome. Any bullet scoring under 2/3 gets rewritten before you move on.",
+        "action": "self"
+      },
+      {
+        "label": "Get a second pair of eyes on it",
+        "kind": "external",
+        "href": "https://www.linkedin.com",
+        "minutes": 60,
+        "detail": "Have someone review it \u2014 anyone a step ahead in the same function is ideal, but a peer applying elsewhere works too (they'll catch unclear language even if they don't know the function). If you don't have someone to ask, post it in a placement community or search online for a CV-review checklist and self-audit against it.",
+        "action": "linkedin"
+      }
+    ],
+    "trackNotes": {
+      "consulting": "\u2022 Lead with a 3-4 line summary / positioning line (e.g. 'analytical + led teams + quant background') \u2014 reviewers scan for a coherent narrative first\n\u2022 Every bullet: a number AND a structured method (e.g. 'segmented X into Y groups, found Z')\n\u2022 Call out leadership/ownership scope explicitly \u2014 team size, budget, stakeholders managed\n\u2022 Order: summary \u2192 most relevant experience \u2192 POR/leadership \u2192 skills",
+      "product": "\u2022 Lead every bullet with a user or business metric, not the feature ('drove 18% activation via X', not 'built X')\n\u2022 Include at least one line signalling technical fluency (SQL, an experiment, a dashboard) even in a non-technical role\n\u2022 A teardown, side project or case-comp result earns a line \u2014 sometimes ahead of a weaker internship bullet\n\u2022 Order: summary \u2192 product/impact experience \u2192 projects \u2192 skills",
+      "analyst": "\u2022 Lead bullets with the named tool/technique, then the outcome ('built a churn model in Python \u2014 logistic regression, 0.81 AUC \u2014 flagging X% of at-risk users')\n\u2022 Put a skills line (SQL, Python, Excel, Tableau, key libraries) near the top \u2014 it gets scanned first\n\u2022 Quantify everything; analyst reviewers want specific technical evidence, not just business impact\n\u2022 Order: skills \u2192 analytical experience \u2192 projects \u2192 education",
+      "general": "\u2022 Show range, not depth in one function \u2014 one operations bullet, one strategy bullet, one people-facing bullet\n\u2022 Mix business impact, cross-functional exposure and any quantitative bullets you have\n\u2022 GM roles hire generalists, so a CV that looks narrowly specialised reads worse than one showing breadth\n\u2022 Order: summary \u2192 varied experience \u2192 POR \u2192 skills"
+    }
+  },
+  {
+    "id": "FOUND-02",
+    "title": "Bullet Rewrite Lab",
+    "stage": 1,
+    "tier": 2,
+    "family": "foundation",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 4,
+    "priority": 90,
+    "what": "A focused rewrite pass turning every weak CV bullet into a quantified, defensible claim.",
+    "why": "CV deep-dive rounds attack your weakest bullet. Fixing them now removes your softest target.",
+    "good": "You can defend any bullet for 5 minutes with specifics \u2014 the number, the method, the counterfactual.",
+    "mistake": "Inflating numbers you cannot back up. Interviewers probe exactly the impressive-sounding ones.",
+    "tasks": [
+      {
+        "label": "Rewrite every bullet using Action-Metric-Impact",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 120,
+        "detail": "Take every bullet scoring under 2/3 from FOUND-01 and rewrite using Action \u2192 Metric \u2192 Impact. Aim for one line, 18-22 words.",
+        "action": "self"
+      },
+      {
+        "label": "Write a 5-line defence note under each bullet",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 90,
+        "detail": "For each bullet write 3-4 lines answering: what was the actual number, how did you measure it, what would have happened without your change.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "FOUND-03",
+    "title": "Target Company Map & JD Decode",
+    "stage": 1,
+    "tier": 2,
+    "family": "foundation",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 3,
+    "priority": 85,
+    "what": "Build your ranked shortlist of target companies and decode what each JD is actually testing.",
+    "why": "Prep is finite. Knowing that Company A tests SQL and Company B tests guesstimates changes what you study.",
+    "good": "A ranked sheet: company, role, CTC, test format, interview rounds, your fit gap.",
+    "mistake": "Preparing generically for 'analytics roles' when three of your targets test three different things.",
+    "tasks": [
+      {
+        "label": "Build your ranked target sheet from the JD database",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 90,
+        "detail": "Work through this deliberately rather than skimming \u2014 this becomes a reference document you'll return to, so get the structure right the first time.",
+        "action": "self"
+      },
+      {
+        "label": "Map each target to the modules that cover its test format",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 60,
+        "detail": "Work through this deliberately rather than skimming \u2014 this becomes a reference document you'll return to, so get the structure right the first time.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "APT-01",
+    "title": "Speed Arithmetic",
+    "stage": 1,
+    "tier": 1,
+    "family": "aptitude",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 10,
+    "priority": 95,
+    "what": "Mental math without a calculator: percentages, ratios, fractions, approximations under time pressure.",
+    "why": "Every OA is time-bound. Slow arithmetic costs you questions you actually knew how to solve.",
+    "good": "Two-digit multiplication, percentage swings and ratio conversions in under 10 seconds each.",
+    "mistake": "Practising accuracy without a timer. The OA constraint is speed, not whether you can do it eventually.",
+    "tasks": [
+      {
+        "label": "Work GFG's aptitude question bank end to end",
+        "kind": "external",
+        "href": "https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/",
+        "minutes": 180,
+        "detail": "This is the comprehensive one \u2014 don't cherry-pick topics, go through all of it. Pair it with IndiaBix below for volume.",
+        "action": "external"
+      },
+      {
+        "label": "Drill tables, squares, cubes and reciprocals to 30",
+        "kind": "external",
+        "href": "https://www.indiabix.com/aptitude/questions-and-answers/",
+        "minutes": 120,
+        "detail": "Do the general aptitude section on IndiaBix. Memorise tables to 20, squares to 30, cubes to 20, and reciprocals as percentages \u2014 flashcards, not just reading.",
+        "action": "external"
+      },
+      {
+        "label": "Timed sets: every problem under 1 minute",
+        "kind": "external",
+        "href": "https://prepinsta.com/learn-aptitude/",
+        "minutes": 180,
+        "detail": "Analyst-track speed matters most here \u2014 build the habit of solving every problem in under a minute, not just eventually getting it right. Cover PrepInsta's aptitude section fully.",
+        "action": "external"
+      },
+      {
+        "label": "Short-trick pass on FacePrep's aptitude articles",
+        "kind": "external",
+        "href": "https://www.faceprep.in/quantitative-aptitude/",
+        "minutes": 90,
+        "detail": "These articles are dense with shortcuts (not just theory) \u2014 work through them for the speed tricks, they compound with the tables/squares drilling above.",
+        "action": "external"
+      },
+      {
+        "label": "Log every error into a mistake sheet by type",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 60,
+        "detail": "Keep a running sheet of every wrong answer tagged by type (percentage / ratio / DI / approximation). After ~30 logged, the pattern in your mistakes becomes obvious and tells you what to drill.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "APT-02",
+    "title": "Data Interpretation",
+    "stage": 1,
+    "tier": 1,
+    "family": "aptitude",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 7,
+    "priority": 94,
+    "what": "Reading tables, bar charts, pie charts and line graphs fast, then computing what is asked.",
+    "why": "DI is the single highest-weight section in analyst and consulting OAs.",
+    "good": "You scan the chart, spot the trap, and answer without recomputing the whole table.",
+    "mistake": "Calculating exact values when the options are far apart and approximation would have done.",
+    "tasks": [
+      {
+        "label": "Work through table, bar, pie and line DI sets",
+        "kind": "external",
+        "href": "https://www.indiabix.com/data-interpretation/questions-and-answers/",
+        "minutes": 180,
+        "detail": "Most people find DI's length intimidating and half-skip it \u2014 that's exactly why practising it properly creates a real score gap. Do at least 2 full sets of each chart type.",
+        "action": "external"
+      },
+      {
+        "label": "Timed DI sets: 4 sets in 24 minutes",
+        "kind": "external",
+        "href": "https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/",
+        "minutes": 150,
+        "detail": "4 sets, 6 minutes each, no calculator. If you're consistently over time, you're calculating exact values where estimation would do.",
+        "action": "external"
+      },
+      {
+        "label": "Build your approximation shortcut sheet",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 90,
+        "detail": "Write down your go-to shortcuts for 10%, 12.5%, 16.67%, 33.33% conversions and common ratio simplifications \u2014 this sheet is what you'll actually use in the exam.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "APT-03",
+    "title": "Logical Reasoning",
+    "stage": 1,
+    "tier": 1,
+    "family": "aptitude",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 93,
+    "what": "Arrangements, seating, blood relations, syllogisms, coding-decoding and input-output.",
+    "why": "LR sections are pure pattern practice \u2014 the return per hour is the highest of any OA section.",
+    "good": "You recognise the set type in 15 seconds and reach for the right grid or diagram immediately.",
+    "mistake": "Solving in your head. LR sets need a written grid; mental attempts fail on the 4th constraint.",
+    "tasks": [
+      {
+        "label": "Cover each LR set type with worked examples",
+        "kind": "external",
+        "href": "https://www.indiabix.com/logical-reasoning/questions-and-answers/",
+        "minutes": 180,
+        "detail": "Work through arrangements, seating, blood relations, syllogisms, coding-decoding and input-output \u2014 minimum 8 worked examples per type, with a grid drawn for every arrangement question.",
+        "action": "external"
+      },
+      {
+        "label": "Timed mixed LR sets, 3 rounds",
+        "kind": "external",
+        "href": "https://prepinsta.com/learn-aptitude/",
+        "minutes": 150,
+        "detail": "3 rounds of 15 mixed questions, 20 minutes each. Draw the grid every time, even for easy ones \u2014 this builds the habit for when it's hard.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "APT-04",
+    "title": "Probability & Statistics",
+    "stage": 1,
+    "tier": 1,
+    "family": "aptitude",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 9,
+    "priority": 92,
+    "what": "Counting, conditional probability, Bayes, distributions, expected value and descriptive statistics.",
+    "why": "Analyst and quant-heavy product OAs lean on this, and it reappears in guesstimate reasoning.",
+    "good": "You set up the sample space correctly first. Most probability errors are setup errors, not maths errors.",
+    "mistake": "Jumping to a formula before defining the event. Bayes questions punish this hardest.",
+    "tasks": [
+      {
+        "label": "Counting, permutations and combinations",
+        "kind": "external",
+        "href": "https://www.indiabix.com/aptitude/probability/",
+        "minutes": 120,
+        "detail": "Cover permutations, combinations, and basic counting with at least 15 worked problems \u2014 focus on distinguishing when order matters.",
+        "action": "external"
+      },
+      {
+        "label": "Conditional probability and Bayes problem set",
+        "kind": "external",
+        "href": "https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/",
+        "minutes": 150,
+        "detail": "15 conditional probability problems, minimum 5 on Bayes' theorem specifically. Always draw the sample space or tree before computing \u2014 Bayes questions are asked directly in interviews, not just OAs.",
+        "action": "external"
+      },
+      {
+        "label": "Expected value and distribution problems",
+        "kind": "external",
+        "href": "https://www.indiabix.com/aptitude/probability/",
+        "minutes": 150,
+        "detail": "Solve 10 expected value problems and cover binomial/normal distribution basics with 5 problems each.",
+        "action": "external"
+      },
+      {
+        "label": "Classic probability puzzle set",
+        "kind": "external",
+        "href": "https://brainstellar.com/",
+        "minutes": 90,
+        "detail": "A handful of probability puzzles get reused across interviews and papers (e.g. the classic 'ants on a triangle', answer 1/4). Work through the probability-tagged puzzles on Brainstellar \u2014 these aren't in KaseMate's case bank, so practise them on the puzzle sites directly.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "APT-05",
+    "title": "Advanced DI & Caselets",
+    "stage": 1,
+    "tier": 3,
+    "family": "aptitude",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 66,
+    "what": "Multi-chart DI, missing-data sets and caselet DI where the data is buried in a paragraph.",
+    "why": "Top-CTC firms use harder DI as the actual filter. Standard DI practice is not enough for them.",
+    "good": "You extract a clean table from a paragraph caselet before attempting any question.",
+    "mistake": "Attempting caselets question-by-question instead of tabulating the whole thing first.",
+    "tasks": [
+      {
+        "label": "Caselet DI sets \u2014 tabulate then solve",
+        "kind": "external",
+        "href": "https://www.indiabix.com/data-interpretation/questions-and-answers/",
+        "minutes": 180,
+        "detail": "Extract a clean table from the paragraph before attempting any question \u2014 don't answer caselets question-by-question.",
+        "action": "external"
+      },
+      {
+        "label": "Missing-data and multi-chart DI sets",
+        "kind": "external",
+        "href": "https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/",
+        "minutes": 180,
+        "detail": "Missing-data and multi-chart DI sets from GFG's harder aptitude sets.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "APT-06",
+    "title": "Verbal Ability & Reading Comprehension",
+    "stage": 1,
+    "tier": 2,
+    "family": "aptitude",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 72,
+    "what": "RC strategy, para-jumbles, critical reasoning and error spotting.",
+    "why": "Consulting and GM OAs carry a verbal section, and RC speed transfers directly to case prompt reading.",
+    "good": "You read the questions first, skim for structure, and never re-read the passage twice.",
+    "mistake": "Reading RC passages like a textbook. You need the argument structure, not every detail.",
+    "tasks": [
+      {
+        "label": "RC sets \u2014 3 passages in 20 minutes",
+        "kind": "external",
+        "href": "https://www.indiabix.com/verbal-ability/questions-and-answers/",
+        "minutes": 150,
+        "detail": "Read questions first, skim for argument structure, never re-read the whole passage twice. 3 passages, 20 minutes total.",
+        "action": "external"
+      },
+      {
+        "label": "Para-jumbles and critical reasoning drills",
+        "kind": "external",
+        "href": "https://www.geeksforgeeks.org/aptitude/aptitude-questions-and-answers/",
+        "minutes": 150,
+        "detail": "Para-jumbles and critical reasoning drills from GFG's verbal section.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "PUZ-01",
+    "title": "Classic Puzzles",
+    "stage": 1,
+    "tier": 1,
+    "family": "puzzles",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 6.5,
+    "priority": 88,
+    "what": "The standard interview puzzle canon: weighing, crossing, measuring, probability puzzles, chessboard problems.",
+    "why": "Analyst and quant interviews open with a puzzle. It is a thinking-out-loud test, not a trivia test.",
+    "good": "You narrate your approach, state assumptions, and recover cleanly when your first idea fails.",
+    "mistake": "Going silent while you think. The interviewer is grading the process, and silence gives them nothing.",
+    "tasks": [
+      {
+        "label": "Work through Brainstellar end to end",
+        "kind": "external",
+        "href": "https://brainstellar.com/",
+        "minutes": 180,
+        "detail": "This is worth finishing completely, not sampling \u2014 it's built around the interview-puzzle format. Puzzles aren't in KaseMate's case bank, so this is your main practice ground for them.",
+        "action": "external"
+      },
+      {
+        "label": "GFG's top 100 interview puzzles",
+        "kind": "external",
+        "href": "https://www.geeksforgeeks.org/aptitude/top-100-puzzles-asked-in-interviews/",
+        "minutes": 120,
+        "detail": "A second pass at volume once Brainstellar is done.",
+        "action": "external"
+      },
+      {
+        "label": "Record yourself solving 10 puzzles out loud",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 90,
+        "detail": "Record yourself solving 10 puzzles out loud from the sites above. Narrate every assumption and dead end \u2014 the interviewer grades how you think, not just the answer. Track your own progress; there's no in-app puzzle grader.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "PUZ-02",
+    "title": "Advanced Puzzles & Brainteasers",
+    "stage": 1,
+    "tier": 3,
+    "family": "puzzles",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 62,
+    "what": "Harder game-theory, invariant, pigeonhole and strategy puzzles used by quant and top analyst firms.",
+    "why": "When a firm wants to separate the top 10%, this is the tier of puzzle they reach for.",
+    "good": "You identify the invariant or the parity argument rather than brute-forcing cases.",
+    "mistake": "Memorising answers. These get rotated \u2014 the pattern of reasoning is what transfers.",
+    "tasks": [
+      {
+        "label": "Invariants, parity and pigeonhole problem set",
+        "kind": "external",
+        "href": "https://brainstellar.com/",
+        "minutes": 150,
+        "detail": "Work the harder Brainstellar tiers plus any invariant/parity problems you can find \u2014 these aren't in the case bank, practise on the puzzle sites.",
+        "action": "external"
+      },
+      {
+        "label": "Classic high-difficulty problem collection",
+        "kind": "external",
+        "href": "https://www.geeksforgeeks.org/aptitude/top-100-puzzles-asked-in-interviews/",
+        "minutes": 150,
+        "detail": "The reasoning patterns (parity, invariants) recur even when exact questions don't, and a few have appeared in OAs. Skip if short on time \u2014 not the highest-leverage block.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "GUE-01",
+    "title": "Guesstimates",
+    "stage": 1,
+    "tier": 1,
+    "family": "guesstimate",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 90,
+    "what": "Market sizing and estimation using clean top-down and bottom-up decomposition.",
+    "why": "Guesstimates appear in almost every non-tech interview across all four tracks.",
+    "good": "A visible tree, stated assumptions, sane numbers, and a sanity check at the end.",
+    "mistake": "Producing a number without ever stating the assumptions it rests on.",
+    "tasks": [
+      {
+        "label": "Learn top-down vs bottom-up with worked examples",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Guesstimate",
+        "minutes": 120,
+        "detail": "Learn both approaches with a couple of fully worked examples each. Open the Guesstimate set in Browse All \u2014 the cases there have structures you can study before drilling.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Practise ~10 guesstimates with written trees",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Guesstimate",
+        "minutes": 180,
+        "detail": "Work through around 10 from the Guesstimate set, each with a visible tree \u2014 population/segment splits, labelled assumptions, and a sanity check against a known number.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Build your India base-numbers sheet",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 60,
+        "detail": "Build a reference sheet: India's population, urban/rural split, internet/smartphone users, household size, income bands \u2014 the numbers every guesstimate needs. This is your own doc.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "GUE-02",
+    "title": "Advanced Market Sizing",
+    "stage": 1,
+    "tier": 3,
+    "family": "guesstimate",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 64,
+    "what": "Sizing with segmentation, penetration curves, replacement cycles and B2B markets.",
+    "why": "Consulting and strategy rounds push past 'how many autos in Delhi' into real TAM questions.",
+    "good": "You segment before you estimate and defend each penetration assumption with a reference point.",
+    "mistake": "Using one blended average across a market that has obviously different segments.",
+    "tasks": [
+      {
+        "label": "Practise segmented sizing and penetration curves",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Guesstimate",
+        "minutes": 150,
+        "detail": "Work the harder guesstimates in the Guesstimate set \u2014 segment before estimating, defend each penetration assumption with a reference point.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Practise B2B and replacement-cycle sizing",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Guesstimate",
+        "minutes": 150,
+        "detail": "Continue in the Guesstimate set focusing on B2B and replacement-cycle style sizing.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "BIZ-01",
+    "title": "Business Basics",
+    "stage": 1,
+    "tier": 1,
+    "family": "business",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 86,
+    "what": "Revenue, cost structure, margin, contribution, break-even, CAC, LTV, churn and the core business vocabulary.",
+    "why": "You cannot structure a profitability case or read a metrics dashboard without this language.",
+    "good": "You can decompose any business into its revenue and cost drivers within a minute.",
+    "mistake": "Confusing gross margin with contribution margin, or CAC payback with LTV:CAC.",
+    "tasks": [
+      {
+        "label": "Learn the core P&L and unit-economics vocabulary",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 120,
+        "detail": "Learn revenue, COGS, gross margin, contribution margin, fixed vs variable cost, break-even, CAC, LTV, and churn \u2014 write your own one-line definition for each, not just the formula.",
+        "action": "self"
+      },
+      {
+        "label": "Decompose 5 real Indian businesses into driver trees",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 180,
+        "detail": "Pick 5 real Indian businesses (e.g. Zomato, Ola, a D2C brand, a bank, a manufacturer) and draw their revenue and cost driver trees from public information.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "BIZ-02",
+    "title": "Indian Business Landscape",
+    "stage": 1,
+    "tier": 2,
+    "family": "business",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 4,
+    "priority": 70,
+    "what": "Who competes with whom across Indian fintech, quick commerce, e-commerce, FMCG and banking.",
+    "why": "Interviewers pick cases from sectors they hire into. Sector context makes your answers concrete.",
+    "good": "You can name the players, the business model and the current strategic question in 5 sectors.",
+    "mistake": "Knowing company names but not their revenue model or their actual competitive pressure.",
+    "tasks": [
+      {
+        "label": "Build sector one-pagers for 5 target industries",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 150,
+        "detail": "Apply this to real companies you know, not abstract examples \u2014 the concepts stick when tied to something concrete.",
+        "action": "self"
+      },
+      {
+        "label": "Track business news daily for the sectors you target",
+        "kind": "external",
+        "href": "https://www.livemint.com",
+        "minutes": 90,
+        "detail": "Apply this to real companies you know, not abstract examples \u2014 the concepts stick when tied to something concrete.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "BIZ-03",
+    "title": "Financial Statements & Unit Economics",
+    "stage": 1,
+    "tier": 3,
+    "family": "business",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 68,
+    "what": "Reading a P&L, balance sheet and cash flow, plus building a unit-economics model.",
+    "why": "Finance-adjacent roles and profitability cases both assume you can read a statement without help.",
+    "good": "Given a P&L you can find the margin leak in under two minutes.",
+    "mistake": "Treating profit and cash flow as the same thing \u2014 a classic trap in banking interviews.",
+    "tasks": [
+      {
+        "label": "Read and dissect 3 real annual-report P&Ls",
+        "kind": "external",
+        "href": "https://www.screener.in",
+        "minutes": 180,
+        "detail": "Apply this to real companies you know, not abstract examples \u2014 the concepts stick when tied to something concrete.",
+        "action": "external"
+      },
+      {
+        "label": "Build a unit-economics model for one company",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 180,
+        "detail": "Apply this to real companies you know, not abstract examples \u2014 the concepts stick when tied to something concrete.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "SQL-01",
+    "title": "SQL Fundamentals",
+    "stage": 1,
+    "tier": 1,
+    "family": "sql",
+    "tracks": [
+      "product",
+      "analyst"
+    ],
+    "hours": 6,
+    "priority": 91,
+    "what": "SELECT, WHERE, GROUP BY, HAVING, ORDER BY, and thinking in sets rather than loops.",
+    "why": "Every analyst OA and most product-analyst rounds have a live SQL section.",
+    "good": "You write correct SQL first try, without a syntax hunt, and you can explain what it returns.",
+    "mistake": "Using WHERE where HAVING is needed. It is the most common single mistake in SQL screens.",
+    "tasks": [
+      {
+        "label": "Watch the SQL one-shot and take structured notes",
+        "kind": "external",
+        "href": "https://www.youtube.com/watch?v=D_wNQR3LeeM",
+        "minutes": 150,
+        "detail": "Watch this first, before touching a practice site \u2014 it covers SELECT, WHERE, GROUP BY, HAVING and ORDER BY in one sitting. Take notes as you go, don't just watch passively.",
+        "action": "external"
+      },
+      {
+        "label": "Revise and go deeper with W3Schools SQL",
+        "kind": "external",
+        "href": "https://www.w3schools.com/sql/",
+        "minutes": 90,
+        "detail": "Go through the full tutorial for revision and to fill in the depth the video sightly skimmed.",
+        "action": "external"
+      },
+      {
+        "label": "Solve 20 easy query problems, timed",
+        "kind": "external",
+        "href": "https://leetcode.com/studyplan/top-sql-50/",
+        "minutes": 150,
+        "detail": "Very high chance an interviewer hands you a live SQL problem directly from a set like this \u2014 solve 20 easy ones from Top SQL 50, under 5 minutes each.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "SQL-02",
+    "title": "Joins & Aggregations",
+    "stage": 1,
+    "tier": 1,
+    "family": "sql",
+    "tracks": [
+      "product",
+      "analyst"
+    ],
+    "hours": 6,
+    "priority": 89,
+    "what": "INNER, LEFT, RIGHT, FULL and SELF joins, plus multi-table aggregation and subqueries.",
+    "why": "Real interview questions are never single-table. Join logic is where candidates actually fail.",
+    "good": "You reason about row multiplication before writing the join, so counts never surprise you.",
+    "mistake": "Using an INNER JOIN and silently dropping the rows the question was actually about.",
+    "tasks": [
+      {
+        "label": "Work through every join type with row-count reasoning",
+        "kind": "external",
+        "href": "https://www.w3schools.com/sql/",
+        "minutes": 120,
+        "detail": "For every join type, write out on paper what happens to row count before running the query \u2014 this is the skill that actually gets tested, not the syntax.",
+        "action": "external"
+      },
+      {
+        "label": "Solve 20 medium multi-table problems",
+        "kind": "external",
+        "href": "https://leetcode.com/studyplan/top-sql-50/",
+        "minutes": 180,
+        "detail": "20 medium problems from Top SQL 50. For each, identify which join type is needed before writing any SQL.",
+        "action": "external"
+      },
+      {
+        "label": "Extra reps on SQLZoo",
+        "kind": "external",
+        "href": "https://sqlzoo.net/wiki/SQL_Tutorial",
+        "minutes": 90,
+        "detail": "SQLZoo's interactive tutorial is good for join-heavy drilling specifically if LeetCode's problems alone aren't giving you enough join variety.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "SQL-03",
+    "title": "Window Functions",
+    "stage": 1,
+    "tier": 2,
+    "family": "sql",
+    "tracks": [
+      "product",
+      "analyst"
+    ],
+    "hours": 6,
+    "priority": 74,
+    "what": "ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD, running totals and PARTITION BY.",
+    "why": "This is the dividing line between a screening-level and an interview-level SQL candidate.",
+    "good": "You reach for a window function instead of a self-join when ranking or comparing rows.",
+    "mistake": "Confusing RANK and DENSE_RANK on tie-handling questions, which is exactly what gets tested.",
+    "tasks": [
+      {
+        "label": "Learn each window function with worked queries",
+        "kind": "external",
+        "href": "https://www.w3schools.com/sql/",
+        "minutes": 150,
+        "detail": "Learn ROW_NUMBER vs RANK vs DENSE_RANK on tie-handling specifically \u2014 write a query that demonstrates the difference on a dataset with ties.",
+        "action": "external"
+      },
+      {
+        "label": "Solve 15 window-function problems",
+        "kind": "external",
+        "href": "https://leetcode.com/studyplan/top-sql-50/",
+        "minutes": 180,
+        "detail": "15 window function problems covering ranking, running totals, and period-over-period comparison (LAG/LEAD).",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "SQL-04",
+    "title": "SQL Case Studies",
+    "stage": 1,
+    "tier": 3,
+    "family": "sql",
+    "tracks": [
+      "product",
+      "analyst"
+    ],
+    "hours": 5,
+    "priority": 65,
+    "what": "End-to-end business questions answered in SQL: retention cohorts, funnels, DAU/MAU, churn.",
+    "why": "Senior analyst rounds ask a business question, not a query question. You must translate first.",
+    "good": "You restate the business question as a table shape before writing a single line of SQL.",
+    "mistake": "Writing a technically correct query that answers a slightly different question than the one asked.",
+    "tasks": [
+      {
+        "label": "Build cohort retention and funnel queries end to end",
+        "kind": "external",
+        "href": "https://datalemur.com/sql-tutorial",
+        "minutes": 180,
+        "detail": "DataLemur's questions are framed as real business problems, not syntax drills \u2014 exactly the translation skill senior analyst rounds test. Build cohort retention and funnel queries.",
+        "action": "external"
+      },
+      {
+        "label": "Solve 10 business-framed SQL case problems",
+        "kind": "external",
+        "href": "https://www.stratascratch.com",
+        "minutes": 120,
+        "detail": "10 business-framed SQL case problems from StrataScratch, restating the business question as a table shape before writing any SQL.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "PY-01",
+    "title": "Python & Pandas",
+    "stage": 1,
+    "tier": 1,
+    "family": "python",
+    "tracks": [
+      "analyst"
+    ],
+    "hours": 8,
+    "priority": 87,
+    "what": "Python fundamentals plus pandas: loading, filtering, groupby, merge, pivot and cleaning.",
+    "why": "Analyst live-coding rounds are almost always pandas, not algorithms.",
+    "good": "You manipulate a DataFrame fluently without looking up syntax mid-interview.",
+    "mistake": "Preparing LeetCode DSA when the actual round is a messy CSV and a business question.",
+    "tasks": [
+      {
+        "label": "Python fundamentals + pandas + intro ML",
+        "kind": "external",
+        "href": "https://www.w3schools.com/python/",
+        "minutes": 240,
+        "detail": "Go through the tutorial, the modules section, and the machine learning section \u2014 high chance a data-adjacent interview touches all three, even though direct 'write Python from scratch' questions are less common than pandas questions.",
+        "action": "external"
+      },
+      {
+        "label": "Pandas core operations with a real dataset",
+        "kind": "external",
+        "href": "https://www.kaggle.com/learn/pandas",
+        "minutes": 240,
+        "detail": "Work with a real, messy dataset rather than a clean tutorial one \u2014 that's what the actual live-coding round will look like.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "PY-02",
+    "title": "Pandas for Analyst Cases",
+    "stage": 1,
+    "tier": 2,
+    "family": "python",
+    "tracks": [
+      "analyst"
+    ],
+    "hours": 6,
+    "priority": 73,
+    "what": "Applying pandas to open-ended business questions under time pressure.",
+    "why": "The live round gives you data and 30 minutes. Speed and structure matter more than elegance.",
+    "good": "You produce a clean answer plus one chart and a spoken insight within the time box.",
+    "mistake": "Spending 20 minutes on data cleaning and leaving no time for the actual insight.",
+    "tasks": [
+      {
+        "label": "Timed analysis: dataset to insight in 30 minutes, 4 rounds",
+        "kind": "external",
+        "href": "https://www.kaggle.com/datasets",
+        "minutes": 240,
+        "detail": "Give yourself a messy dataset and 30 minutes to reach one clean insight plus a chart \u2014 four rounds. The live analyst round is exactly this: speed and a clear finding matter more than elegant code.",
+        "action": "external"
+      },
+      {
+        "label": "Build a reusable cleaning and EDA snippet file",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 120,
+        "detail": "Save your go-to pandas snippets \u2014 loading, null-handling, groupby, quick plots \u2014 into one file you can paste from. In a timed round, not re-typing boilerplate buys you minutes for the actual analysis.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "STAT-01",
+    "title": "A/B Testing & Experimentation",
+    "stage": 1,
+    "tier": 2,
+    "family": "stats",
+    "tracks": [
+      "analyst",
+      "product"
+    ],
+    "hours": 6,
+    "priority": 76,
+    "what": "Hypothesis testing, p-values, power, sample size, and how experiments actually get designed.",
+    "why": "Product-analyst and DS rounds test experiment design more reliably than they test modelling.",
+    "good": "You state the metric, the hypothesis, the unit of randomisation and the guardrails, in that order.",
+    "mistake": "Talking about significance without ever defining the success metric or the randomisation unit.",
+    "tasks": [
+      {
+        "label": "Hypothesis testing, power and sample size",
+        "kind": "external",
+        "href": "https://www.kaggle.com/learn",
+        "minutes": 180,
+        "detail": "Learn hypothesis testing, p-values, power and sample size on Kaggle Learn. State the metric, hypothesis, randomisation unit and guardrails in that order.",
+        "action": "external"
+      },
+      {
+        "label": "Design 5 experiments end to end",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 180,
+        "detail": "Design 5 experiments for real products on paper \u2014 metric, hypothesis, unit of randomisation, guardrails. A/B design isn't in the case bank, so this is a written self-exercise you can review with a peer.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "STAT-02",
+    "title": "Regression & ML Basics",
+    "stage": 1,
+    "tier": 3,
+    "family": "stats",
+    "tracks": [
+      "analyst"
+    ],
+    "hours": 7,
+    "priority": 60,
+    "what": "Linear and logistic regression, overfitting, train-test split, and the standard evaluation metrics.",
+    "why": "DS-adjacent analyst roles ask you to interpret a model, not to build one from scratch.",
+    "good": "You can read a coefficient, explain what it means in business terms, and name its limitation.",
+    "mistake": "Reciting algorithm names without being able to interpret a single coefficient or metric.",
+    "tasks": [
+      {
+        "label": "Machine learning fundamentals, one focused pass",
+        "kind": "external",
+        "href": "https://youtu.be/JxgmHe2NyeY",
+        "minutes": 240,
+        "detail": "This single ~6 hour video covers most of the core ML algorithms in one sitting \u2014 good for building a first working mental model before going deeper.",
+        "action": "external"
+      },
+      {
+        "label": "Go deeper with a structured ML playlist",
+        "kind": "external",
+        "href": "https://www.youtube.com/playlist?list=PLfFghEzKVmjsNtIRwErklMAN8nJmebB0I",
+        "minutes": 210,
+        "detail": "Covers more ground than the single video above, including some applied projects \u2014 use this for depth once the fundamentals from the first video are solid.",
+        "action": "external"
+      },
+      {
+        "label": "Classification metrics: precision, recall, ROC-AUC",
+        "kind": "external",
+        "href": "https://www.kaggle.com/learn/intermediate-machine-learning",
+        "minutes": 150,
+        "detail": "Given a P&L you can find the margin leak in under two minutes \u2014 same idea here: given a confusion matrix you should be able to state precision, recall and the trade-off in under a minute.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "EXCEL-01",
+    "title": "Excel & Spreadsheet Modelling",
+    "stage": 1,
+    "tier": 2,
+    "family": "tools",
+    "tracks": [
+      "analyst",
+      "general",
+      "consulting"
+    ],
+    "hours": 4,
+    "priority": 69,
+    "what": "Lookups, pivots, conditional aggregation and building a clean model layout.",
+    "why": "Consulting and GM roles still run Excel tests, and many analyst rounds allow only a spreadsheet.",
+    "good": "Your model has separate input, calculation and output blocks and no hardcoded numbers in formulas.",
+    "mistake": "Burying assumptions inside formulas so nothing can be sensitivity-tested.",
+    "tasks": [
+      {
+        "label": "Lookups, pivots and conditional aggregation drills",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 120,
+        "detail": "Build something functional, not just following a tutorial \u2014 a real dashboard or model teaches the decisions a tutorial skips.",
+        "action": "self"
+      },
+      {
+        "label": "Build one clean 3-block financial model",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 120,
+        "detail": "Build something functional, not just following a tutorial \u2014 a real dashboard or model teaches the decisions a tutorial skips.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "VIZ-01",
+    "title": "Dashboards & Data Storytelling",
+    "stage": 1,
+    "tier": 3,
+    "family": "tools",
+    "tracks": [
+      "analyst",
+      "product"
+    ],
+    "hours": 5,
+    "priority": 58,
+    "what": "Choosing the right chart, building a dashboard, and structuring an insight narrative.",
+    "why": "Analyst take-homes are graded on communication as much as on correctness.",
+    "good": "One headline insight per chart, and the dashboard answers a question rather than displaying data.",
+    "mistake": "Building a dashboard with 12 charts and no stated conclusion.",
+    "tasks": [
+      {
+        "label": "Chart selection and dashboard structure",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 120,
+        "detail": "Build something functional, not just following a tutorial \u2014 a real dashboard or model teaches the decisions a tutorial skips.",
+        "action": "self"
+      },
+      {
+        "label": "Build one dashboard on a real dataset with a written narrative",
+        "kind": "external",
+        "href": "https://public.tableau.com",
+        "minutes": 180,
+        "detail": "Build something functional, not just following a tutorial \u2014 a real dashboard or model teaches the decisions a tutorial skips.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "MATH-01",
+    "title": "Engineering & Quant Maths",
+    "stage": 1,
+    "tier": 3,
+    "family": "quant-maths",
+    "tracks": [
+      "analyst"
+    ],
+    "hours": 5,
+    "priority": 55,
+    "what": "Fourier series, Laplace transforms, complex numbers, integration and other engineering-maths topics that show up in quant-leaning OAs.",
+    "why": "Global banks and quant-heavy recruiters (GS, JPMorgan, HSBC-style roles) sometimes test JEE-level engineering maths, not just business aptitude \u2014 this is a narrow but real gap if you skip it.",
+    "good": "You can solve a standard Laplace transform or complex-number problem at the speed you'd expect from second-year engineering coursework, without relearning it from scratch under time pressure.",
+    "mistake": "Preparing this like a fresh subject. It's revision, not new learning \u2014 treat it as knocking the rust off JEE-level material you've already seen.",
+    "tasks": [
+      {
+        "label": "MCQ practice across engineering maths topics",
+        "kind": "external",
+        "href": "https://www.sanfoundry.com/1000-engineering-mathematics-questions-answers/",
+        "minutes": 210,
+        "detail": "Covers Fourier series, Laplace transforms, complex numbers, integration and more in MCQ form \u2014 only worth doing if a target company on your list is known for this style of test (typically the larger global quant/banking recruiters, not most Indian fintech or product firms).",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "CASE-01",
+    "title": "Case Interview Mechanics",
+    "stage": 2,
+    "tier": 1,
+    "family": "case-core",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 100,
+    "what": "The universal shape of a case: clarify, structure, analyse, synthesise, recommend.",
+    "why": "Every track gets cased. Mechanics are what let you look composed before you know the answer.",
+    "good": "You always clarify first, structure on paper, and close with a recommendation plus risks.",
+    "mistake": "Diving into analysis before restating the objective, then solving the wrong problem well.",
+    "tasks": [
+      {
+        "label": "Learn the 5-step case flow from a walkthrough",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 90,
+        "detail": "The case flow (clarify, structure, analyse, synthesise, recommend) is best learned from an annotated walkthrough \u2014 the Exponent playlist covers it well. A quick search for 'consulting case interview framework' turns up plenty more. Learn the shape here first.",
+        "action": "external"
+      },
+      {
+        "label": "Practise clarifying + structuring on ~10 cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 120,
+        "detail": "Open the Profitability set in Browse All and work the opening \u2014 clarifying questions and structure \u2014 on about 10 cases. Don't worry about the final number yet, just the setup.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Run a few full cases focusing only on structure",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 120,
+        "detail": "Run a few full cases with a clean structure as your only goal. Use the live Practice mode for one or two of these, and read through the rest in Browse All.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "CASE-02",
+    "title": "Profitability Cases",
+    "stage": 2,
+    "tier": 1,
+    "family": "case-consulting",
+    "tracks": [
+      "consulting",
+      "general"
+    ],
+    "hours": 8,
+    "priority": 84,
+    "what": "Diagnosing why profit fell using a revenue and cost decomposition tree.",
+    "why": "Profitability is the most frequently asked consulting case type by a wide margin.",
+    "good": "You isolate whether it is a revenue or cost problem before going one level deeper.",
+    "mistake": "Listing every possible cause instead of narrowing with data at each branch.",
+    "tasks": [
+      {
+        "label": "Learn the profitability tree",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 120,
+        "detail": "Learn the revenue-cost profitability tree and its volume-price-mix variant from a worked example \u2014 the Exponent walkthrough covers it, and searching 'profitability case framework' brings up more. Then practise in KaseMate.",
+        "action": "external"
+      },
+      {
+        "label": "Practise ~10 profitability cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 300,
+        "detail": "The single most common consulting case type \u2014 worth the most reps. Open the Profitability set in Browse All and work through around 10, using live Practice mode for a couple and reading the rest.",
+        "action": "kasemate"
+      },
+      {
+        "label": "See where you're slipping and fix it",
+        "kind": "internal",
+        "href": "/performance",
+        "minutes": 60,
+        "detail": "Check the Performance page to see which part of your cases keeps costing you marks, and target that next.",
+        "action": "performance"
+      }
+    ]
+  },
+  {
+    "id": "CASE-03",
+    "title": "Market Entry Cases",
+    "stage": 2,
+    "tier": 1,
+    "family": "case-consulting",
+    "tracks": [
+      "consulting",
+      "general"
+    ],
+    "hours": 8,
+    "priority": 82,
+    "what": "Should the client enter this market \u2014 sizing, attractiveness, capability fit and entry mode.",
+    "why": "The second-most common consulting case type and a favourite in GM interviews too.",
+    "good": "You size the market, test attractiveness and capability, then pick an entry mode with a reason.",
+    "mistake": "Sizing the market beautifully and then never answering whether to actually enter.",
+    "tasks": [
+      {
+        "label": "Learn the market entry framework",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 120,
+        "detail": "Learn the market-entry framework and entry modes from a worked case \u2014 the Exponent playlist or a quick search for 'market entry case framework' both work. Then practise in KaseMate.",
+        "action": "external"
+      },
+      {
+        "label": "Practise ~10 market entry cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Market%20Entry",
+        "minutes": 300,
+        "detail": "The other highest-frequency case type. Open the Market Entry set in Browse All and work through around 10.",
+        "action": "kasemate"
+      },
+      {
+        "label": "See where you're slipping and fix it",
+        "kind": "internal",
+        "href": "/performance",
+        "minutes": 60,
+        "detail": "Check the Performance page for your recurring gap and target it.",
+        "action": "performance"
+      }
+    ]
+  },
+  {
+    "id": "CASE-04",
+    "title": "M&A and Pricing Cases",
+    "stage": 2,
+    "tier": 2,
+    "family": "case-consulting",
+    "tracks": [
+      "consulting"
+    ],
+    "hours": 6,
+    "priority": 75,
+    "what": "Acquisition rationale, valuation logic, synergies, and the three pricing approaches.",
+    "why": "Mid and late consulting rounds move here once you have cleared profitability and entry.",
+    "good": "On pricing you name cost-plus, competitor-based and value-based, then justify your choice.",
+    "mistake": "Treating an M&A case as a market entry case and skipping synergy and integration risk.",
+    "tasks": [
+      {
+        "label": "Learn M&A rationale and pricing approaches",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 150,
+        "detail": "Learn deal rationale, synergies, integration risk, and the three pricing approaches (cost-plus, competitor, value-based). The Exponent playlist and a search for 'pricing case framework' cover these.",
+        "action": "external"
+      },
+      {
+        "label": "Practise a few M&A / growth cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=M%26A%20%2F%20Growth%20Strategy",
+        "minutes": 90,
+        "detail": "Open the M&A / Growth Strategy set in Browse All. A few solid reps is plenty \u2014 lighter-coverage type than profitability and market entry, so don't over-invest.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Practise a few pricing cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Pricing",
+        "minutes": 90,
+        "detail": "Open the Pricing set in Browse All and do a couple, naming the pricing approach before solving.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "CASE-05",
+    "title": "Growth & Market Share Cases",
+    "stage": 2,
+    "tier": 2,
+    "family": "case-consulting",
+    "tracks": [
+      "consulting",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 71,
+    "what": "How to grow revenue or win share \u2014 organic levers, channel, segment and competitive response.",
+    "why": "Growth cases show up constantly in GM and strategy interviews at Indian corporates.",
+    "good": "You separate market growth from share growth before proposing anything.",
+    "mistake": "Proposing a list of growth ideas with no prioritisation and no view of competitor reaction.",
+    "tasks": [
+      {
+        "label": "Learn growth-lever and share frameworks",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 150,
+        "detail": "Separate market growth from share growth before proposing anything. Learn the frameworks from the Exponent playlist or a quick search for 'growth strategy case'.",
+        "action": "external"
+      },
+      {
+        "label": "Practise a few growth cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=M%26A%20%2F%20Growth%20Strategy",
+        "minutes": 210,
+        "detail": "Open the M&A / Growth Strategy set in Browse All \u2014 it covers growth-strategy cases. A few solid reps here.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "CASE-06",
+    "title": "Operations & Supply Chain Cases",
+    "stage": 2,
+    "tier": 3,
+    "family": "case-consulting",
+    "tracks": [
+      "consulting",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 63,
+    "what": "Capacity, bottlenecks, inventory, throughput and cost-to-serve.",
+    "why": "Manufacturing and FMCG recruiters at KGP lean heavily on operations cases.",
+    "good": "You find the bottleneck first, because everything upstream of it is not the problem.",
+    "mistake": "Optimising a non-bottleneck step, which improves nothing in total throughput.",
+    "tasks": [
+      {
+        "label": "Learn bottleneck and throughput frameworks",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 150,
+        "detail": "Find the bottleneck first \u2014 everything upstream isn't the problem. Learn the frameworks from the Exponent playlist or a search for 'operations case framework'. As an IE student, lean into this one.",
+        "action": "external"
+      },
+      {
+        "label": "Practise a few operations cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Operations",
+        "minutes": 210,
+        "detail": "Open the Operations set in Browse All and work through a few.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "CASE-07",
+    "title": "Unconventional & Public Sector Cases",
+    "stage": 2,
+    "tier": 3,
+    "family": "case-consulting",
+    "tracks": [
+      "consulting"
+    ],
+    "hours": 5,
+    "priority": 56,
+    "what": "Non-profit, government, social impact and cases with no obvious framework.",
+    "why": "Firms use these specifically to see whether you can structure without a memorised template.",
+    "good": "You build a bespoke structure from the objective rather than forcing a known framework.",
+    "mistake": "Jamming a profitability tree onto a case where the objective is not profit at all.",
+    "tasks": [
+      {
+        "label": "Learn to structure without frameworks",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 120,
+        "detail": "Non-profit, government and no-framework cases test whether you can build a bespoke structure from the objective. Search 'non-standard case interview' for worked examples \u2014 there's no dedicated set for these in KaseMate.",
+        "action": "external"
+      },
+      {
+        "label": "Practise bespoke structuring on operations cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Operations",
+        "minutes": 180,
+        "detail": "The Operations set in Browse All has the most open-ended prompts \u2014 use it to practise structuring from the objective rather than a template.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "PRD-01",
+    "title": "Product Design",
+    "stage": 2,
+    "tier": 1,
+    "family": "case-product",
+    "tracks": [
+      "product"
+    ],
+    "hours": 8,
+    "priority": 83,
+    "what": "Design a product for a user \u2014 user segmentation, pain points, solutions, prioritisation, metrics.",
+    "why": "The single most common PM interview question format across every product company.",
+    "good": "You pick one segment and go deep rather than covering three segments shallowly.",
+    "mistake": "Jumping to features before establishing who the user is and what pain you are solving.",
+    "tasks": [
+      {
+        "label": "Learn the CIRCLES-style design flow",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 150,
+        "detail": "The Exponent PM playlist walks through the design-question flow. Learn it before drilling.",
+        "action": "external"
+      },
+      {
+        "label": "Watch the mock-interview breakdowns in the key-concepts playlist",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLqtwvdE26B_RqemTzPe1NwfufeNV5USEI",
+        "minutes": 120,
+        "detail": "This 25-video playlist covers various PM interview topics \u2014 look specifically for the mock-interview and design-question breakdown videos, which walk through a live answer being built and critiqued in real time.",
+        "action": "external"
+      },
+      {
+        "label": "Practise ~8 product design questions",
+        "kind": "internal",
+        "href": "/hub?track=product&subtype=Product%20Design",
+        "minutes": 240,
+        "detail": "The most common PM format. Open the Product Design set in Browse All and work through around 8 \u2014 pick one user segment per case and go deep.",
+        "action": "kasemate"
+      },
+      {
+        "label": "See where you're slipping and fix it",
+        "kind": "internal",
+        "href": "/performance",
+        "minutes": 60,
+        "detail": "Check the Performance page and target your weakest step next.",
+        "action": "performance"
+      },
+      {
+        "label": "Read a product-interview prep book",
+        "kind": "external",
+        "href": "https://www.google.com/search?q=Decode+and+Conquer+Lewis+C+Lin",
+        "minutes": 240,
+        "detail": "\"Decode and Conquer\" (Lewis C. Lin) and \"The Product Manager Interview\" (also Lewis C. Lin) are the two most widely recommended PM-interview books, followed by \"Cracking the PM Interview\". Treat this as background reading spread across the plan, not a one-sitting task \u2014 buy, borrow, or find a copy online.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "PRD-02",
+    "title": "RCA & Metrics",
+    "stage": 2,
+    "tier": 1,
+    "family": "case-product",
+    "tracks": [
+      "product",
+      "analyst"
+    ],
+    "hours": 7,
+    "priority": 80,
+    "what": "Metric dropped \u2014 diagnose it. Segment, isolate, test hypotheses, and define the right metrics.",
+    "why": "RCA is the highest-signal PM and product-analyst question and it is asked constantly.",
+    "good": "You rule out instrumentation and seasonality before hunting for a product cause.",
+    "mistake": "Guessing causes at random instead of segmenting systematically by dimension.",
+    "tasks": [
+      {
+        "label": "Learn the RCA decomposition and metric frameworks",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLqtwvdE26B_RqemTzPe1NwfufeNV5USEI",
+        "minutes": 120,
+        "detail": "Rule out instrumentation and seasonality before hunting a product cause. Learn the RCA framework from the key-concepts playlist, then practise in KaseMate.",
+        "action": "external"
+      },
+      {
+        "label": "Practise ~8 RCA and metrics questions",
+        "kind": "internal",
+        "href": "/hub?track=product&subtype=Metrics%20%2F%20Root-Cause",
+        "minutes": 240,
+        "detail": "Highest-signal PM/analyst question type. Open the Metrics / Root-Cause set in Browse All and work through around 8.",
+        "action": "kasemate"
+      },
+      {
+        "label": "See where you're slipping and fix it",
+        "kind": "internal",
+        "href": "/performance",
+        "minutes": 60,
+        "detail": "Check the Performance page and target recurring gaps.",
+        "action": "performance"
+      }
+    ]
+  },
+  {
+    "id": "PRD-03",
+    "title": "Prioritisation & Roadmapping",
+    "stage": 2,
+    "tier": 2,
+    "family": "case-product",
+    "tracks": [
+      "product"
+    ],
+    "hours": 5,
+    "priority": 72,
+    "what": "Choosing what to build \u2014 RICE, impact-effort, and defending trade-offs under constraints.",
+    "why": "Every PM round contains a trade-off question, often disguised inside a design question.",
+    "good": "You state your prioritisation criteria before ranking, so the ranking is defensible.",
+    "mistake": "Naming a framework and then ranking by gut feel anyway.",
+    "tasks": [
+      {
+        "label": "Learn RICE and impact-effort prioritisation",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLqtwvdE26B_RqemTzPe1NwfufeNV5USEI",
+        "minutes": 120,
+        "detail": "State your prioritisation criteria before ranking. Learn RICE and impact-effort from the key-concepts playlist.",
+        "action": "external"
+      },
+      {
+        "label": "Practise the prioritisation cases",
+        "kind": "internal",
+        "href": "/hub?track=product&subtype=Prioritization%20%2F%20Tradeoff",
+        "minutes": 120,
+        "detail": "Open the Prioritization / Tradeoff set in Browse All and work through it, then supplement below.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Add a prioritisation angle to a few design cases",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 60,
+        "detail": "Revisit a few Product Design cases you've done and force a ranked prioritisation decision with a stated criterion.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "PRD-04",
+    "title": "Product Teardowns",
+    "stage": 2,
+    "tier": 2,
+    "family": "case-product",
+    "tracks": [
+      "product"
+    ],
+    "hours": 11,
+    "priority": 70,
+    "what": "Analysing a live product: what it does well, what it misses, and what you would change.",
+    "why": "Teardowns are asked directly and they also give you concrete examples for every other answer.",
+    "good": "You anchor critique in a user segment and a metric, not in personal taste.",
+    "mistake": "Listing UI nitpicks with no hypothesis about why the team made that choice.",
+    "tasks": [
+      {
+        "label": "Learn the teardown structure",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLqtwvdE26B_RqemTzPe1NwfufeNV5USEI",
+        "minutes": 90,
+        "detail": "Learn the teardown structure from the key-concepts playlist \u2014 anchor critique in a user segment and metric, not taste.",
+        "action": "external"
+      },
+      {
+        "label": "Study a few real PM decks",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 150,
+        "detail": "Search LinkedIn for Flipkart / HiLabs / Tata 1mg-style PM decks people have shared publicly. Analyse the flow \u2014 everything on a slide is there for a reason. Searching '<company> PM case deck' surfaces plenty.",
+        "action": "external"
+      },
+      {
+        "label": "Recreate one deck, then build your own from scratch",
+        "kind": "external",
+        "href": "https://www.figma.com",
+        "minutes": 240,
+        "detail": "Copy one deck slide-for-slide in Figma to learn the tool and design language, then build a completely original deck for the same problem and compare.",
+        "action": "external"
+      },
+      {
+        "label": "Practise teardown-style cases",
+        "kind": "internal",
+        "href": "/hub?track=product&subtype=Product%20Improvement",
+        "minutes": 150,
+        "detail": "Open the Product Improvement set in Browse All \u2014 it's the closest to teardown practice. Drill written teardowns of Indian apps here.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Present one teardown out loud in 8 minutes",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 60,
+        "detail": "Record and present one teardown in 8 minutes. Watch it back and self-review.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "PRD-05",
+    "title": "Product Strategy Cases",
+    "stage": 2,
+    "tier": 3,
+    "family": "case-product",
+    "tracks": [
+      "product"
+    ],
+    "hours": 6,
+    "priority": 64,
+    "what": "Should we enter this space, build vs buy, competitive response and platform strategy.",
+    "why": "Senior PM and APM final rounds move from design into strategy questions.",
+    "good": "You connect the strategic choice back to the company's actual moat and monetisation.",
+    "mistake": "Answering strategy questions with feature ideas instead of positioning and economics.",
+    "tasks": [
+      {
+        "label": "Learn product strategy frameworks",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLqtwvdE26B_RqemTzPe1NwfufeNV5USEI",
+        "minutes": 150,
+        "detail": "Connect strategic choices to the company's moat and monetisation, not features. Learn from the key-concepts playlist.",
+        "action": "external"
+      },
+      {
+        "label": "Practise a few product strategy questions",
+        "kind": "internal",
+        "href": "/hub?track=product&subtype=Strategy%20%2F%20Go-to-Market",
+        "minutes": 210,
+        "detail": "Open the Strategy / Go-to-Market set in Browse All and work through a few.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "PRD-06",
+    "title": "Execution & Trade-offs",
+    "stage": 2,
+    "tier": 3,
+    "family": "case-product",
+    "tracks": [
+      "product"
+    ],
+    "hours": 5,
+    "priority": 61,
+    "what": "Launch planning, go/no-go decisions, estimation, and handling ambiguity with incomplete data.",
+    "why": "Execution rounds test whether you can actually ship, not just whether you can ideate.",
+    "good": "You name the decision, the data you would need, and what you would do without it.",
+    "mistake": "Asking for more data and stopping there instead of committing to a decision under uncertainty.",
+    "tasks": [
+      {
+        "label": "Learn launch, go/no-go and estimation frameworks",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLqtwvdE26B_RqemTzPe1NwfufeNV5USEI",
+        "minutes": 120,
+        "detail": "Execution rounds test whether you can ship, not just ideate. Learn the frameworks from the key-concepts playlist.",
+        "action": "external"
+      },
+      {
+        "label": "Practise execution-style cases",
+        "kind": "internal",
+        "href": "/hub?track=product&subtype=Product%20Improvement",
+        "minutes": 180,
+        "detail": "Open the Product Improvement set in Browse All \u2014 it has the closest go/no-go style prompts. Practise committing to a decision under incomplete data.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "PRD-07",
+    "title": "Technical Fluency for PMs",
+    "stage": 2,
+    "tier": 3,
+    "family": "case-product",
+    "tracks": [
+      "product"
+    ],
+    "hours": 5,
+    "priority": 57,
+    "what": "APIs, databases, latency, caching, system design at a PM level of depth.",
+    "why": "Tech-company PM rounds check that you can hold a credible conversation with engineers.",
+    "good": "You explain a system at the right altitude and know what you do not know.",
+    "mistake": "Bluffing depth. Engineers spot it instantly and it costs you more than admitting the gap.",
+    "tasks": [
+      {
+        "label": "Learn the core technical concepts a PM must hold",
+        "kind": "external",
+        "href": "https://www.w3schools.com/sql/",
+        "minutes": 150,
+        "detail": "APIs, databases, latency, caching, system design at PM depth. No case set for this \u2014 learn the concepts (a search for 'system design for PMs' is a good start) and be able to say what you don't know.",
+        "action": "external"
+      },
+      {
+        "label": "Explain 5 product architectures out loud",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 150,
+        "detail": "Pick 5 products you use and explain their architecture out loud at the right altitude. Self-assess.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "MET-01",
+    "title": "Metrics Design & North Star",
+    "stage": 2,
+    "tier": 2,
+    "family": "metrics",
+    "tracks": [
+      "product",
+      "analyst"
+    ],
+    "hours": 5,
+    "priority": 68,
+    "what": "Choosing a north star, building metric trees, and designing guardrails.",
+    "why": "Both PM and analyst interviews ask 'what would you measure' in almost every round.",
+    "good": "Your north star reflects delivered user value, not just activity, and has guardrails.",
+    "mistake": "Picking a vanity metric like total signups that can go up while the product gets worse.",
+    "tasks": [
+      {
+        "label": "Learn north-star and metric-tree construction",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLqtwvdE26B_RqemTzPe1NwfufeNV5USEI",
+        "minutes": 120,
+        "detail": "For every metric, know what gaming it looks like. Learn metric-tree construction from the key-concepts playlist.",
+        "action": "external"
+      },
+      {
+        "label": "Practise metric design on RCA cases",
+        "kind": "internal",
+        "href": "/hub?track=product&subtype=Metrics%20%2F%20Root-Cause",
+        "minutes": 180,
+        "detail": "Open the Metrics / Root-Cause set in Browse All to practise defining north-star metrics and guardrails for real products.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "GD-01",
+    "title": "GD & WAT Playbook",
+    "stage": 2,
+    "tier": 1,
+    "family": "communication",
+    "tracks": [
+      "consulting",
+      "general"
+    ],
+    "hours": 4,
+    "priority": 78,
+    "what": "Group discussion tactics and written ability test structure under time pressure.",
+    "why": "Consulting and GM shortlists at KGP frequently include a GD or WAT elimination round.",
+    "good": "You enter early with a structure, bring in quiet members, and summarise at the end.",
+    "mistake": "Fighting for airtime volume. Assessors grade contribution quality and group behaviour.",
+    "tasks": [
+      {
+        "label": "Learn GD roles, entry lines and summarising",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLqtwvdE26B_RqemTzPe1NwfufeNV5USEI",
+        "minutes": 90,
+        "detail": "Learn how to enter a GD early with structure, bring in quiet members, and summarise at the end. Searching 'group discussion tips MBA' brings up plenty; the key-concepts playlist also helps. This isn't something KaseMate simulates \u2014 practise it live.",
+        "action": "external"
+      },
+      {
+        "label": "Write 5 timed WAT essays, 20 minutes each",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 150,
+        "detail": "Write five WAT essays under a 20-minute timer each. Do these on paper or a doc and self-review against a structure \u2014 KaseMate doesn't grade WAT.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "GM-01",
+    "title": "Sales, Marketing & Brand Cases",
+    "stage": 2,
+    "tier": 2,
+    "family": "case-general",
+    "tracks": [
+      "general"
+    ],
+    "hours": 6,
+    "priority": 72,
+    "what": "Distribution, channel strategy, brand positioning, 4Ps and go-to-market for FMCG-type firms.",
+    "why": "ITC, HUL-style and bank GM roles case you on distribution and brand, not on profitability trees.",
+    "good": "You reason about channel economics and trade margins, not just consumer messaging.",
+    "mistake": "Answering a distribution question with an advertising campaign idea.",
+    "tasks": [
+      {
+        "label": "Learn channel, distribution and 4P frameworks",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 150,
+        "detail": "GM roles case you on distribution and brand, not profitability trees. Learn channel economics, trade margins and the 4Ps \u2014 searching 'FMCG distribution case' or 'marketing case framework' brings up plenty. There's no dedicated GM set in KaseMate.",
+        "action": "external"
+      },
+      {
+        "label": "Practise using Market Entry as the closest proxy",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Market%20Entry",
+        "minutes": 210,
+        "detail": "KaseMate's bank is consulting/product cases, so use the Market Entry set in Browse All as the closest structured proxy for GM-style reps, and supplement with FMCG/brand cases you find online.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "GM-02",
+    "title": "Manufacturing & Plant Cases",
+    "stage": 2,
+    "tier": 3,
+    "family": "case-general",
+    "tracks": [
+      "general"
+    ],
+    "hours": 5,
+    "priority": 59,
+    "what": "Plant-level problem solving: efficiency, quality, safety, workforce and cost reduction.",
+    "why": "Tata Steel and similar core recruiters case you on shop-floor problems, and you are IE \u2014 lean into it.",
+    "good": "You connect your IE coursework and internship directly to the plant problem in front of you.",
+    "mistake": "Answering like a strategy consultant when the interviewer wants operational specifics.",
+    "tasks": [
+      {
+        "label": "Learn plant efficiency and quality frameworks",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLrtCHHeadkHr8ro-vTg1CAdDuwrVmXS4y",
+        "minutes": 120,
+        "detail": "Tata Steel-style recruiters case you on shop-floor problems. As an IE student, connect your coursework directly. Search 'manufacturing / operations case' for worked examples \u2014 no dedicated set in KaseMate.",
+        "action": "external"
+      },
+      {
+        "label": "Practise using Operations as the closest proxy",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Operations",
+        "minutes": 180,
+        "detail": "Use the Operations set in Browse All as the closest proxy for manufacturing-case reps, and supplement with plant cases you find online.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "CV-01",
+    "title": "Resume Deep-Dive Interview",
+    "stage": 2,
+    "tier": 1,
+    "family": "interview",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 4,
+    "priority": 79,
+    "what": "Defending every line of your CV under sustained follow-up questioning.",
+    "why": "The CV round is the most predictable round you will face, which makes failing it unforgivable.",
+    "good": "You have a 2-minute and a 30-second version of every project, with numbers ready.",
+    "mistake": "Being fluent on your best project and vague on the one they happen to pick.",
+    "tasks": [
+      {
+        "label": "Write STAR narratives for every CV line",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 150,
+        "detail": "Write a 2-minute and 30-second version of every project with numbers ready. There's no CV-round simulator in KaseMate \u2014 rehearse out loud, record yourself, or run it with a peer.",
+        "action": "self"
+      },
+      {
+        "label": "Run a full CV grilling",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 90,
+        "detail": "Get someone to attack your weakest bullet with follow-ups, or record yourself answering likely probes. Searching 'CV deep dive interview questions' gives you a bank to drill against.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "HR-01",
+    "title": "HR & Behavioural Bank",
+    "stage": 2,
+    "tier": 1,
+    "family": "interview",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 77,
+    "what": "The standard behavioural set \u2014 tell me about yourself, strengths, weaknesses, why this role.",
+    "why": "Behavioural answers are graded on structure and specificity, and they are fully preparable.",
+    "good": "Every answer is a specific story with a result, delivered in under 90 seconds.",
+    "mistake": "Generic answers with no story. 'I am a hard worker' is worth nothing without evidence.",
+    "tasks": [
+      {
+        "label": "Build your story bank \u2014 10 stories, STAR format",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 180,
+        "detail": "Write 10 stories covering leadership, failure, conflict, teamwork and initiative from your SaveSage, Product Club and Inter IIT experience. Your own doc.",
+        "action": "self"
+      },
+      {
+        "label": "Rehearse 20 standard HR questions out loud",
+        "kind": "external",
+        "href": "https://youtube.com/playlist?list=PLqtwvdE26B_RqemTzPe1NwfufeNV5USEI",
+        "minutes": 180,
+        "detail": "Rehearse the standard behavioural questions under 90 seconds each. The key-concepts playlist has framing tips, and searching 'common HR interview questions' gives the full list to drill.",
+        "action": "external"
+      }
+    ]
+  },
+  {
+    "id": "HR-02",
+    "title": "Advanced Behavioural",
+    "stage": 2,
+    "tier": 2,
+    "family": "interview",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 67,
+    "what": "Conflict, failure, leadership, ethical dilemmas and the multi-layer follow-up chains that follow.",
+    "why": "The first answer is easy. The third follow-up is where candidates fall apart.",
+    "good": "You own failures without deflecting, and you name what you changed afterwards.",
+    "mistake": "Choosing a fake weakness or a failure that was secretly someone else's fault.",
+    "tasks": [
+      {
+        "label": "Prepare conflict, failure and leadership stories",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 150,
+        "detail": "Own your failures without deflecting; name what you changed. Prepare these as written notes.",
+        "action": "self"
+      },
+      {
+        "label": "Run follow-up chain drills \u2014 3 layers deep",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 150,
+        "detail": "Have someone push each answer three follow-ups deep, or write out the likely follow-up chain yourself and prepare for it. This is where candidates fall apart.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "CMP-01",
+    "title": "Company Research & Why Us",
+    "stage": 2,
+    "tier": 1,
+    "family": "interview",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 4,
+    "priority": 76,
+    "what": "Researching a company well enough to give a specific, non-interchangeable 'why us' answer.",
+    "why": "A generic 'why us' is the fastest way to signal that you would take any offer.",
+    "good": "You reference something specific \u2014 a recent move, a product decision, a team \u2014 and tie it to you.",
+    "mistake": "Reciting the company's About page back at the person who works there.",
+    "tasks": [
+      {
+        "label": "Build research one-pagers for your top 5 targets",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 150,
+        "detail": "Build a one-pager per target company: what they do, recent strategic moves (last 6 months), the team/role you're applying to, and one open question you'd genuinely ask them.",
+        "action": "self"
+      },
+      {
+        "label": "Draft and rehearse a distinct 'why us' for each",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 90,
+        "detail": "Write a 60-90 second 'why us' answer per company that references something specific from your one-pager \u2014 not the About page.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "CMP-02",
+    "title": "Shortlist Dossiers",
+    "stage": 2,
+    "tier": 3,
+    "family": "interview",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 58,
+    "what": "Deep dossiers on the companies you actually get shortlisted for \u2014 process, panel, past questions.",
+    "why": "Once shortlists are out, targeted prep beats generic prep by a wide margin.",
+    "good": "You know each shortlisted company's round structure, its typical case types, and the questions it tends to ask \u2014 all of which is findable online.",
+    "mistake": "Preparing identically for all shortlists when their formats differ completely.",
+    "tasks": [
+      {
+        "label": "Build a full dossier per shortlisted company",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 180,
+        "detail": "Build a dossier per shortlisted company \u2014 round structure, panel, past questions. Search '<company> interview experience' and placement forums; this info is public and easy to find.",
+        "action": "self"
+      },
+      {
+        "label": "Practise cases in your company's favoured type",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 120,
+        "detail": "Filter Browse All to the case type your shortlisted company favours (Profitability for most consulting; switch to Product Design or Metrics/Root-Cause for product roles) and work through a handful.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "MOCK-01",
+    "title": "Full-Length Case Practice",
+    "stage": 2,
+    "tier": 1,
+    "family": "mock",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 74,
+    "what": "Doing complete cases end to end in KaseMate's AI interview mode, under realistic conditions.",
+    "why": "Solo reading hides your real failure modes. Only a full timed case in interview mode surfaces them.",
+    "good": "You complete the case in time, stay composed under the AI's follow-ups, and act on the feedback.",
+    "mistake": "Delaying your first full case until you 'feel ready'. You never will \u2014 start now.",
+    "tasks": [
+      {
+        "label": "Do 2 full cases in AI interview mode",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 150,
+        "detail": "Run a couple of complete cases end to end in KaseMate's Practice mode \u2014 the AI runs it like an interview with follow-ups. No pausing.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Record yourself doing one case and review it",
+        "kind": "internal",
+        "href": "/performance",
+        "minutes": 90,
+        "detail": "After a full case, check the Performance page to see how you scored across dimensions and where you lost marks.",
+        "action": "performance"
+      },
+      {
+        "label": "Log your top 3 failure modes",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 60,
+        "detail": "Write down the 3 mistakes that keep recurring across your cases \u2014 this becomes your focus for the next couple of weeks.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "MOCK-02",
+    "title": "Review & Self-Correction",
+    "stage": 2,
+    "tier": 2,
+    "family": "mock",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 5,
+    "priority": 66,
+    "what": "Doing cases, then reviewing your own performance to fix delivery as well as content.",
+    "why": "Pace, filler words and structure are invisible to you until you review the session.",
+    "good": "You cut filler and hit a clear signposted structure the listener can follow.",
+    "mistake": "Doing cases and never reviewing them \u2014 the review is the entire point.",
+    "tasks": [
+      {
+        "label": "Do 3 full cases in Practice mode",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 180,
+        "detail": "Run three complete cases in KaseMate's interview mode, back to back where you can.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Review your scores and delivery on Performance",
+        "kind": "internal",
+        "href": "/performance",
+        "minutes": 120,
+        "detail": "Go through the Performance page for each case \u2014 score yourself on structure, delivery and pace, and note what to fix.",
+        "action": "performance"
+      }
+    ]
+  },
+  {
+    "id": "MOCK-03",
+    "title": "Back-to-Back Case Stamina",
+    "stage": 2,
+    "tier": 3,
+    "family": "mock",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 62,
+    "what": "Doing several cases in a row to build the stamina a real interview day demands.",
+    "why": "Real interview days are stamina tests \u2014 performing well on case 1 and fading by case 3 is common.",
+    "good": "Your third case is as structured as your first.",
+    "mistake": "Only ever doing single cases, then fading during the real multi-round day.",
+    "tasks": [
+      {
+        "label": "Do 3 cases back-to-back in one sitting",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 180,
+        "detail": "Run three cases in a row in Practice mode with no long breaks \u2014 this builds the endurance the real day needs.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Repeat with a different case type",
+        "kind": "internal",
+        "href": "/hub?track=product&subtype=Product%20Design",
+        "minutes": 180,
+        "detail": "Do it again with a different case category so you're not only sharp on one type.",
+        "action": "kasemate"
+      }
+    ]
+  },
+  {
+    "id": "PRAC-01",
+    "title": "Case Sprint I \u2014 Volume Block",
+    "stage": 2,
+    "tier": 2,
+    "family": "practice",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 8,
+    "priority": 65,
+    "what": "A structured volume block: 10 full cases across your track's main types, logged and reviewed.",
+    "why": "Frameworks become fluent through repetition. There is no substitute for case volume.",
+    "good": "You complete 10 cases and can name the pattern in your mistakes across all of them.",
+    "mistake": "Doing cases without reviewing them, so you repeat the same structural error ten times.",
+    "tasks": [
+      {
+        "label": "Work a volume block of full cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 360,
+        "detail": "Do a solid block of complete cases across your track's main types in KaseMate's Practice mode. Switch categories as you go.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Review scores and spot your pattern",
+        "kind": "internal",
+        "href": "/performance",
+        "minutes": 120,
+        "detail": "Check the Performance page after the block \u2014 the goal is to name the one mistake that recurs across all of them.",
+        "action": "performance"
+      }
+    ]
+  },
+  {
+    "id": "PRAC-02",
+    "title": "Weakness Drill Sprint",
+    "stage": 2,
+    "tier": 3,
+    "family": "practice",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 8,
+    "priority": 63,
+    "what": "A targeted block attacking only your lowest-scoring dimension from the Performance page.",
+    "why": "Late-stage gains come from fixing your weakest dimension, not repeating your strongest.",
+    "good": "Your weakest radar dimension moves up measurably by the end of the block.",
+    "mistake": "Practising what you enjoy. Your comfortable case type is not the one costing you offers.",
+    "tasks": [
+      {
+        "label": "Find your weakest dimension",
+        "kind": "internal",
+        "href": "/performance",
+        "minutes": 30,
+        "detail": "Open the Performance page radar to see your lowest-scoring dimension.",
+        "action": "performance"
+      },
+      {
+        "label": "Do a focused block on that weakness",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 330,
+        "detail": "Filter to cases that stress your weakest dimension and work a focused block on just those in Practice mode.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Confirm the movement on Performance",
+        "kind": "internal",
+        "href": "/performance",
+        "minutes": 120,
+        "detail": "Re-check the radar after the block and confirm your weakest dimension has moved up.",
+        "action": "performance"
+      }
+    ]
+  },
+  {
+    "id": "PRAC-03",
+    "title": "Peer Mock Marathon",
+    "stage": 2,
+    "tier": 3,
+    "family": "practice",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 60,
+    "what": "Partner mocks where you alternate interviewing and being interviewed.",
+    "why": "Giving cases teaches you what interviewers actually notice. It is the fastest late-stage upgrade.",
+    "good": "You run a clean case as the interviewer and give specific, structured feedback.",
+    "mistake": "Only ever being the candidate. Interviewing is where the grading logic becomes visible.",
+    "tasks": [
+      {
+        "label": "Run peer mocks, alternating roles",
+        "kind": "external",
+        "href": "https://www.linkedin.com",
+        "minutes": 270,
+        "detail": "Pair with a batchmate and alternate interviewing each other \u2014 being the interviewer is the fastest way to see the grading logic. Case-prep communities online will pair you if you don't have a partner.",
+        "action": "linkedin"
+      },
+      {
+        "label": "Consolidate all feedback into a fix list",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 90,
+        "detail": "Log every session in Performance afterward. Volume without review just repeats the same mistake at higher speed.",
+        "action": "self"
+      }
+    ]
+  },
+  {
+    "id": "PRAC-04",
+    "title": "Final Sweep & Interview Readiness",
+    "stage": 2,
+    "tier": 3,
+    "family": "practice",
+    "tracks": [
+      "product",
+      "consulting",
+      "analyst",
+      "general"
+    ],
+    "hours": 6,
+    "priority": 54,
+    "what": "The last pass: revise your story bank, run light cases to stay warm, and prepare logistics.",
+    "why": "The week before interviews is for sharpening and confidence, not for new material.",
+    "good": "You are warm, rested, and your notes fit on two pages you can skim before each round.",
+    "mistake": "Cramming new frameworks in the final week, which adds anxiety and displaces what you know.",
+    "tasks": [
+      {
+        "label": "Condense everything into a 2-page skim sheet",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 120,
+        "detail": "Pull your frameworks and story bank into a 2-page sheet you can skim before each round. Your own doc.",
+        "action": "self"
+      },
+      {
+        "label": "Do a few light warm-up cases",
+        "kind": "internal",
+        "href": "/hub?track=consulting&subtype=Profitability",
+        "minutes": 180,
+        "detail": "Run a few easy cases in Practice mode to stay sharp \u2014 this week is for staying warm, not new material.",
+        "action": "kasemate"
+      },
+      {
+        "label": "Prepare your questions for the interviewer",
+        "kind": "internal",
+        "href": "/roadmap",
+        "minutes": 60,
+        "detail": "Write the questions you'll ask each interviewer. Your own doc.",
+        "action": "self"
+      }
+    ]
+  }
+]
