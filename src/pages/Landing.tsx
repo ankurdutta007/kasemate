@@ -701,7 +701,7 @@ export default function Landing() {
           <div style={{ padding: '20px 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
               <span style={{ fontSize: 12, color: 'rgba(226,217,243,0.6)' }}>v1.0 · Verified by Placement Batch of 2025-26</span>
-              <span style={{ fontSize: 13, color: 'rgba(226,217,243,0.7)', fontWeight: 500 }}>Made with ❤️ by Ankur Dutta for Placement Season 2026-27.</span>
+              <span style={{ fontSize: 13, color: 'rgba(226,217,243,0.7)', fontWeight: 500 }}>Made with ❤️ by Ankur Dutta — Placement Season 2026-27.</span>
             </div>
             <div style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
               <span style={{ fontSize: 13, color: 'rgba(226,217,243,0.4)' }}>© 2026 KaseMate</span>
