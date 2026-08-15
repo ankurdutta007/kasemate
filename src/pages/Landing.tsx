@@ -495,9 +495,9 @@ export default function Landing() {
       </div>
 
       {/* ── CTA BANNER ───────────────────────────────── */}
-      <section style={{ background: `linear-gradient(135deg,${VM} 0%,${V} 50%,#5B21B6 100%)`, padding: '88px 48px', position: 'relative', overflow: 'hidden' }}>
+      <section style={{ background: `linear-gradient(135deg,${VM} 0%,${V} 50%,#5B21B6 100%)`, padding: '56px 48px', position: 'relative', overflow: 'hidden' }}>
         <Swirl style={{ position: 'absolute', top: -80, right: -80, width: 480, height: 480, color: 'rgba(255,255,255,0.07)', animation: 'spinSlow 60s linear infinite' }} />
-        <div className="multi-col-grid" style={{ maxWidth: 1120, margin: '0 auto', position: 'relative', zIndex: 1, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'center' }}>
+        <div className="multi-col-grid" style={{ maxWidth: 1120, margin: '0 auto', position: 'relative', zIndex: 1, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 72, alignItems: 'stretch' }}>
           <Reveal>
             <div>
               <h2 style={{ fontFamily: 'Plus Jakarta Sans,sans-serif', fontSize: 50, fontWeight: 800, color: '#fff', margin: '0 0 18px', letterSpacing: '-0.04em', lineHeight: 1.1 }}>
@@ -515,8 +515,8 @@ export default function Landing() {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            {/* Single placeholder — replace with real image when ready. Width spans full right column, height matches previous two-image block */}
-            <div id="cta-image-placeholder" style={{ borderRadius: 24, overflow: 'hidden', height: 420, background: 'rgba(255,255,255,0.10)', border: '2px dashed rgba(255,255,255,0.30)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 }}>
+            {/* Single placeholder — replace with real image when ready. Stretches to match text column height. */}
+            <div id="cta-image-placeholder" style={{ borderRadius: 24, overflow: 'hidden', alignSelf: 'stretch', minHeight: 200, background: 'rgba(255,255,255,0.10)', border: '2px dashed rgba(255,255,255,0.30)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 }}>
               <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
               <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', fontWeight: 500 }}>Image placeholder — drop your Canva export here</span>
             </div>
