@@ -514,13 +514,11 @@ export default function Landing() {
 
             </div>
           </Reveal>
-          <Reveal delay={120}>
-            {/* Single placeholder — replace with real image when ready. Stretches to match text column height. */}
-            <div id="cta-image-placeholder" style={{ borderRadius: 24, overflow: 'hidden', alignSelf: 'stretch', minHeight: 200, background: 'rgba(255,255,255,0.10)', border: '2px dashed rgba(255,255,255,0.30)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 }}>
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', fontWeight: 500 }}>Image placeholder — drop your Canva export here</span>
-            </div>
-          </Reveal>
+          {/* Single placeholder — direct grid child so alignSelf:stretch works. Replace with real image when ready. */}
+          <div id="cta-image-placeholder" style={{ borderRadius: 24, overflow: 'hidden', alignSelf: 'stretch', background: 'rgba(255,255,255,0.10)', border: '2px dashed rgba(255,255,255,0.30)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 }}>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+            <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', fontWeight: 500 }}>Image placeholder — drop your Canva export here</span>
+          </div>
         </div>
       </section>
 
