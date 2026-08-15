@@ -427,7 +427,7 @@ export default function Settings() {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
             <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>v1.0 · Verified by Placement Batch of 2025-26</span>
-            <span style={{ fontSize: 13, color: 'var(--text-muted)', fontWeight: 500 }}>Made with ❤️ by Ankur Dutta — Placement Season 2026-27.</span>
+            <span style={{ fontSize: 13, color: 'var(--text-muted)', fontWeight: 500 }}>Made with ❤️ by Ankur Dutta for Placement Season 2026-27.</span>
           </div>
         </div>
       </div>
