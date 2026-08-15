@@ -320,9 +320,9 @@ export default function Landing() {
       </nav>
 
       {/* ── HERO ─────────────────────────────────────── */}
-      <section style={{ background: heroBg, paddingTop: 128, paddingBottom: 16, position: 'relative', overflow: 'hidden', minHeight: '85vh', display: 'flex', alignItems: 'center' }}>
+      <section style={{ background: heroBg, paddingTop: 128, paddingBottom: 16, position: 'relative', overflow: 'visible', minHeight: '85vh', display: 'flex', alignItems: 'center' }}>
         <Swirl style={{ position: 'absolute', top: -60, right: -80, width: 500, height: 500, color: swirl, animation: 'spinSlow 50s linear infinite', transformOrigin: 'center' }} />
-        <div className="landing-hero-grid" style={{ maxWidth: 1160, margin: '0 auto', padding: '0 48px', width: '100%', display: 'grid', gridTemplateColumns: '1.05fr 0.95fr', gap: 80, alignItems: 'center', position: 'relative', zIndex: 1 }}>
+        <div className="landing-hero-grid" style={{ maxWidth: 1200, margin: '0 auto', padding: '0 0 0 48px', width: '100%', display: 'grid', gridTemplateColumns: '1.05fr 0.95fr', gap: 64, alignItems: 'start', position: 'relative', zIndex: 1 }}>
 
           {/* Text */}
           <div>
@@ -356,24 +356,24 @@ export default function Landing() {
             {/* Duplicate stats row removed — floating badge cards on the hero image carry this info */}
           </div>
 
-          {/* Illustration */}
-          <div style={{ position: 'relative', animation: 'float 6s ease-in-out infinite' }}>
-            <div style={{ position: 'relative', width: '100%', aspectRatio: '4/3', borderRadius: 32, overflow: 'hidden', background: isDark ? 'linear-gradient(145deg,#1c2330,#252f3d)' : 'linear-gradient(145deg,#ece5ff,#f5f0ff)', boxShadow: isDark ? '0 40px 100px rgba(0,0,0,0.5)' : `0 40px 100px ${VG}` }}>
-              <img src={img3} alt="KaseMate live case interview simulation" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} />
+          {/* Illustration — aligned top with headline, bottom with buttons, right toward nav edge */}
+          <div id="hero-image-container" style={{ position: 'relative', animation: 'float 6s ease-in-out infinite', alignSelf: 'stretch', display: 'flex', flexDirection: 'column' }}>
+            <div style={{ position: 'relative', flex: 1, minHeight: 0, borderRadius: 32, overflow: 'hidden', background: isDark ? 'linear-gradient(145deg,#1c2330,#252f3d)' : 'linear-gradient(145deg,#ece5ff,#f5f0ff)', boxShadow: isDark ? '0 40px 100px rgba(0,0,0,0.5)' : `0 40px 100px ${VG}` }}>
+              <img src={img3} alt="KaseMate live case interview simulation" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
             </div>
 
             {/* Floating stat: Cases (real number) */}
-            <div style={{ position: 'absolute', bottom: -30, left: -40, backgroundColor: isDark ? 'var(--bg2)' : '#fff', padding: '16px 20px', borderRadius: 16, boxShadow: 'var(--card-shadow-lg)', maxWidth: 220, border: `1px solid ${border}`, display: 'flex', flexDirection: 'column', gap: 4 }}>
-              <div style={{ fontSize: 40, fontWeight: 800, color: 'var(--coral)', lineHeight: 1, letterSpacing: '-0.03em' }}>271</div>
-              <p style={{ margin: 0, fontSize: 14, color: text, fontWeight: 500, lineHeight: 1.4 }}>
+            <div style={{ position: 'absolute', bottom: 16, left: -24, backgroundColor: isDark ? 'var(--bg2)' : '#fff', padding: '12px 16px', borderRadius: 14, boxShadow: 'var(--card-shadow-lg)', maxWidth: 200, border: `1px solid ${border}`, display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <div style={{ fontSize: 34, fontWeight: 800, color: 'var(--coral)', lineHeight: 1, letterSpacing: '-0.03em' }}>271</div>
+              <p style={{ margin: 0, fontSize: 12, color: text, fontWeight: 500, lineHeight: 1.4 }}>
                 hand-curated cases, not scraped
               </p>
             </div>
 
             {/* Floating stat: Modules (real number) */}
-            <div style={{ position: 'absolute', top: -30, right: -40, backgroundColor: isDark ? 'var(--bg2)' : '#fff', padding: '16px 20px', borderRadius: 16, boxShadow: 'var(--card-shadow-lg)', maxWidth: 220, border: `1px solid ${border}`, display: 'flex', flexDirection: 'column', gap: 4 }}>
-              <div style={{ fontSize: 40, fontWeight: 800, color: 'var(--primary-bright)', lineHeight: 1, letterSpacing: '-0.03em' }}>57</div>
-              <p style={{ margin: 0, fontSize: 14, color: text, fontWeight: 500, lineHeight: 1.4 }}>
+            <div style={{ position: 'absolute', top: 16, right: -24, backgroundColor: isDark ? 'var(--bg2)' : '#fff', padding: '12px 16px', borderRadius: 14, boxShadow: 'var(--card-shadow-lg)', maxWidth: 200, border: `1px solid ${border}`, display: 'flex', flexDirection: 'column', gap: 3 }}>
+              <div style={{ fontSize: 34, fontWeight: 800, color: 'var(--primary-bright)', lineHeight: 1, letterSpacing: '-0.03em' }}>57</div>
+              <p style={{ margin: 0, fontSize: 12, color: text, fontWeight: 500, lineHeight: 1.4 }}>
                 roadmap modules across all tracks
               </p>
             </div>
@@ -515,13 +515,10 @@ export default function Landing() {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-              <div style={{ borderRadius: 20, overflow: 'hidden', aspectRatio: '1/1', background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.18)' }}>
-                <img src={img4} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} />
-              </div>
-              <div style={{ borderRadius: 20, overflow: 'hidden', aspectRatio: '1/1', background: 'rgba(255,255,255,0.09)', border: '1px solid rgba(255,255,255,0.18)', marginTop: 28 }}>
-                <img src={img2} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }} />
-              </div>
+            {/* Single placeholder — replace with real image when ready. Width spans full right column, height matches previous two-image block */}
+            <div id="cta-image-placeholder" style={{ borderRadius: 24, overflow: 'hidden', height: 420, background: 'rgba(255,255,255,0.10)', border: '2px dashed rgba(255,255,255,0.30)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12 }}>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              <span style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', fontWeight: 500 }}>Image placeholder — drop your Canva export here</span>
             </div>
           </Reveal>
         </div>
