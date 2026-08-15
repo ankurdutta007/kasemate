@@ -264,6 +264,17 @@ export default function Landing() {
   const [showFeedback, setShowFeedback] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1)
+      setTimeout(() => {
+        const el = document.getElementById(id)
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' })
+        }
+      }, 100)
+    }
+  }, [])
   if (isLoading) return null
   if (user) return <Navigate to="/roadmap" replace />
 
