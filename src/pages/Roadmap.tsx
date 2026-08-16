@@ -7,7 +7,7 @@ import PlanReveal from '../features/roadmap/PlanReveal'
 import RoadmapDashboard from '../features/roadmap/RoadmapDashboard'
 
 export default function Roadmap() {
-  const [searchParams] = useSearchParams()
+  const [searchParams, setSearchParams] = useSearchParams()
   const preview = searchParams.get('preview')
   const showReveal = searchParams.get('reveal') === 'true'
   const { user } = useAuth()
@@ -55,7 +55,13 @@ export default function Roadmap() {
     return (
       <PlanReveal 
         plan={plan} 
-        onStart={() => setShowingReveal(false)} 
+        onStart={() => {
+          setShowingReveal(false)
+          setSearchParams(prev => {
+            prev.delete('reveal')
+            return prev
+          }, { replace: true })
+        }} 
       />
     )
   }
