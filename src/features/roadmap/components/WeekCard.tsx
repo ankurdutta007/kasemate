@@ -74,7 +74,7 @@ export default function WeekCard({
                 <span style={{ fontSize: 'inherit', display: 'flex', alignItems: 'center' }}>🔒</span> Locked
               </span>
             ) : (
-              `${totalCount} modules · ~${week.hours}h`
+              `${totalCount} module${totalCount === 1 ? '' : 's'} · ~${week.hours}h`
             )}
           </div>
           {isCompleted ? (
@@ -145,7 +145,7 @@ export default function WeekCard({
       </div>
 
       <div style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 16 }}>
-        ~{week.hours}h total · {totalCount} modules · {week.dailyTimeLabel} habit
+        ~{week.hours}h total · {totalCount} module{totalCount === 1 ? '' : 's'} · {week.dailyTimeLabel} habit
       </div>
 
       <div style={{ display: 'flex', gap: 12, marginBottom: 20, flexWrap: 'wrap' }}>
