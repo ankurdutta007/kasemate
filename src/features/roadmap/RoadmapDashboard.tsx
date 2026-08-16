@@ -176,55 +176,73 @@ export default function RoadmapDashboard() {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: 'var(--bg)', fontFamily: 'Inter, sans-serif', padding: '20px 24px' }}>
       <div style={{ maxWidth: 760, margin: '0 auto' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16, gap: 20 }}>
-          <div>
-            <div style={{ margin: '0 0 8px' }}>
-              <h1 style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 36, fontWeight: 400, color: 'var(--text-primary)', margin: 0, letterSpacing: '-0.02em' }}>
-                Your Roadmap
-              </h1>
+        {completedCount > 0 && completedCount === plan.totalModules ? (
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', marginBottom: 40, padding: '40px 24px', background: 'var(--bg2)', borderRadius: 16, border: '1px solid var(--border)', boxShadow: 'var(--card-shadow)' }}>
+            <div style={{ fontSize: 48, marginBottom: 16 }}>🎉</div>
+            <h1 style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 32, fontWeight: 700, color: 'var(--text-primary)', margin: '0 0 12px', letterSpacing: '-0.02em' }}>
+              You've completed your roadmap!
+            </h1>
+            <div style={{ fontSize: 15, color: 'var(--text-muted)', lineHeight: 1.6, maxWidth: 400, margin: '0 auto 24px' }}>
+              {plan.totalModules} modules across {plan.totalWeeks} weeks — you're ready to crush your placement interviews.
             </div>
-            <div style={{ fontSize: 14, color: 'var(--text-muted)' }}>
-              {plan.totalWeeks}-week plan · {tracksStr}
-            </div>
-            <div style={{ fontSize: 13, color: 'var(--text-muted)', fontFamily: 'Inter, sans-serif', marginTop: 4 }}>
-              {completedCount === 0
-                ? 'Your plan is ready. Start with Week 1 — the foundation matters most.'
-                : `${completedCount} module${completedCount === 1 ? '' : 's'} done · Keep going.`}
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, padding: '8px 16px', background: 'rgba(16, 185, 129, 0.1)', color: '#10B981', borderRadius: 20, fontSize: 13, fontWeight: 600 }}>
+              <span>✓</span>
+              <span>100% Completed</span>
             </div>
           </div>
+        ) : (
+          <>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16, gap: 20 }}>
+              <div>
+                <div style={{ margin: '0 0 8px' }}>
+                  <h1 style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 36, fontWeight: 400, color: 'var(--text-primary)', margin: 0, letterSpacing: '-0.02em' }}>
+                    Your Roadmap
+                  </h1>
+                </div>
+                <div style={{ fontSize: 14, color: 'var(--text-muted)' }}>
+                  {plan.totalWeeks}-week plan · {tracksStr}
+                </div>
+                <div style={{ fontSize: 13, color: 'var(--text-muted)', fontFamily: 'Inter, sans-serif', marginTop: 4 }}>
+                  {completedCount === 0
+                    ? 'Your plan is ready. Start with Week 1 — the foundation matters most.'
+                    : `${completedCount} module${completedCount === 1 ? '' : 's'} done · Keep going.`}
+                </div>
+              </div>
 
-          <div style={{ display: 'flex', gap: 12, flexShrink: 0 }}>
-            <div style={{ background: 'var(--bg2)', borderRadius: 12, padding: '12px 16px', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: 100 }}>
-              <div style={{ fontSize: 24, fontWeight: 700, color: 'var(--text-primary)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>{weeksLeft}</div>
-              <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>{weeksLeft === 1 ? 'Week left' : 'Weeks left'}</div>
+              <div style={{ display: 'flex', gap: 12, flexShrink: 0 }}>
+                <div style={{ background: 'var(--bg2)', borderRadius: 12, padding: '12px 16px', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: 100 }}>
+                  <div style={{ fontSize: 24, fontWeight: 700, color: 'var(--text-primary)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>{weeksLeft}</div>
+                  <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>{weeksLeft === 1 ? 'Week left' : 'Weeks left'}</div>
+                </div>
+                <div style={{ background: 'var(--bg2)', borderRadius: 12, padding: '12px 16px', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: 100 }}>
+                  <div style={{ fontSize: 24, fontWeight: 700, color: 'var(--text-primary)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>{completedCount}/{plan.totalModules}</div>
+                  <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Modules done</div>
+                </div>
+              </div>
             </div>
-            <div style={{ background: 'var(--bg2)', borderRadius: 12, padding: '12px 16px', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: 100 }}>
-              <div style={{ fontSize: 24, fontWeight: 700, color: 'var(--text-primary)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>{completedCount}/{plan.totalModules}</div>
-              <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Modules done</div>
+
+            <label style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', marginBottom: 24, alignSelf: 'flex-start' }}>
+              <input 
+                type="checkbox" 
+                checked={previewMode} 
+                onChange={(e) => setPreviewMode(e.target.checked)}
+                style={{ width: 22, height: 22, accentColor: 'var(--primary-bright)', cursor: 'pointer', margin: 0, flexShrink: 0 }}
+              />
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)' }}>Preview full roadmap</span>
+                <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>
+                  {previewMode 
+                    ? "Browsing ahead — you'll still need to complete each week in order to check things off." 
+                    : "See what's in every week before you get there."}
+                </span>
+              </div>
+            </label>
+
+            <div style={{ width: '100%', height: 6, borderRadius: 3, background: 'var(--bg3)', marginBottom: 40, overflow: 'hidden' }}>
+              <div style={{ width: `${progressPct}%`, height: '100%', background: 'linear-gradient(90deg, var(--primary), var(--primary-bright))', transition: 'width 0.3s ease' }} />
             </div>
-          </div>
-        </div>
-
-        <label style={{ display: 'flex', alignItems: 'center', gap: 12, cursor: 'pointer', marginBottom: 24, alignSelf: 'flex-start' }}>
-          <input 
-            type="checkbox" 
-            checked={previewMode} 
-            onChange={(e) => setPreviewMode(e.target.checked)}
-            style={{ width: 22, height: 22, accentColor: 'var(--primary-bright)', cursor: 'pointer', margin: 0, flexShrink: 0 }}
-          />
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-            <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)' }}>Preview full roadmap</span>
-            <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>
-              {previewMode 
-                ? "Browsing ahead — you'll still need to complete each week in order to check things off." 
-                : "See what's in every week before you get there."}
-            </span>
-          </div>
-        </label>
-
-        <div style={{ width: '100%', height: 6, borderRadius: 3, background: 'var(--bg3)', marginBottom: 40, overflow: 'hidden' }}>
-          <div style={{ width: `${progressPct}%`, height: '100%', background: 'linear-gradient(90deg, var(--primary), var(--primary-bright))', transition: 'width 0.3s ease' }} />
-        </div>
+          </>
+        )}
 
         <div style={{ display: 'flex', flexDirection: 'column' }}>
           {plan.weeks.map((week, index) => {
