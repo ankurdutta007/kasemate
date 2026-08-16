@@ -382,36 +382,35 @@ export default function PlanReveal({ plan, onStart }: PlanRevealProps) {
 
   function getVerifiers(tracks: string[]) {
     const result: typeof VERIFIERS['product'] = []
-    
-    // Always pick 1 per track first
-    tracks.forEach(track => {
-      const v = VERIFIERS[track]
-      if (v && v[0]) result.push(v[0])
-    })
-    
-    // Then fill up to exactly 4
-    // Go through tracks again picking second verifier
-    for (const track of tracks) {
-      if (result.length >= 4) break
-      const v = VERIFIERS[track]
-      if (v && v[1] && !result.includes(v[1])) {
-        result.push(v[1])
+    if (tracks.length === 0) return result;
+
+    if (tracks.length === 1) {
+      // 1 track: show 2 people from that track
+      const v = VERIFIERS[tracks[0]] || []
+      result.push(...v.slice(0, 2))
+    } else if (tracks.length === 2) {
+      // 2 tracks: show 4 people, 2 from each
+      const v1 = VERIFIERS[tracks[0]] || []
+      const v2 = VERIFIERS[tracks[1]] || []
+      result.push(...v1.slice(0, 2), ...v2.slice(0, 2))
+    } else if (tracks.length === 3) {
+      // 3 tracks: 1 from each, plus 1 extra randomly from the 3
+      const pool: typeof VERIFIERS['product'] = []
+      tracks.forEach(t => {
+        const v = VERIFIERS[t] || []
+        if (v[0]) result.push(v[0])
+        if (v[1]) pool.push(v[1])
+      })
+      if (pool.length > 0) {
+        const randomIndex = Math.floor(Math.random() * pool.length)
+        result.push(pool[randomIndex])
       }
-    }
-    
-    // If still under 4, pick from any track
-    if (result.length < 4) {
-      const allTracks = ['product', 'consulting', 'analyst', 'general']
-      for (const track of allTracks) {
-        if (result.length >= 4) break
-        const v = VERIFIERS[track]
-        if (v) {
-          for (const verifier of v) {
-            if (result.length >= 4) break
-            if (!result.includes(verifier)) result.push(verifier)
-          }
-        }
-      }
+    } else if (tracks.length >= 4) {
+      // 4 tracks: exactly 1 from each
+      tracks.slice(0, 4).forEach(t => {
+        const v = VERIFIERS[t] || []
+        if (v[0]) result.push(v[0])
+      })
     }
     
     return result.slice(0, 4)

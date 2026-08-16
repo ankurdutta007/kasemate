@@ -143,7 +143,7 @@ export default function Settings() {
       setEditingWeeks(false)
 
       // 6. Navigate to reveal screen after short delay
-      setTimeout(() => navigate('/roadmap?reveal=true'), 300)
+      setTimeout(() => navigate('/roadmap', { state: { reveal: true } }), 300)
 
     } catch (err) {
       console.error('Save failed:', err)

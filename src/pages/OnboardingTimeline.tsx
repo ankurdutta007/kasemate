@@ -74,7 +74,7 @@ export default function OnboardingTimeline() {
         data: { onboarded: true, difficulty_level: 'some' } 
       })
 
-      navigate('/roadmap?reveal=true')
+      navigate('/roadmap', { state: { reveal: true } })
     } catch (err: any) {
       console.error(err)
       setErrorMsg('Something went wrong. Please try again.')

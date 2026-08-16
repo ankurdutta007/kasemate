@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { supabase } from '../lib/supabase'
 import OnboardingRole from './OnboardingRole'
@@ -7,9 +7,11 @@ import PlanReveal from '../features/roadmap/PlanReveal'
 import RoadmapDashboard from '../features/roadmap/RoadmapDashboard'
 
 export default function Roadmap() {
-  const [searchParams, setSearchParams] = useSearchParams()
+  const [searchParams] = useSearchParams()
+  const location = useLocation()
+  const navigate = useNavigate()
   const preview = searchParams.get('preview')
-  const showReveal = searchParams.get('reveal') === 'true'
+  const showReveal = location.state?.reveal === true
   const { user } = useAuth()
   const [plan, setPlan] = useState<any>(null)
   const [loading, setLoading] = useState(true)
@@ -33,6 +35,8 @@ export default function Roadmap() {
         // Show reveal screen if coming fresh from onboarding
         if (data && showReveal) {
           setShowingReveal(true)
+          // Clear the state from history immediately so it doesn't survive reloads/back-button
+          navigate(location.pathname, { replace: true, state: {} })
         }
         setLoading(false)
       })
@@ -55,13 +59,7 @@ export default function Roadmap() {
     return (
       <PlanReveal 
         plan={plan} 
-        onStart={() => {
-          setShowingReveal(false)
-          setSearchParams(prev => {
-            prev.delete('reveal')
-            return prev
-          }, { replace: true })
-        }} 
+        onStart={() => setShowingReveal(false)} 
       />
     )
   }
