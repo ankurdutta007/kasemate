@@ -92,8 +92,16 @@ export default function RoadmapDashboard() {
       source: 'roadmap',
     })
 
-    // Auto-expand next week when a week completes
     if (plan) {
+      // Check if this action completes the entire roadmap
+      const newlyCompletedCount = [...newSet].filter(id => planModuleIds.has(id)).length;
+      if (newlyCompletedCount === plan.totalModules && plan.totalModules > 0) {
+        setTimeout(() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 150);
+      }
+
+      // Auto-expand next week when a week completes
       for (const wp of plan.weeks) {
         if (wp.moduleIds.includes(moduleId)) {
           const allDone = wp.moduleIds.every((id) => newSet.has(id) && planModuleIds.has(id))
