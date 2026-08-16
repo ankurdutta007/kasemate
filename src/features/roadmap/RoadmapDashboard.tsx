@@ -196,7 +196,7 @@ export default function RoadmapDashboard() {
           <div style={{ display: 'flex', gap: 12, flexShrink: 0 }}>
             <div style={{ background: 'var(--bg2)', borderRadius: 12, padding: '12px 16px', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: 100 }}>
               <div style={{ fontSize: 24, fontWeight: 700, color: 'var(--text-primary)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>{weeksLeft}</div>
-              <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>Weeks left</div>
+              <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>{weeksLeft === 1 ? 'Week left' : 'Weeks left'}</div>
             </div>
             <div style={{ background: 'var(--bg2)', borderRadius: 12, padding: '12px 16px', border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', alignItems: 'center', minWidth: 100 }}>
               <div style={{ fontSize: 24, fontWeight: 700, color: 'var(--text-primary)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>{completedCount}/{plan.totalModules}</div>
