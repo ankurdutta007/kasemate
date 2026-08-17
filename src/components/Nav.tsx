@@ -50,7 +50,7 @@ export default function Nav() {
             ))}
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 'auto' }}>
             <button onClick={toggle} title={`Switch to ${isDark ? 'light' : 'dark'} mode`}
               style={{ width: 32, height: 32, borderRadius: 8, border: '1px solid var(--border)', backgroundColor: 'var(--bg3)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontSize: 14, transition: 'all 0.15s' }}>
               {isDark ? '☀️' : '🌙'}
@@ -86,7 +86,7 @@ export default function Nav() {
                 borderRadius: 1,
                 backgroundColor: 'var(--text-primary)',
                 transition: 'all 0.2s',
-                transform: menuOpen ? 'rotate(45deg) translateY(3px)' : 'none',
+                transform: menuOpen ? 'translateY(6px) rotate(45deg)' : 'none',
               }} />
               <span style={{
                 display: 'block',
@@ -104,7 +104,7 @@ export default function Nav() {
                 borderRadius: 1,
                 backgroundColor: 'var(--text-primary)',
                 transition: 'all 0.2s',
-                transform: menuOpen ? 'rotate(-45deg) translateY(-3px)' : 'none',
+                transform: menuOpen ? 'translateY(-6px) rotate(-45deg)' : 'none',
               }} />
             </button>
           </div>
@@ -149,10 +149,10 @@ export default function Nav() {
               {label}
             </NavLink>
           ))}
-          <div style={{ padding: '8px 16px', display: 'flex', alignItems: 'center', gap: 8 }}>
+          <NavLink to="/settings" onClick={() => setMenuOpen(false)} style={({ isActive }) => ({ padding: '12px 16px', borderRadius: 10, textDecoration: 'none', display: 'flex', alignItems: 'center', gap: 8, backgroundColor: isActive ? 'var(--primary-subtle)' : 'transparent', transition: 'all 0.15s' })}>
             <div style={{ width: 30, height: 30, borderRadius: '50%', background: 'linear-gradient(135deg, var(--primary), var(--primary-mid))', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: 11, fontWeight: 700, fontFamily: 'Inter, sans-serif' }}>A</div>
-            <span style={{ fontSize: 13, color: 'var(--text-secondary)', fontFamily: 'Inter, sans-serif' }}>Account</span>
-          </div>
+            <span style={{ fontSize: 15, fontWeight: 500, color: 'var(--text-primary)', fontFamily: 'Inter, sans-serif' }}>Account</span>
+          </NavLink>
         </div>
       )}
     </>
