@@ -264,7 +264,6 @@ const SENIOR_VALIDATORS = [
 
 const FAQS = [
   { q: 'What do I actually get with KaseMate?', a: "A week-by-week roadmap built around your track and timeline. Full curated solutions and structured frameworks for 271 real cases, so you can study before you ever go live. And when you're ready, a live AI interviewer that grades you on four dimensions, so you know exactly where you stand before the real thing." },
-  { q: 'Is it free?', a: "Yes, completely. KaseMate is free for KGPians with a KGP email. No paywall, no premium tier, no credit card." },
   { q: 'Can I trust the grading, or is it just vibes?', a: "Every response is scored against a fixed rubric across four dimensions, and each score cites the specific moment in your transcript it's based on. It's not a vague \"good job\" or \"needs work,\" you can see exactly which answer earned or lost you points." },
 ]
 
@@ -702,7 +701,7 @@ export default function Landing() {
           <div style={{ padding: '20px 0', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
               <span style={{ fontSize: 12, color: 'rgba(226,217,243,0.6)' }}>v1.0 · Verified by Placement Batch of 2025-26</span>
-              <span style={{ fontSize: 13, color: 'rgba(226,217,243,0.7)', fontWeight: 500 }}>Made with ❤️ by Ankur Dutta for Placement Season 2026-27.</span>
+              <span style={{ fontSize: 13, color: 'rgba(226,217,243,0.7)', fontWeight: 500 }}>Made with ❤️ by Ankur for Placement Season 2026-27.</span>
             </div>
             <div style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
               <span style={{ fontSize: 13, color: 'rgba(226,217,243,0.4)' }}>© 2026 KaseMate</span>

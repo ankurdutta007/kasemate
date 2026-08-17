@@ -232,9 +232,7 @@ export default function Auth() {
             Continue with Google
           </button>
 
-          <p style={{ textAlign: 'center', fontSize: 11, color: 'var(--text-muted)', margin: '24px 0 0' }}>
-            IIT KGP email only · Free for placements · No paywall
-          </p>
+
         </div>
       </div>
 
