@@ -85,9 +85,7 @@ export default function Auth() {
         provider: 'google',
         options: {
           redirectTo: `${window.location.origin}/roadmap`,
-          queryParams: {
-            hd: 'iitkgp.ac.in'
-          }
+
         }
       })
       if (error) throw error
@@ -101,9 +99,8 @@ export default function Auth() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     
-    const isKgpEmail = email.endsWith('@iitkgp.ac.in') || email.endsWith('@kgpian.iitkgp.ac.in')
-    if (!email.includes('@') || !isKgpEmail) {
-      setError('Please use a valid @iitkgp.ac.in or @kgpian.iitkgp.ac.in email address.')
+    if (!email.includes('@')) {
+      setError('Please enter a valid email address.')
       return
     }
 
@@ -184,9 +181,9 @@ export default function Auth() {
             {error && <div style={{ padding: '10px 14px', borderRadius: 8, backgroundColor: 'var(--coral-subtle)', border: '1px solid rgba(224,82,82,0.3)', color: 'var(--coral)', fontSize: 13, fontWeight: 500 }}>{error}</div>}
             
             <div>
-              <label style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', display: 'block', marginBottom: 6, letterSpacing: '0.04em', textTransform: 'uppercase' }}>IIT KGP Email</label>
+              <label style={{ fontSize: 12, fontWeight: 700, color: 'var(--text-muted)', display: 'block', marginBottom: 6, letterSpacing: '0.04em', textTransform: 'uppercase' }}>Email Address</label>
               <input type="email" value={email} onChange={e => { setEmail(e.target.value); setError('') }}
-                placeholder="yourname@kgpian.iitkgp.ac.in"
+                placeholder="yourname@example.com"
                 style={{ width: '100%', padding: '12px 14px', borderRadius: 10, border: `1.5px solid ${error ? 'var(--coral)' : 'var(--border)'}`, backgroundColor: 'var(--bg3)', color: 'var(--text-primary)', fontSize: 14, fontFamily: 'Inter, sans-serif', outline: 'none', boxSizing: 'border-box', transition: 'border-color 0.15s' }}
                 onFocus={e => { if (!error) e.target.style.borderColor = 'var(--primary-mid)' }}
                 onBlur={e => { if (!error) e.target.style.borderColor = 'var(--border)' }}
