@@ -370,21 +370,12 @@ export default function Landing() {
       <div style={{ borderTop: `1px solid ${border}`, borderBottom: `1px solid ${border}`, overflow: 'hidden', padding: '20px 0', backgroundColor: isDark ? '#141920' : '#f9f9f9' }}>
         <p style={{ textAlign: 'center', fontSize: 16, fontWeight: 700, color: soft, letterSpacing: '0.05em', textTransform: 'uppercase', margin: '0 0 16px' }}>Companies our roadmap prepares you for</p>
         <div style={{ overflow: 'hidden' }}>
-          <div style={{ display: 'flex', animation: 'ticker 24s linear infinite', width: 'max-content' }}>
-            <div style={{ display: 'flex', gap: 60, paddingRight: 60 }}>
-              {TARGET_COMPANIES.map((f,i) => (
-                <div key={`a-${i}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={f.logo} alt={f.n} style={{ height: 32, objectFit: 'contain' }} />
-                </div>
-              ))}
-            </div>
-            <div style={{ display: 'flex', gap: 60, paddingRight: 60 }}>
-              {TARGET_COMPANIES.map((f,i) => (
-                <div key={`b-${i}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <img src={f.logo} alt={f.n} style={{ height: 32, objectFit: 'contain' }} />
-                </div>
-              ))}
-            </div>
+          <div style={{ display: 'flex', animation: 'ticker 24s linear infinite', width: 'max-content', gap: 60, paddingRight: 60 }}>
+            {[...TARGET_COMPANIES, ...TARGET_COMPANIES].map((f, i) => (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 140, flexShrink: 0 }}>
+                <img src={f.logo} alt={f.n} style={{ height: 32, maxWidth: '100%', objectFit: 'contain' }} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -440,39 +431,21 @@ export default function Landing() {
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           <div style={{ overflow: 'hidden' }}>
-            <div style={{ display: 'flex', animation: 'ticker 35s linear infinite', width: 'max-content' }}>
-              <div style={{ display: 'flex', gap: 16, paddingRight: 16 }}>
-                {CONSULTING_RESOURCES.map((f, i) => (
-                  <span key={`a-${i}`} style={{ padding: '8px 20px', borderRadius: 100, border: `1px solid ${border}`, background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)', fontSize: 16, fontWeight: 700, color: isDark ? (f.darkC || '#fff') : (f.c || '#000'), fontFamily: f.font || 'inherit', letterSpacing: '-0.01em', whiteSpace: 'nowrap' }}>
-                    {f.n}
-                  </span>
-                ))}
-              </div>
-              <div style={{ display: 'flex', gap: 16, paddingRight: 16 }}>
-                {CONSULTING_RESOURCES.map((f, i) => (
-                  <span key={`b-${i}`} style={{ padding: '8px 20px', borderRadius: 100, border: `1px solid ${border}`, background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)', fontSize: 16, fontWeight: 700, color: isDark ? (f.darkC || '#fff') : (f.c || '#000'), fontFamily: f.font || 'inherit', letterSpacing: '-0.01em', whiteSpace: 'nowrap' }}>
-                    {f.n}
-                  </span>
-                ))}
-              </div>
+            <div style={{ display: 'flex', animation: 'ticker 35s linear infinite', width: 'max-content', gap: 16, paddingRight: 16 }}>
+              {[...CONSULTING_RESOURCES, ...CONSULTING_RESOURCES].map((f, i) => (
+                <span key={i} style={{ padding: '8px 20px', borderRadius: 100, border: `1px solid ${border}`, background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)', fontSize: 16, fontWeight: 700, color: isDark ? (f.darkC || '#fff') : (f.c || '#000'), fontFamily: f.font || 'inherit', letterSpacing: '-0.01em', whiteSpace: 'nowrap', flexShrink: 0 }}>
+                  {f.n}
+                </span>
+              ))}
             </div>
           </div>
           <div style={{ overflow: 'hidden' }}>
-            <div style={{ display: 'flex', animation: 'ticker 35s linear infinite', animationDirection: 'reverse', width: 'max-content' }}>
-              <div style={{ display: 'flex', gap: 16, paddingRight: 16 }}>
-                {PRODUCT_RESOURCES.map((f, i) => (
-                  <span key={`a-${i}`} style={{ padding: '8px 20px', borderRadius: 100, border: `1px solid ${border}`, background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)', fontSize: 16, fontWeight: 700, color: isDark ? (f.darkC || '#fff') : (f.c || '#000'), fontFamily: f.font || 'inherit', letterSpacing: '-0.01em', whiteSpace: 'nowrap' }}>
-                    {f.n}
-                  </span>
-                ))}
-              </div>
-              <div style={{ display: 'flex', gap: 16, paddingRight: 16 }}>
-                {PRODUCT_RESOURCES.map((f, i) => (
-                  <span key={`b-${i}`} style={{ padding: '8px 20px', borderRadius: 100, border: `1px solid ${border}`, background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)', fontSize: 16, fontWeight: 700, color: isDark ? (f.darkC || '#fff') : (f.c || '#000'), fontFamily: f.font || 'inherit', letterSpacing: '-0.01em', whiteSpace: 'nowrap' }}>
-                    {f.n}
-                  </span>
-                ))}
-              </div>
+            <div style={{ display: 'flex', animation: 'ticker 35s linear infinite', animationDirection: 'reverse', width: 'max-content', gap: 16, paddingRight: 16 }}>
+              {[...PRODUCT_RESOURCES, ...PRODUCT_RESOURCES].map((f, i) => (
+                <span key={i} style={{ padding: '8px 20px', borderRadius: 100, border: `1px solid ${border}`, background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)', fontSize: 16, fontWeight: 700, color: isDark ? (f.darkC || '#fff') : (f.c || '#000'), fontFamily: f.font || 'inherit', letterSpacing: '-0.01em', whiteSpace: 'nowrap', flexShrink: 0 }}>
+                  {f.n}
+                </span>
+              ))}
             </div>
           </div>
         </div>
