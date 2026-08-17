@@ -414,9 +414,9 @@ export default function Landing() {
       <div style={{ borderTop: `1px solid ${border}`, borderBottom: `1px solid ${border}`, overflow: 'hidden', padding: '20px 0', backgroundColor: isDark ? '#141920' : '#f9f9f9' }}>
         <p style={{ textAlign: 'center', fontSize: 16, fontWeight: 700, color: soft, letterSpacing: '0.05em', textTransform: 'uppercase', margin: '0 0 16px' }}>Companies our roadmap prepares you for</p>
         <div style={{ overflow: 'hidden' }}>
-          <div style={{ display: 'flex', animation: 'ticker 60s linear infinite', width: 'max-content', gap: 40, paddingRight: 40 }}>
+          <div style={{ display: 'flex', animation: 'ticker 60s linear infinite', width: 'max-content', gap: 24, paddingRight: 24 }}>
             {[...TARGET_COMPANIES, ...TARGET_COMPANIES].map((f, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 110, flexShrink: 0 }}>
+              <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 90, flexShrink: 0 }}>
                 <img src={f.logo} alt={f.n} style={{ height: 32, maxWidth: '100%', objectFit: 'contain' }} />
               </div>
             ))}
