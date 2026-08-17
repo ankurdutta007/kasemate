@@ -17,7 +17,7 @@ import imgProductRole from '@/imports/product.webp'
 import ctaHero from '@/imports/cta-hero.png'
 import heroIllustration from '@/imports/hero-illustration-new.png'
 
-import logoMckinsey from '@/imports/logos/mckinsey.png'
+import logoMckinsey from '@/imports/logos/mckinsey.jpg'
 import logoAccenture from '@/imports/logos/accenture.png'
 import logoDeloitte from '@/imports/logos/deloitte.png'
 import logoPwc from '@/imports/logos/pwc.png'
@@ -34,15 +34,15 @@ import logoJio from '@/imports/logos/jio.png'
 import logoOla from '@/imports/logos/ola.png'
 import logoBlinkit from '@/imports/logos/blinkit.png'
 import logoEma from '@/imports/logos/ema.png'
-import logoNavi from '@/imports/logos/navi.png'
+import logoNavi from '@/imports/logos/navi.svg'
 import logoMedianet from '@/imports/logos/medianet.png'
 import logoSprinklr from '@/imports/logos/sprinklr.png'
-import logoHilabs from '@/imports/logos/hilabs.png'
-import logoCitymall from '@/imports/logos/citymall.png'
+import logoHilabs from '@/imports/logos/hilabs.svg'
+import logoCitymall from '@/imports/logos/citymall.jpg'
 import logoLyric from '@/imports/logos/lyric.png'
 import logoZs from '@/imports/logos/zs.png'
 import logoExl from '@/imports/logos/exl.png'
-import logoIndusinsights from '@/imports/logos/indusinsights.png'
+import logoIndusinsights from '@/imports/logos/indusinsights.jpg'
 import logoAyna from '@/imports/logos/ayna.png'
 import logoAcuvon from '@/imports/logos/acuvon.png'
 import logoMoneyview from '@/imports/logos/moneyview.png'
@@ -52,7 +52,7 @@ import logoMeesho from '@/imports/logos/meesho.png'
 import logoCashfree from '@/imports/logos/cashfree.png'
 import logoAxis from '@/imports/logos/axis.png'
 import logoDtdc from '@/imports/logos/dtdc.png'
-import logoUrbancompany from '@/imports/logos/urbancompany.png'
+import logoUrbancompany from '@/imports/logos/urbancompany.jpg'
 
 /* ─── Decorative swirl (kept for hero only) ──────────────────────── */
 function Swirl({ style }: { style?: React.CSSProperties }) {
@@ -414,7 +414,7 @@ export default function Landing() {
       <div style={{ borderTop: `1px solid ${border}`, borderBottom: `1px solid ${border}`, overflow: 'hidden', padding: '20px 0', backgroundColor: isDark ? '#141920' : '#f9f9f9' }}>
         <p style={{ textAlign: 'center', fontSize: 16, fontWeight: 700, color: soft, letterSpacing: '0.05em', textTransform: 'uppercase', margin: '0 0 16px' }}>Companies our roadmap prepares you for</p>
         <div style={{ overflow: 'hidden' }}>
-          <div style={{ display: 'flex', animation: 'ticker 24s linear infinite', width: 'max-content', gap: 40, paddingRight: 40 }}>
+          <div style={{ display: 'flex', animation: 'ticker 36s linear infinite', width: 'max-content', gap: 40, paddingRight: 40 }}>
             {[...TARGET_COMPANIES, ...TARGET_COMPANIES].map((f, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 110, flexShrink: 0 }}>
                 <img src={f.logo} alt={f.n} style={{ height: 32, maxWidth: '100%', objectFit: 'contain' }} />
