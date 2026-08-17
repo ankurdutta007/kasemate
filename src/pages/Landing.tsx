@@ -31,6 +31,28 @@ import logoIcici from '@/imports/logos/icici.png'
 import logoSwiggy from '@/imports/logos/swiggy.png'
 import logoTata from '@/imports/logos/tata.png'
 import logoJio from '@/imports/logos/jio.png'
+import logoOla from '@/imports/logos/ola.png'
+import logoBlinkit from '@/imports/logos/blinkit.png'
+import logoEma from '@/imports/logos/ema.png'
+import logoNavi from '@/imports/logos/navi.png'
+import logoMedianet from '@/imports/logos/medianet.png'
+import logoSprinklr from '@/imports/logos/sprinklr.png'
+import logoHilabs from '@/imports/logos/hilabs.png'
+import logoCitymall from '@/imports/logos/citymall.png'
+import logoLyric from '@/imports/logos/lyric.png'
+import logoZs from '@/imports/logos/zs.png'
+import logoExl from '@/imports/logos/exl.png'
+import logoIndusinsights from '@/imports/logos/indusinsights.png'
+import logoAyna from '@/imports/logos/ayna.png'
+import logoAcuvon from '@/imports/logos/acuvon.png'
+import logoMoneyview from '@/imports/logos/moneyview.png'
+import logoIdfc from '@/imports/logos/idfc.png'
+import logoKotak from '@/imports/logos/kotak.png'
+import logoMeesho from '@/imports/logos/meesho.png'
+import logoCashfree from '@/imports/logos/cashfree.png'
+import logoAxis from '@/imports/logos/axis.png'
+import logoDtdc from '@/imports/logos/dtdc.png'
+import logoUrbancompany from '@/imports/logos/urbancompany.png'
 
 /* ─── Decorative swirl (kept for hero only) ──────────────────────── */
 function Swirl({ style }: { style?: React.CSSProperties }) {
@@ -75,6 +97,28 @@ const TARGET_COMPANIES = [
   { n: 'Swiggy', logo: logoSwiggy },
   { n: 'Tata Steel', logo: logoTata },
   { n: 'Jio Financial Services', logo: logoJio },
+  { n: 'Ola', logo: logoOla },
+  { n: 'Blinkit', logo: logoBlinkit },
+  { n: 'Ema', logo: logoEma },
+  { n: 'Navi', logo: logoNavi },
+  { n: 'Media.net', logo: logoMedianet },
+  { n: 'Sprinklr', logo: logoSprinklr },
+  { n: 'HiLabs', logo: logoHilabs },
+  { n: 'CityMall', logo: logoCitymall },
+  { n: 'Lyric', logo: logoLyric },
+  { n: 'ZS Associates', logo: logoZs },
+  { n: 'EXL', logo: logoExl },
+  { n: 'Indus Insights', logo: logoIndusinsights },
+  { n: 'Ayna', logo: logoAyna },
+  { n: 'Acuvon', logo: logoAcuvon },
+  { n: 'Moneyview', logo: logoMoneyview },
+  { n: 'IDFC', logo: logoIdfc },
+  { n: 'Kotak Mahindra Bank', logo: logoKotak },
+  { n: 'Meesho', logo: logoMeesho },
+  { n: 'Cashfree', logo: logoCashfree },
+  { n: 'Axis Bank', logo: logoAxis },
+  { n: 'DTDC', logo: logoDtdc },
+  { n: 'Urban Company', logo: logoUrbancompany },
 ]
 
 const CONSULTING_RESOURCES = [
@@ -370,9 +414,9 @@ export default function Landing() {
       <div style={{ borderTop: `1px solid ${border}`, borderBottom: `1px solid ${border}`, overflow: 'hidden', padding: '20px 0', backgroundColor: isDark ? '#141920' : '#f9f9f9' }}>
         <p style={{ textAlign: 'center', fontSize: 16, fontWeight: 700, color: soft, letterSpacing: '0.05em', textTransform: 'uppercase', margin: '0 0 16px' }}>Companies our roadmap prepares you for</p>
         <div style={{ overflow: 'hidden' }}>
-          <div style={{ display: 'flex', animation: 'ticker 24s linear infinite', width: 'max-content', gap: 60, paddingRight: 60 }}>
+          <div style={{ display: 'flex', animation: 'ticker 24s linear infinite', width: 'max-content', gap: 40, paddingRight: 40 }}>
             {[...TARGET_COMPANIES, ...TARGET_COMPANIES].map((f, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 140, flexShrink: 0 }}>
+              <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: 110, flexShrink: 0 }}>
                 <img src={f.logo} alt={f.n} style={{ height: 32, maxWidth: '100%', objectFit: 'contain' }} />
               </div>
             ))}
