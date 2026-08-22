@@ -133,7 +133,15 @@ export default function NavV2() {
         >
           {/* Brand */}
           <a
-            href="#top"
+            href="/"
+            onClick={(e) => {
+              if (window.location.pathname === '/') {
+                e.preventDefault()
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+                // Remove any hash without triggering a reload
+                history.replaceState(null, '', '/')
+              }
+            }}
             style={{
               display: 'flex',
               alignItems: 'center',

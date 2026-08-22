@@ -5,7 +5,7 @@ import img7 from "@/imports/image-7.webp";
 import img8 from "@/imports/image-8.webp";
 import img9 from "@/imports/image-9.webp";
 import imgStrategy from "@/imports/strategy.webp";
-import imgStructure from "@/imports/structure-case.webp";
+import imgStructure from "@/imports/structure-case-portrait.webp";
 import logo from "@/imports/logo.webp";
 import { supabase } from "../lib/supabase";
 

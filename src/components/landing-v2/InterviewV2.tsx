@@ -15,7 +15,7 @@ const DIMENSIONS = [
     yOffset: 8,
     rotate: 5,
     delay: 0.2,
-    color: '#d97706', // Amber (darker for text contrast)
+    color: '#eab308', // Yellow
   },
   {
     label: 'Business judgment',
@@ -29,7 +29,7 @@ const DIMENSIONS = [
     yOffset: -4,
     rotate: 6,
     delay: 0.4,
-    color: '#d97706', // Amber
+    color: '#eab308', // Yellow
   },
 ]
 
@@ -158,11 +158,11 @@ export default function InterviewV2() {
 
             {/* Clustered Dimension Badges */}
             <div
+              className="gap-y-[24px] gap-x-[20px] md:gap-y-[12px] md:gap-x-[16px]"
               style={{
                 display: 'flex',
                 flexWrap: 'wrap',
                 justifyContent: 'center',
-                gap: '12px 16px',
                 marginTop: 'clamp(28px, 4vh, 40px)',
                 position: 'relative',
                 zIndex: 3,
@@ -177,7 +177,7 @@ export default function InterviewV2() {
                   transition={{ duration: 0.6, delay: 0.1 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
                   style={{
                     background: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E"), linear-gradient(135deg, color-mix(in srgb, ${dim.color} 85%, white), color-mix(in srgb, ${dim.color} 75%, black))`,
-                    border: `2px solid rgba(255, 255, 255, 0.95)`,
+                    border: `3px solid rgba(255, 255, 255, 0.95)`,
                     borderRadius: 999,
                     padding: '8px 18px',
                     display: 'flex',

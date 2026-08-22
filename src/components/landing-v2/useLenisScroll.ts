@@ -90,6 +90,19 @@ export function useLenisScroll(enabled: boolean) {
     })
     activeLenis = lenis
 
+    // If there is a hash in the URL on load (e.g., hitting reload on /#roadmap),
+    // force Lenis to jump there immediately so it doesn't reset the page to 0.
+    if (window.location.hash) {
+      try {
+        const target = document.querySelector(window.location.hash)
+        if (target) {
+          lenis.scrollTo(target, { immediate: true })
+        }
+      } catch (e) {
+        // Ignore invalid selectors in the URL hash
+      }
+    }
+
     // Lenis suppresses some native scroll events while it animates, so forward
     // its own scroll event to our subscribers too.
     lenis.on('scroll', notifyScrollSubscribers)
