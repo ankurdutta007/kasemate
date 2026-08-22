@@ -81,9 +81,9 @@
 
 /* ─── BASE ───────────────────────────────────────────────────────── */
 * { box-sizing: border-box; }
-body {
+html, body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: var(--bg);
+  background-color: #0a0a0f; /* Fixed dark overscroll background */
   color: var(--text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

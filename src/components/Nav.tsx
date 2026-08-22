@@ -26,7 +26,9 @@ export default function Nav() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
-  if (isLanding || isAuth || isOnboarding || isCase) return null
+  const isPreviewV2 = location.pathname === '/preview-v2'
+
+  if (isLanding || isAuth || isOnboarding || isCase || isPreviewV2) return null
 
   const navLinks = [
     { to: '/roadmap', label: 'Roadmap' },

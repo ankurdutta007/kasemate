@@ -1,0 +1,455 @@
+/**
+ * landing-v2.css — styles for the LandingV2 redesign ONLY.
+ *
+ * SCOPING RULE: every selector in this file starts with `.lv2-root`.
+ * `.lv2-root` is the wrapper <div> around the whole LandingV2 page, so none of
+ * these rules — fonts, colours, spacing — can affect any other route.
+ *
+ * The colour palette is declared as CSS variables ON `.lv2-root` rather than on
+ * `:root`, which is what keeps it out of the global theme.
+ */
+
+.lv2-root {
+  /* ── Local palette. Scoped to this element and its children only. ── */
+  --lv2-bg: #0a0a0f; /* near-black page background */
+  --lv2-bg-elevated: #12121a; /* slightly lifted surface */
+  --lv2-text: #f5f3ef; /* off-white body text */
+  --lv2-text-muted: rgba(245, 243, 239, 0.62);
+  --lv2-text-faint: rgba(245, 243, 239, 0.38);
+  --lv2-accent: #e8a33d; /* the one warm accent, used sparingly */
+  --lv2-hairline: rgba(245, 243, 239, 0.14);
+  --lv2-glass: rgba(10, 10, 15, 0.72);
+
+  /* ── Local fonts. Scoped the same way. ── */
+  --lv2-font-display: "Libre Baskerville", serif;
+  --lv2-font-number: "Poppins", sans-serif;
+  --lv2-font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  background-color: var(--lv2-bg);
+  color: var(--lv2-text);
+  font-family: var(--lv2-font-sans);
+  min-height: 100vh;
+  /* `clip`, NOT `hidden`. Setting `overflow-x: hidden` forces the other axis to
+     compute as `auto`, which would turn this wrapper into its own scroll
+     container — and then the page would scroll inside this div instead of the
+     window, breaking Lenis and every scroll-linked animation. `clip` contains
+     horizontal overflow while leaving vertical overflow visible. */
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Display type — opt-in via class, never a global default. */
+.lv2-root .lv2-display {
+  font-family: var(--lv2-font-display);
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Space Grotesk ships no italic face — requesting the `ital` axis from Google
+   Fonts returns only upright @font-face blocks. So this emphasis treatment
+   relies on the browser SYNTHESISING a slant.
+   Use the plain `italic` keyword, NOT `oblique <angle>`: the angle syntax is
+   silently ignored here (it renders pixel-identical to upright), whereas
+   `italic` correctly triggers synthesis. Verified in-browser. */
+.lv2-root .lv2-display-italic {
+  font-family: var(--lv2-font-display);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ── Nav ─────────────────────────────────────────────────────────── */
+
+.lv2-root .lv2-nav-link {
+  color: var(--lv2-text);
+  text-decoration: none;
+  opacity: 0.78;
+  transition: opacity 0.2s ease;
+}
+
+.lv2-root .lv2-nav-link:hover {
+  opacity: 1;
+}
+
+/* Pill button: thin light border over a translucent fill. */
+.lv2-root .lv2-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 999px;
+  border: 1px solid var(--lv2-hairline);
+  background: rgba(245, 243, 239, 0.06);
+  color: var(--lv2-text);
+  font-family: var(--lv2-font-sans);
+  cursor: pointer;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.lv2-root .lv2-pill:hover {
+  background: rgba(245, 243, 239, 0.12);
+  border-color: rgba(245, 243, 239, 0.32);
+  transform: translateY(-1px);
+}
+
+/* Text-only secondary action. */
+.lv2-root .lv2-textlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--lv2-text-muted);
+  font-family: var(--lv2-font-sans);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.lv2-root .lv2-textlink:hover {
+  color: var(--lv2-text);
+}
+
+/* Desktop / mobile nav switching. */
+.lv2-root .lv2-nav-desktop {
+  display: flex;
+}
+.lv2-root .lv2-nav-burger {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .lv2-root .lv2-nav-desktop {
+    display: none;
+  }
+  .lv2-root .lv2-nav-burger {
+    display: inline-flex;
+  }
+}
+
+/* ── Tracks carousel ─────────────────────────────────────────────── */
+/*
+ * Built on native scroll-snap rather than a JS drag handler. On a phone that
+ * means the swipe is the OS's own scrolling — real momentum, real rubber-band,
+ * real interruption on touch — which no hand-rolled pointer/velocity loop
+ * matches. JS only observes the scroll position to decide which card is
+ * centred; it never drives it.
+ */
+.lv2-root .lv2-carousel {
+  --lv2-card-w: clamp(230px, 68vw, 340px);
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  /* Each swipe advances exactly one card instead of flinging past several. */
+  scroll-snap-stop: always;
+  /* Keeps a horizontal swipe from triggering the browser's back gesture. */
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  /* Lets the first and last card reach the centre of the viewport. */
+  padding-inline: calc(50% - var(--lv2-card-w) / 2);
+  padding-block: 8px 4px;
+  scrollbar-width: none;
+}
+
+.lv2-root .lv2-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.lv2-root .lv2-card {
+  flex: 0 0 var(--lv2-card-w);
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  /* Resting (unselected) state: distinct panel sitting in front of background. */
+  transform: scale(0.87);
+  opacity: 0.95;
+  filter: saturate(0.4) brightness(0.5);
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.4s ease,
+    filter 0.4s ease;
+}
+
+.lv2-root .lv2-card[data-active='true'] {
+  transform: scale(1);
+  opacity: 1;
+  filter: saturate(1) brightness(1);
+}
+
+@keyframes lv2-stroke-spin {
+  0% { stroke-dashoffset: -11; }
+  100% { stroke-dashoffset: -111; }
+}
+
+.lv2-root .lv2-card-highlight-svg {
+  pointer-events: none;
+}
+
+.lv2-root .lv2-card-highlight-svg g {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.lv2-root .lv2-card[data-active='true'] .lv2-card-highlight-svg g {
+  opacity: 1;
+}
+
+.lv2-root .lv2-card-highlight-svg rect {
+  stroke-dasharray: 8 92;
+  stroke-dashoffset: -11;
+  animation: lv2-stroke-spin 12s linear infinite;
+  pointer-events: none;
+}
+
+.lv2-root .lv2-carousel-arrows {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .lv2-root .lv2-carousel {
+    /* Sized against viewport HEIGHT, not width. The whole section has to fit
+       one screen, and the card's portrait artwork is what drives that height —
+       so on a short viewport the cards shrink rather than pushing the dots and
+       arrows below the fold. */
+    --lv2-card-w: clamp(240px, 34svh, 330px);
+    gap: 24px;
+  }
+  .lv2-root .lv2-carousel-arrows {
+    display: flex;
+  }
+}
+
+/* Circular icon buttons for carousel navigation. */
+.lv2-root .lv2-carousel-btn {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--lv2-hairline);
+  background: rgba(245, 243, 239, 0.06);
+  color: var(--lv2-text);
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.lv2-root .lv2-carousel-btn:hover:not(:disabled) {
+  background: rgba(232, 163, 61, 0.14);
+  border-color: rgba(232, 163, 61, 0.5);
+  color: var(--lv2-accent);
+  transform: translateY(-1px);
+}
+
+.lv2-root .lv2-carousel-btn:disabled {
+  opacity: 0.28;
+  cursor: default;
+}
+
+.lv2-root .lv2-carousel-btn svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.lv2-root .lv2-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  padding: 18.5px;
+  margin: -18.5px; /* prevent layout shift */
+  background-clip: content-box;
+  cursor: pointer;
+  background-color: var(--lv2-text-faint);
+  transition:
+    background-color 0.3s ease,
+    width 0.3s ease;
+}
+
+.lv2-root .lv2-dot[data-active='true'] {
+  /* To keep the active dot 22px wide visually, content width needs to be 22px. Total width = 22 + 37 (padding) = 59px */
+  width: 59px;
+  background-color: var(--lv2-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lv2-root .lv2-carousel {
+    scroll-behavior: auto;
+  }
+  .lv2-root .lv2-card,
+  .lv2-root .lv2-dot {
+    transition: none;
+  }
+}
+
+/* ── Roadmap stack ───────────────────────────────────────────────── */
+
+/*
+ * Centering strategy: The row is a flex container with `width: max-content`.
+ * By giving the annotation column a fixed width, every row computes to the
+ * EXACT same total width. Centering this row using absolute positioning
+ * perfectly balances the whitespace on the left of the bar and the right of
+ * the text, while ensuring every bar aligns perfectly on the Y axis.
+ */
+.lv2-root .lv2-layer-row {
+  --lv2-layer-bar-w: clamp(180px, 35vw, 320px);
+  --lv2-layer-gap: clamp(12px, 2.2vw, 24px);
+  --lv2-layer-annot-w: clamp(120px, 20vw, 170px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--lv2-layer-gap);
+  height: var(--lv2-layer-row-h, 54px);
+  width: max-content;
+}
+
+.lv2-root .lv2-layer-bar {
+  width: var(--lv2-layer-bar-w);
+  height: 54px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 16px;
+  overflow: hidden;
+  opacity: var(--lv2-bar-reveal, 0.5);
+}
+
+/* One tick per real module in the group, so a taller stack of ticks means a
+   heavier phase. Purely decorative — the count is also written in the label. */
+.lv2-root .lv2-layer-tick {
+  flex: 1 1 auto;
+  max-width: 5px;
+  height: 18px;
+  border-radius: 2px;
+  opacity: 0.55;
+}
+
+/* Stage 1 — "Get Shortlisted" — amber. */
+.lv2-root .lv2-layer--s1 .lv2-layer-bar {
+  border: 1px solid rgba(232, 163, 61, 0.4);
+  background: linear-gradient(100deg, rgba(232, 163, 61, 0.17), rgba(232, 163, 61, 0.03));
+  box-shadow:
+    0 0 22px rgba(232, 163, 61, 0.13),
+    inset 0 1px 0 rgba(255, 220, 170, 0.2);
+}
+.lv2-root .lv2-layer--s1 .lv2-layer-tick {
+  background: var(--lv2-accent);
+}
+
+/* Stage 2 — "Convert the Interview" — violet. */
+.lv2-root .lv2-layer--s2 .lv2-layer-bar {
+  border: 1px solid rgba(157, 116, 232, 0.44);
+  background: linear-gradient(100deg, rgba(140, 96, 222, 0.2), rgba(140, 96, 222, 0.04));
+  box-shadow:
+    0 0 22px rgba(140, 96, 222, 0.16),
+    inset 0 1px 0 rgba(210, 190, 255, 0.18);
+}
+.lv2-root .lv2-layer--s2 .lv2-layer-tick {
+  background: #b48cf0;
+}
+
+/* ── Cases Stack (Round 5) ───────────────────────────────────────── */
+.lv2-root .lv2-card-stack-item {
+  background: var(--lv2-bg-elevated);
+  border-radius: 16px;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  /* The cards are absolute positioned inside their container. 
+     Framer motion handles rotate and y translations. */
+}
+
+.lv2-root .lv2-card-stack-item.lv2-layer--s1 {
+  border: 1px solid rgba(232, 163, 61, 0.4);
+  background: linear-gradient(140deg, rgba(232, 163, 61, 0.15), rgba(232, 163, 61, 0.03));
+  box-shadow:
+    0 4px 24px rgba(10, 10, 15, 0.8),
+    inset 0 1px 0 rgba(255, 220, 170, 0.2);
+}
+
+.lv2-root .lv2-card-stack-item.lv2-layer--s2 {
+  border: 1px solid rgba(157, 116, 232, 0.44);
+  background: linear-gradient(140deg, rgba(140, 96, 222, 0.15), rgba(140, 96, 222, 0.03));
+  box-shadow:
+    0 4px 24px rgba(10, 10, 15, 0.8),
+    inset 0 1px 0 rgba(210, 190, 255, 0.18);
+}
+
+/*
+ * Both fades are driven by CSS custom properties written from JS, NOT by
+ * Framer style values.
+ *
+ * Framer routes a scroll-linked `opacity` through the Web Animations API here,
+ * and that animation lands `finished` with `fill: both` — permanently
+ * overriding the inline value, so the element renders at opacity 1 no matter
+ * what the scroll says. `transform` is unaffected, which is why the layer `y`
+ * scrubs correctly while opacity did not. Custom properties sidestep the whole
+ * pipeline and stay continuous.
+ */
+.lv2-root .lv2-layer-bar {
+  opacity: var(--lv2-bar-reveal, 0.5);
+}
+
+/*
+ * The annotation column has a fixed width to ensure every row has the same
+ * total width for perfect centering.
+ */
+.lv2-root .lv2-layer-annot {
+  width: var(--lv2-layer-annot-w);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: var(--lv2-label-reveal, 0);
+  transform: translateX(calc((var(--lv2-label-reveal, 0) - 1) * 12px));
+}
+
+.lv2-root .lv2-layer-label {
+  font-size: clamp(13px, 1.4vw, 15px);
+  color: var(--lv2-text);
+  letter-spacing: -0.01em;
+  white-space: normal;
+  line-height: 1.25;
+}
+
+.lv2-root .lv2-layer-count {
+  font-size: 12px;
+  color: var(--lv2-text-faint);
+  white-space: nowrap;
+}
+
+/* ── Reduced motion ──────────────────────────────────────────────── */
+/*
+ * Belt-and-braces companion to the JS handling in LandingV2.tsx:
+ * if any animation still manages to run, collapse it to ~instant so the
+ * page renders in its final resting state instead of moving.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .lv2-root *,
+  .lv2-root *::before,
+  .lv2-root *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
