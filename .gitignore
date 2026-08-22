@@ -11,3 +11,19 @@ logs/
 *.log
 .claude-replay.*
 .tmp-*
+
+# Root-level test/debug files
+/*.cjs
+/test_*.js
+/fix_*.js
+/shoot*.js
+/verify_*.js
+/*.html
+
+# Root-level screenshots
+/*.png
+/*.jpg
+
+# Puppeteer/Lighthouse output
+/lighthouse-report*.json
+/mobile-results.json
