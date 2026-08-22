@@ -79,6 +79,9 @@ function StackLayer({
         // Closed deck reads top-down, so earlier layers sit above later ones.
         zIndex: LAYERS.length - index,
         y: reduced ? open : y,
+        // Force GPU acceleration to prevent Safari compositing lag
+        transform: 'translateZ(0)',
+        willChange: 'transform, opacity',
       }}
     >
       <div className={`lv2-layer-row lv2-layer--s${layer.stage}`}>

@@ -138,7 +138,7 @@ export default function HeroV2() {
         <picture>
           <source
             media="(max-width: 767px)"
-            srcSet="/landing-v2/hero-mobile.webp"
+            srcSet="/landing-v2/hero-v4.webp"
             type="image/webp"
           />
           <source srcSet="/landing-v2/hero-v4.webp" type="image/webp" />

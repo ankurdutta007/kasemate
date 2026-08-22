@@ -1,4 +1,5 @@
-import { type WeekPlan } from '../../../lib/roadmap-compiler'
+ 
+ import { type WeekPlan } from '../../../lib/roadmap-compiler'
 import imgLock from '../../../imports/lock-illustration.webp'
 
 type WeekCardProps = {

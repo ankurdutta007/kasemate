@@ -56,16 +56,30 @@ export default function TracksV2() {
     const el = trackRef.current
     if (!el) return
     let frame = 0
+    let cachedMetrics: { centreOffset: number; cards: number[] } | null = null
+
+    const cacheLayout = () => {
+      const cards = Array.from(el.querySelectorAll<HTMLElement>('[data-card]'))
+      if (!cards.length) {
+        cachedMetrics = null
+        return
+      }
+      cachedMetrics = {
+        centreOffset: el.clientWidth / 2,
+        cards: cards.map(c => c.offsetLeft + c.offsetWidth / 2),
+      }
+    }
 
     const measure = () => {
       frame = 0
-      const cards = Array.from(el.querySelectorAll<HTMLElement>('[data-card]'))
-      if (!cards.length) return
-      const centre = el.scrollLeft + el.clientWidth / 2
+      if (!cachedMetrics) return
+      
+      // Only read scrollLeft during the rAF, avoiding forced synchronous layout (Reflow) in Safari
+      const centre = el.scrollLeft + cachedMetrics.centreOffset
       let best = 0
       let bestDistance = Infinity
-      cards.forEach((card, i) => {
-        const cardCentre = card.offsetLeft + card.offsetWidth / 2
+      
+      cachedMetrics.cards.forEach((cardCentre, i) => {
         const distance = Math.abs(cardCentre - centre)
         if (distance < bestDistance) {
           bestDistance = distance
@@ -79,12 +93,18 @@ export default function TracksV2() {
       if (!frame) frame = requestAnimationFrame(measure)
     }
 
+    const onResize = () => {
+      cacheLayout()
+      onScroll()
+    }
+
+    cacheLayout()
     measure()
     el.addEventListener('scroll', onScroll, { passive: true })
-    window.addEventListener('resize', onScroll)
+    window.addEventListener('resize', onResize)
     return () => {
       el.removeEventListener('scroll', onScroll)
-      window.removeEventListener('resize', onScroll)
+      window.removeEventListener('resize', onResize)
       if (frame) cancelAnimationFrame(frame)
     }
   }, [])
@@ -260,7 +280,12 @@ export default function TracksV2() {
             >
               <svg 
                 className="lv2-card-highlight-svg" 
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 10 }}
+                style={{ 
+                  position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', 
+                  pointerEvents: 'none', zIndex: 10,
+                  willChange: 'filter, transform',
+                  transform: 'translateZ(0)',
+                }}
               >
                 <g filter="url(#lv2-comet-glow)">
                   {Array.from({ length: 20 }).map((_, j) => {

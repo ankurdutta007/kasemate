@@ -27,3 +27,5 @@ logs/
 # Puppeteer/Lighthouse output
 /lighthouse-report*.json
 /mobile-results.json
+
+/trace*.json

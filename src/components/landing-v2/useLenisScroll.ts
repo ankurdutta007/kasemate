@@ -72,7 +72,14 @@ export function subscribeToPageScroll(cb: (scrollY: number) => void) {
 
 export function useLenisScroll(enabled: boolean) {
   useEffect(() => {
-    if (!enabled) return
+    // Safari's compositor and OMTS (off-main-thread-scrolling) often fight with 
+    // JS-driven RAF scroll hijacking, causing severe lag and frame drops. 
+    // We bypass Lenis entirely for Safari, leaving it to use its native scroll, 
+    // which feels perfectly smooth and still triggers useScroll animations correctly.
+    // This regex matches Safari but excludes Chrome, Edge, and Android browsers.
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent)
+    
+    if (!enabled || isSafari) return
 
     const lenis = new Lenis({
       duration: 1.1,
