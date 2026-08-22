@@ -259,7 +259,6 @@ export default function TracksV2() {
               }}
             >
               <svg 
-                key={isRealActive ? 'active' : 'inactive'}
                 className="lv2-card-highlight-svg" 
                 style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 10 }}
               >
@@ -276,6 +275,7 @@ export default function TracksV2() {
                         strokeWidth="4" 
                         pathLength="100"
                         style={{
+                          animation: isRealActive ? '' : 'none',
                           animationDelay: `${delay}s`,
                           opacity: opacity
                         }}
