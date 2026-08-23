@@ -11,8 +11,6 @@ import imgHubHero from '@/imports/hub-hero-new.webp'
 import img12 from '@/imports/image-12.webp'
 import img13 from '@/imports/image-13.webp'
 import img14 from '@/imports/image-14.webp'
-import imgConsultingRole from '@/imports/consulting.webp'
-import imgProductRole from '@/imports/product.webp'
 import imgEmptyCases from '@/imports/no-cases-empty.webp'
 
 // v2, renamed to "Learn by Doing", SVG icons, illustration avatars
@@ -469,7 +467,7 @@ export default function Hub() {
                 <div onClick={() => setBrowseTrack('consulting')} style={{ cursor: 'pointer', backgroundColor: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 16, padding: 32, transition: 'border-color 0.15s, box-shadow 0.15s', boxShadow: 'var(--card-shadow)', display: 'flex', flexDirection: 'column', height: '100%' }} onMouseEnter={e => e.currentTarget.style.borderColor = 'var(--coral)'} onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
                     <div>
-                      <img src={imgConsultingRole} alt="Consulting" style={{ width: 64, height: 64, objectFit: 'contain', marginBottom: 16 }} />
+                      <img src="/landing-v2/track-consulting-v3.webp" alt="Consulting" style={{ width: 64, height: 64, objectFit: 'contain', marginBottom: 16 }} />
                       <h3 style={{ fontSize: 20, fontWeight: 700, color: 'var(--coral)', margin: '0 0 8px' }}>Consulting</h3>
                     </div>
                     <div style={{ textAlign: 'right' }}>
@@ -486,7 +484,7 @@ export default function Hub() {
                 <div onClick={() => setBrowseTrack('product')} style={{ cursor: 'pointer', backgroundColor: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: 16, padding: 32, transition: 'border-color 0.15s, box-shadow 0.15s', boxShadow: 'var(--card-shadow)', display: 'flex', flexDirection: 'column', height: '100%' }} onMouseEnter={e => e.currentTarget.style.borderColor = 'var(--primary-bright)'} onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 16 }}>
                     <div>
-                      <img src={imgProductRole} alt="Product" style={{ width: 64, height: 64, objectFit: 'contain', marginBottom: 16 }} />
+                      <img src="/landing-v2/track-product-v4.webp" alt="Product" style={{ width: 64, height: 64, objectFit: 'contain', marginBottom: 16 }} />
                       <h3 style={{ fontSize: 20, fontWeight: 700, color: 'var(--primary-bright)', margin: '0 0 8px' }}>Product Management</h3>
                     </div>
                     <div style={{ textAlign: 'right' }}>
@@ -502,9 +500,9 @@ export default function Hub() {
                 </div>
             </div>
             <div style={{ marginTop: 24, padding: '20px 24px', backgroundColor: 'var(--bg2)', borderRadius: 16, border: '1px solid var(--border)', display: 'flex', flexDirection: 'column', gap: 8, boxShadow: 'var(--card-shadow)' }}>
-              <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)' }}>Cases Curated From Top Casebooks</div>
-              <div style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-                  <>
+              <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--text-primary)' }}>Cases Curated From Top Sources</div>
+              <div className="hub-sources-container" style={{ fontSize: 14, color: 'var(--text-secondary)', lineHeight: 1.8 }}>
+                  <div>
                     <span style={{ color: 'var(--coral)', fontWeight: 600, marginRight: 6 }}>Consulting:</span>
                     {CONSULTING_RESOURCES.map((r, i) => (
                       <span key={r.n}>
@@ -512,9 +510,8 @@ export default function Hub() {
                         {i < CONSULTING_RESOURCES.length - 1 ? <span style={{ marginRight: 6 }}>,</span> : ''}
                       </span>
                     ))}
-                  </>
-                  <br />
-                  <>
+                  </div>
+                  <div>
                     <span style={{ color: 'var(--primary-bright)', fontWeight: 600, marginRight: 6 }}>Product:</span>
                     {PRODUCT_RESOURCES.map((r, i) => (
                       <span key={r.n}>
@@ -522,7 +519,7 @@ export default function Hub() {
                         {i < PRODUCT_RESOURCES.length - 1 ? <span style={{ marginRight: 6 }}>,</span> : ''}
                       </span>
                     ))}
-                  </>
+                  </div>
               </div>
             </div>
           </div>

@@ -159,7 +159,7 @@ export default function ClosingV2() {
           textAlign: 'center',
         }}
       >
-        Made by <em style={{ fontStyle: 'normal', color: 'var(--lv2-accent)' }}>Ankur</em>, for placement season 2026-27
+        Made with ❤️ by Ankur for Placement Season 2026-27.
       </p>
     </section>
   )

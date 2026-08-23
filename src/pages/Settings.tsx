@@ -195,12 +195,13 @@ export default function Settings() {
           <div style={{
             padding: '18px 24px',
             display: 'flex',
+            flexWrap: 'wrap',
             alignItems: 'flex-start',
             justifyContent: 'space-between',
             gap: 16,
             borderBottom: '1px solid var(--border)'
           }}>
-            <div style={{ marginTop: 2 }}>
+            <div style={{ marginTop: 2, minWidth: 'min-content' }}>
               <div style={{ fontSize: 15, fontWeight: 600, color: 'var(--text-primary)', marginBottom: 3 }}>
                 Prep tracks
               </div>
@@ -208,10 +209,10 @@ export default function Settings() {
                 Roles your roadmap is built around
               </div>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 10, flexShrink: 0 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 10, flexShrink: 0, flex: 1, minWidth: 260 }}>
               {editingTracks ? (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'flex-end' }}>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, width: 260 }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'flex-end', width: '100%' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: 8, width: '100%', maxWidth: 260 }}>
                     {['product', 'consulting', 'analyst', 'general'].map(t => {
                       const selected = draftTracks.includes(t)
                       const config = trackConfig[t.toLowerCase()] || { label: t, bg: 'var(--bg3)', color: 'var(--text-muted)', border: 'var(--border)', activeBg: 'var(--bg3)' }
@@ -228,7 +229,8 @@ export default function Settings() {
                             background: selected ? config.activeBg : 'var(--bg3)',
                             color: selected ? config.color : 'var(--text-muted)',
                             border: `1.5px solid ${selected ? config.border : 'var(--border)'}`,
-                            textAlign: 'center'
+                            textAlign: 'center',
+                            width: '100%'
                           }}>
                           {config.label}
                         </button>
@@ -242,9 +244,9 @@ export default function Settings() {
                   )}
                 </div>
               ) : (
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', justifyContent: 'flex-end', width: '100%' }}>
                   {roadmapData ? (
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, justifyContent: 'flex-end', marginLeft: 'auto' }}>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'flex-end', marginLeft: 'auto' }}>
                       {roadmapData.tracks.map(track => {
                         const c = trackConfig[track.toLowerCase()] || { label: track, bg: 'var(--bg3)', color: 'var(--text-muted)', border: 'var(--border)', activeBg: 'var(--bg3)' }
                         return (
@@ -294,11 +296,12 @@ export default function Settings() {
           <div style={{
             padding: '18px 24px',
             display: 'flex',
+            flexWrap: 'wrap',
             alignItems: 'flex-start',
             justifyContent: 'space-between',
             gap: 16
           }}>
-            <div style={{ marginTop: 2 }}>
+            <div style={{ marginTop: 2, minWidth: 'min-content' }}>
               <div style={{ fontSize: 15, fontWeight: 600, color: 'var(--text-primary)', marginBottom: 3 }}>
                 Prep timeline
               </div>
@@ -306,25 +309,26 @@ export default function Settings() {
                 How many weeks your roadmap covers
               </div>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 10, flexShrink: 0 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 10, flexShrink: 0, flex: 1, minWidth: 220 }}>
               {editingWeeks ? (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'flex-end' }}>
-                  <div style={{ display: 'flex', gap: 6 }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 12, width: '100%' }}>
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 8, width: '100%' }}>
                     {[4, 8, 12].map(w => {
                       const selected = draftWeeks === w
                       const config = weekConfig[w as 4|8|12]
                       return (
                         <button key={w} onClick={() => setDraftWeeks(w)}
                           style={{
-                            padding: '8px 16px', borderRadius: 10, cursor: 'pointer', fontFamily: 'Inter, sans-serif',
+                            padding: '8px 4px', borderRadius: 10, cursor: 'pointer', fontFamily: 'Inter, sans-serif',
                             background: selected ? config.bg : 'var(--bg3)',
                             border: selected ? `2px solid ${config.border}` : '1.5px solid var(--border)',
-                            display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, minWidth: 90
+                            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 4, width: '100%',
+                            boxShadow: selected ? 'var(--card-shadow)' : 'none'
                           }}>
-                          <div style={{ fontSize: 13, fontWeight: 700, color: selected ? config.color : 'var(--text-muted)' }}>
+                          <div style={{ fontSize: 13, fontWeight: 700, color: selected ? config.color : 'var(--text-muted)', textAlign: 'center', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%' }}>
                             {config.label}
                           </div>
-                          <div style={{ fontSize: 11, fontWeight: 600, color: selected ? config.color : 'var(--text-muted)', opacity: selected ? 0.8 : 0.6 }}>
+                          <div style={{ fontSize: 11, fontWeight: 600, color: selected ? config.color : 'var(--text-muted)', opacity: selected ? 0.8 : 0.6, textAlign: 'center', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%' }}>
                             {config.sublabel}
                           </div>
                         </button>
@@ -333,7 +337,7 @@ export default function Settings() {
                   </div>
                 </div>
               ) : (
-                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap', justifyContent: 'flex-end', width: '100%' }}>
                   {roadmapData ? (
                     <div style={{
                       padding: '6px 18px',
@@ -343,12 +347,13 @@ export default function Settings() {
                       background: 'var(--primary-subtle)',
                       color: 'var(--primary-bright)',
                       border: '1.5px solid rgba(124,58,237,0.25)',
-                      fontFamily: 'Inter, sans-serif'
+                      fontFamily: 'Inter, sans-serif',
+                      whiteSpace: 'nowrap'
                     }}>
                       {roadmapData.weeks} weeks
                     </div>
                   ) : (
-                    <span style={{ fontSize: 13, color: 'var(--text-muted)' }}>Not set up</span>
+                    <span style={{ fontSize: 13, color: 'var(--text-muted)', whiteSpace: 'nowrap' }}>Not set up</span>
                   )}
                   <button
                     onClick={() => { setDraftWeeks(roadmapData?.weeks || 4); setEditingWeeks(true); }}
@@ -423,10 +428,9 @@ export default function Settings() {
         <div style={{ textAlign: 'center', padding: '20px' }}>
           <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, marginBottom: 8 }}>
             <img src={logo} alt="KaseMate Logo" style={{ width: 20, height: 20, borderRadius: 5, objectFit: 'cover' }} />
-            <span style={{ fontFamily: '"Newsreader", serif', fontStyle: 'italic', fontSize: 16, fontWeight: 500, color: 'var(--text-primary)' }}>KaseMate</span>
+            <span style={{ fontFamily: '"Libre Baskerville", serif', fontSize: 16, fontWeight: 700, letterSpacing: '-0.01em', color: 'var(--text-primary)' }}>KaseMate</span>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-            <span style={{ fontSize: 12, color: 'var(--text-muted)' }}>v1.0 · Verified by Placement Batch of 2025-26</span>
             <span style={{ fontSize: 13, color: 'var(--text-muted)', fontWeight: 500 }}>Made with ❤️ by Ankur for Placement Season 2026-27.</span>
           </div>
         </div>

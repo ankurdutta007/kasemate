@@ -1,6 +1,8 @@
  
  import { type WeekPlan } from '../../../lib/roadmap-compiler'
 import imgLock from '../../../imports/lock-illustration.webp'
+import imgLockDark from '../../../imports/lock-illustration-dark2.png'
+import { useTheme } from '../../../context/ThemeContext'
 
 type WeekCardProps = {
   week: WeekPlan
@@ -33,6 +35,7 @@ export default function WeekCard({
   prevWeekDoneCount = 0,
   prevWeekTotalCount = 0,
 }: WeekCardProps) {
+  const { theme } = useTheme()
   const completedCount = week.modules.filter((m) => completedModuleIds.has(m.id)).length
   const totalCount = week.modules.length
   const isCompleted = totalCount > 0 && completedCount === totalCount
@@ -186,7 +189,16 @@ export default function WeekCard({
           boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.02)'
         }}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
-            <img src={imgLock} alt="Locked" style={{ height: 80, width: 'auto', objectFit: 'contain', mixBlendMode: 'multiply' }} />
+            <img 
+              src={theme === 'dark' ? imgLockDark : imgLock} 
+              alt="Locked" 
+              style={{ 
+                height: 80, 
+                width: 'auto', 
+                objectFit: 'contain', 
+                mixBlendMode: theme === 'dark' ? 'normal' : 'multiply' 
+              }} 
+            />
           </div>
           <div style={{ textAlign: 'left' }}>
             <div style={{ fontSize: 16, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 6 }}>

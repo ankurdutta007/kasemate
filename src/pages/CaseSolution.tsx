@@ -114,7 +114,7 @@ function StructuredSolution({ sol }: { sol: SolutionContent }) {
       {/* 2. Clarifying questions */}
       <div style={{ paddingTop: 32, marginTop: 32, borderTop: '1px solid var(--border)' }}>
         <h2 style={{ fontSize: 18, fontWeight: 700, marginBottom: 14, color: 'var(--teal)' }}>Clarifying Questions to Ask First</h2>
-        <img src={imgClarifyingQuestions} alt="Clarifying Questions" style={{ width: '100%', height: 200, objectFit: 'cover', borderRadius: 12, marginBottom: 20 }} />
+        <img src={imgClarifyingQuestions} alt="Clarifying Questions" className="case-section-illus" />
         <ul style={{ margin: 0, paddingLeft: 20, listStyleType: 'disc' }}>
           {sol.clarifying_questions.map((q, i) => (
             <li key={i} style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--text-secondary)', marginBottom: 8 }}>{q}</li>
@@ -125,7 +125,7 @@ function StructuredSolution({ sol }: { sol: SolutionContent }) {
       {/* 3. Framework */}
       <div style={{ paddingTop: 32, marginTop: 32, borderTop: '1px solid var(--border)' }}>
         <h2 style={{ fontSize: 18, fontWeight: 700, marginBottom: 14, color: 'var(--primary-bright)' }}>How to Structure This Case</h2>
-        <img src={imgStructureCase} alt="How to Structure This Case" style={{ width: '100%', height: 200, objectFit: 'cover', borderRadius: 12, marginBottom: 20 }} />
+        <img src={imgStructureCase} alt="How to Structure This Case" className="case-section-illus" />
         <p style={{ fontSize: 15, fontWeight: 600, color: 'var(--text-primary)', marginBottom: 12 }}>
           {sol.framework_name}
         </p>
@@ -139,7 +139,7 @@ function StructuredSolution({ sol }: { sol: SolutionContent }) {
       {/* 4. Sample exchange */}
       <div style={{ paddingTop: 32, marginTop: 32, borderTop: '1px solid var(--border)' }}>
         <h2 style={{ fontSize: 18, fontWeight: 700, marginBottom: 14, color: 'var(--blue)' }}>What You'd Uncover by Asking</h2>
-        <img src={imgSampleExchange} alt="" style={{ width: '100%', height: 200, objectFit: 'cover', borderRadius: 12, marginBottom: 20 }} />
+        <img src={imgSampleExchange} alt="" className="case-section-illus" />
         <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
           {sol.sample_exchange.map((ex, i) => (
             <div key={i} style={{ fontSize: 15, lineHeight: 1.6, color: 'var(--text-secondary)' }}>
@@ -153,7 +153,7 @@ function StructuredSolution({ sol }: { sol: SolutionContent }) {
       {/* 5. Strong answer */}
       <div style={{ paddingTop: 32, marginTop: 32, borderTop: '1px solid var(--border)' }}>
         <h2 style={{ fontSize: 18, fontWeight: 700, marginBottom: 14, color: '#10B981' }}>What a Strong Answer Sounds Like</h2>
-        <img src={imgStrongAnswer} alt="Strong Answer" style={{ width: '100%', height: 200, objectFit: 'cover', borderRadius: 12, marginBottom: 20 }} />
+        <img src={imgStrongAnswer} alt="Strong Answer" className="case-section-illus" />
         <div style={{ margin: 0, fontSize: 15, lineHeight: 1.7, color: 'var(--text-secondary)' }}>
           {sol.strong_answer.split('\n').filter(Boolean).map((para, i, arr) => (
             <p key={i} style={{ margin: 0, marginBottom: i === arr.length - 1 ? 0 : 12 }}>
@@ -166,7 +166,7 @@ function StructuredSolution({ sol }: { sol: SolutionContent }) {
       {/* 6. Common pitfall */}
       <div style={{ paddingTop: 24, marginTop: 32, borderTop: '1px solid var(--border)' }}>
         <h3 style={{ fontSize: 14, fontWeight: 600, color: 'var(--amber)', marginBottom: 8 }}>Common Pitfall</h3>
-        <img src={imgCommonPitfall} alt="Common Pitfall" style={{ width: '100%', height: 200, objectFit: 'cover', borderRadius: 12, marginBottom: 20 }} />
+        <img src={imgCommonPitfall} alt="Common Pitfall" className="case-section-illus" />
         <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, color: 'var(--text-muted)' }}>
           {formatProse(sol.common_pitfall, 'var(--amber)')}
         </p>

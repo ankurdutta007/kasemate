@@ -180,7 +180,7 @@ export default function Auth() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: "40px 56px",
+          padding: "clamp(24px, 5vh, 40px) 56px",
           background:
             "linear-gradient(145deg, var(--lv2-glass) 0%, var(--lv2-bg-elevated) 60%, var(--lv2-bg) 100%)",
           borderRight: "1px solid var(--lv2-hairline)",
@@ -211,7 +211,7 @@ export default function Auth() {
             display: "inline-flex",
             alignItems: "center",
             gap: 8,
-            marginBottom: 32,
+            marginBottom: "clamp(16px, 3.5vh, 32px)",
             position: "relative",
             cursor: "pointer",
           }}
@@ -246,7 +246,7 @@ export default function Auth() {
             fontSize: 36,
             fontWeight: 400,
             color: "var(--lv2-text)",
-            margin: "0 0 8px",
+            margin: "0 0 clamp(4px, 1vh, 8px)",
             letterSpacing: "-0.02em",
             lineHeight: 1.15,
             position: "relative",
@@ -258,13 +258,13 @@ export default function Auth() {
           style={{
             fontSize: 15,
             color: "var(--lv2-text-muted)",
-            margin: "0 0 24px",
+            margin: "0 0 clamp(16px, 3vh, 24px)",
             lineHeight: 1.6,
             position: "relative",
           }}
         >
           {mode === "signup"
-            ? "Use your IIT KGP email to get full access."
+            ? "Start building your placement roadmap in minutes."
             : "Sign in to continue your practice streak."}
         </p>
 
@@ -274,7 +274,7 @@ export default function Auth() {
             backgroundColor: "var(--lv2-bg-elevated)",
             borderRadius: 20,
             border: "1px solid var(--lv2-hairline)",
-            padding: "32px",
+            padding: "clamp(24px, 4vh, 32px)",
             boxShadow: "var(--card-shadow-lg)",
             position: "relative",
           }}
@@ -554,7 +554,7 @@ export default function Auth() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: "80px 56px",
+          padding: "clamp(40px, 8vh, 80px) 56px",
           background:
             "linear-gradient(160deg, var(--lv2-bg-elevated) 0%, var(--lv2-bg) 60%)",
           position: "relative",
@@ -595,8 +595,8 @@ export default function Auth() {
             position: "relative",
             width: "100%",
             maxWidth: 420,
-            margin: "0 auto 24px",
-            minHeight: 260,
+            margin: "0 auto clamp(16px, 3vh, 24px)",
+            minHeight: "clamp(180px, 25vh, 260px)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -607,7 +607,7 @@ export default function Auth() {
             alt="Collaborative case practice"
             style={{
               width: "100%",
-              maxHeight: 260,
+              maxHeight: "clamp(180px, 25vh, 260px)",
               objectFit: "contain",
               objectPosition: "center",
               display: "block",

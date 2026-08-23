@@ -38,6 +38,8 @@ import logoTata from '../../imports/logos/tata.png'
 import logoDtdc from '../../imports/logos/dtdc.png'
 import logoJio from '../../imports/logos/jio.png'
 import logoUrbancompany from '../../imports/logos/urbancompany.jpg'
+import logoBain from '../../imports/logos/bain.png'
+import logoWellsfargo from '../../imports/logos/wellsfargo.png'
 
 interface PlanRevealProps {
   plan: {
@@ -102,109 +104,50 @@ function getStage2Description(tracks: string[], stage1Weeks: number, totalWeeks:
 
 const VERIFIERS: Record<string, {
   name: string
-  batch: string
   company: string
   role: string
-  initials: string
-  color: string
   linkedin: string
   photo: string | null
   companyLogo: string
 }[]> = {
-  product: [
-    {
-      name: 'Arjun Mehta',
-      batch: 'IIT KGP \'25',
-      company: 'Flipkart',
-      role: 'APM',
-      initials: 'AM',
-      color: '#7C3AED',
-      linkedin: 'https://linkedin.com',
-      photo: null,
-      companyLogo: logoFlipkart
-    },
-    {
-      name: 'Priya Sharma',
-      batch: 'IIT KGP \'25',
-      company: 'Ola',
-      role: 'Product Manager',
-      initials: 'PS',
-      color: '#0EA5E9',
-      linkedin: 'https://linkedin.com',
-      photo: null,
-      companyLogo: logoOla
-    }
-  ],
   consulting: [
     {
-      name: 'Rohan Das',
-      batch: 'IIT KGP \'25',
-      company: 'McKinsey & Co',
-      role: 'Business Analyst',
-      initials: 'RD',
-      color: '#10B981',
-      linkedin: 'https://linkedin.com',
-      photo: null,
-      companyLogo: logoMckinsey
-    },
+      name: 'Adeeba Ansari',
+      company: 'Bain & Co',
+      role: 'ACI',
+      linkedin: 'https://in.linkedin.com/in/adeeba-alam-ansari-b3aba1252',
+      photo: '/people/adeeba.jpg',
+      companyLogo: logoBain
+    }
+  ],
+  product: [
     {
-      name: 'Sneha Gupta',
-      batch: 'IIT KGP \'25',
-      company: 'Accenture S&C',
-      role: 'Consultant',
-      initials: 'SG',
-      color: '#F59E0B',
-      linkedin: 'https://linkedin.com',
-      photo: null,
-      companyLogo: logoAccenture
+      name: 'Sachin Patel',
+      company: 'Eternal',
+      role: 'Product Analyst',
+      linkedin: 'https://in.linkedin.com/in/sachinpateliitkgp',
+      photo: '/people/sachin.jpg',
+      companyLogo: logoZomato
     }
   ],
   analyst: [
     {
-      name: 'Karan Verma',
-      batch: 'IIT KGP \'25',
-      company: 'JP Morgan',
-      role: 'DS Analyst',
-      initials: 'KV',
-      color: '#6366F1',
-      linkedin: 'https://linkedin.com',
-      photo: null,
-      companyLogo: logoJpmorgan
-    },
-    {
-      name: 'Aditi Singh',
-      batch: 'IIT KGP \'25',
-      company: 'American Express',
-      role: 'MT Data Science',
-      initials: 'AS',
-      color: '#EC4899',
-      linkedin: 'https://linkedin.com',
-      photo: null,
-      companyLogo: logoAmex
+      name: 'Anish Aman',
+      company: 'Wells Fargo',
+      role: 'Technology Analyst',
+      linkedin: 'https://in.linkedin.com/in/anish-aman-098590209',
+      photo: '/people/anish.jpeg',
+      companyLogo: logoWellsfargo
     }
   ],
   general: [
     {
-      name: 'Rahul Joshi',
-      batch: 'IIT KGP \'25',
-      company: 'ITC Limited',
-      role: 'AT (UT)',
-      initials: 'RJ',
-      color: '#14B8A6',
-      linkedin: 'https://linkedin.com',
-      photo: null,
-      companyLogo: logoItc
-    },
-    {
-      name: 'Meera Patel',
-      batch: 'IIT KGP \'25',
-      company: 'Swiggy',
-      role: 'Graduate Trainee',
-      initials: 'MP',
-      color: '#F97316',
-      linkedin: 'https://linkedin.com',
-      photo: null,
-      companyLogo: logoSwiggy
+      name: 'Manasvi Shekhar',
+      company: 'Meesho',
+      role: 'Sr. Business Associate',
+      linkedin: 'https://in.linkedin.com/in/manasvi-shekhar-1a193a257',
+      photo: '/people/manasvi.jpeg',
+      companyLogo: logoMeesho
     }
   ]
 }
@@ -276,8 +219,8 @@ const companiesByTrack: Record<string, {
       logo: logoFlipkart },
     { name: 'ETERNAL (Zomato)', role: 'Data Scientist 1', ctc: '₹29L', ctcNum: 29, brand: 1,
       logo: logoZomato },
-    { name: 'Kotak Mahindra Bank', role: 'Data Scientist', ctc: '₹18L', ctcNum: 18, brand: 2,
-      logo: logoKotak },
+    { name: 'Wells Fargo', role: 'Technology Analyst', ctc: '₹35L', ctcNum: 35, brand: 1,
+      logo: logoWellsfargo },
     { name: 'Meesho', role: 'Data Scientist I', ctc: '₹24L', ctcNum: 24, brand: 2,
       logo: logoMeesho },
     { name: 'Cashfree Payments', role: 'Process Innovation Analyst', ctc: '₹23L', ctcNum: 23, brand: 3,
@@ -382,38 +325,13 @@ export default function PlanReveal({ plan, onStart }: PlanRevealProps) {
 
   function getVerifiers(tracks: string[]) {
     const result: typeof VERIFIERS['product'] = []
-    if (tracks.length === 0) return result;
-
-    if (tracks.length === 1) {
-      // 1 track: show 2 people from that track
-      const v = VERIFIERS[tracks[0]] || []
-      result.push(...v.slice(0, 2))
-    } else if (tracks.length === 2) {
-      // 2 tracks: show 4 people, 2 from each
-      const v1 = VERIFIERS[tracks[0]] || []
-      const v2 = VERIFIERS[tracks[1]] || []
-      result.push(...v1.slice(0, 2), ...v2.slice(0, 2))
-    } else if (tracks.length === 3) {
-      // 3 tracks: 1 from each, plus 1 extra randomly from the 3
-      const pool: typeof VERIFIERS['product'] = []
-      tracks.forEach(t => {
-        const v = VERIFIERS[t] || []
-        if (v[0]) result.push(v[0])
-        if (v[1]) pool.push(v[1])
-      })
-      if (pool.length > 0) {
-        const randomIndex = Math.floor(Math.random() * pool.length)
-        result.push(pool[randomIndex])
+    tracks.forEach(t => {
+      const v = VERIFIERS[t]
+      if (v && v.length > 0) {
+        result.push(v[0])
       }
-    } else if (tracks.length >= 4) {
-      // 4 tracks: exactly 1 from each
-      tracks.slice(0, 4).forEach(t => {
-        const v = VERIFIERS[t] || []
-        if (v[0]) result.push(v[0])
-      })
-    }
-    
-    return result.slice(0, 4)
+    })
+    return result
   }
 
   const verifiers = getVerifiers(tracks)
@@ -645,11 +563,7 @@ export default function PlanReveal({ plan, onStart }: PlanRevealProps) {
           </div>
 
           {/* Company grid */}
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 8
-          }}>
+          <div className="roadmap-companies-grid">
             {companies.map((company, i) => (
               <div key={i} style={{
                 padding: '9px 12px',
@@ -692,7 +606,7 @@ export default function PlanReveal({ plan, onStart }: PlanRevealProps) {
                 color: 'var(--text-primary)',
                 fontFamily: 'Inter, sans-serif'
               }}>
-                Reviewed by IIT KGP '25 students placed in these domains
+                Reviewed by KGPians in these domains
               </span>
             </div>
 
@@ -721,49 +635,39 @@ export default function PlanReveal({ plan, onStart }: PlanRevealProps) {
                 >
                   {/* Person avatar */}
                   <div style={{
-                    width: 40, height: 40, borderRadius: '50%',
+                    width: 40, height: 40, borderRadius: 4,
                     flexShrink: 0, overflow: 'hidden',
                     border: '2px solid var(--border)'
                   }}>
-                    {v.photo ? (
+                    {v.photo && (
                       <img src={v.photo} alt={v.name}
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-                    ) : (
-                      <div style={{
-                        width: '100%', height: '100%', background: v.color,
-                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        fontFamily: 'Plus Jakarta Sans, sans-serif',
-                        fontSize: 14, fontWeight: 700, color: '#fff'
-                      }}>
-                        {v.initials}
-                      </div>
                     )}
                   </div>
 
-                  {/* Person name + batch */}
-                  <div style={{ flex: 1, minWidth: 0 }}>
+                  {/* Person name */}
+                  <div style={{ flex: 1, minWidth: 0, display: 'flex', alignItems: 'center' }}>
                     <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--text-primary)', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
                       {v.name}
-                    </div>
-                    <div style={{ fontSize: 12, color: 'var(--text-muted)', fontFamily: 'Inter, sans-serif' }}>
-                      {v.batch}
                     </div>
                   </div>
 
                   {/* Company info */}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
-                    <img 
-                      src={v.companyLogo} 
-                      alt={v.company}
-                      style={{ 
-                        width: 22, 
-                        height: 22, 
-                        objectFit: 'contain', 
-                        borderRadius: 4, 
-                        flexShrink: 0,
-                        display: 'block'
-                      }} 
-                    />
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, width: 175, flexShrink: 0 }}>
+                    {v.companyLogo && (
+                      <img 
+                        src={v.companyLogo} 
+                        alt={v.company}
+                        style={{ 
+                          width: 32, 
+                          height: 32, 
+                          objectFit: 'contain', 
+                          borderRadius: 4, 
+                          flexShrink: 0,
+                          display: 'block'
+                        }} 
+                      />
+                    )}
                     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                       <div style={{ 
                         fontSize: 13, 
@@ -787,7 +691,7 @@ export default function PlanReveal({ plan, onStart }: PlanRevealProps) {
 
                   {/* LinkedIn button */}
                   <div style={{
-                    flexShrink: 0, width: 28, height: 28, borderRadius: 6,
+                    flexShrink: 0, width: 32, height: 32, borderRadius: 6,
                     background: '#0A66C2', display: 'flex', alignItems: 'center',
                     justifyContent: 'center', marginLeft: 4
                   }}>
@@ -798,17 +702,6 @@ export default function PlanReveal({ plan, onStart }: PlanRevealProps) {
                 </a>
               ))}
             </div>
-
-            {/* Disclaimer */}
-            <p style={{
-              fontSize: 11,
-              color: 'var(--text-muted)',
-              marginTop: 8,
-              fontFamily: 'Inter, sans-serif',
-              fontStyle: 'italic'
-            }}>
-              * Profiles and LinkedIn links will be updated with real verified seniors shortly.
-            </p>
           </div>
         )}
 

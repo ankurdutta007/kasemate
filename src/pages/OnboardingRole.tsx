@@ -1,15 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import imgHeroNew from '@/imports/onboarding-hero-new.webp'
-import imgProduct from '@/imports/product.webp'
-import imgConsulting from '@/imports/consulting.webp'
-import imgImage3 from '@/imports/image-3.webp'
-import imgImage2 from '@/imports/image-2.webp'
 
 const TRACKS = [
   {
     id: 'product',
-    icon: imgProduct,
+    icon: '/landing-v2/track-product-v4.webp',
     label: 'Product',
     color: '#6366f1',
     desc: 'APM, PM, Product Analyst',
@@ -17,7 +13,7 @@ const TRACKS = [
   },
   {
     id: 'consulting',
-    icon: imgConsulting,
+    icon: '/landing-v2/track-consulting-v3.webp',
     label: 'Consulting',
     color: '#f97316',
     desc: 'Consultant, Associate roles',
@@ -25,7 +21,7 @@ const TRACKS = [
   },
   {
     id: 'analyst',
-    icon: imgImage3,
+    icon: '/landing-v2/track-data-v4.webp',
     label: 'Data & Business Analyst',
     color: '#3b82f6',
     desc: 'BA, DA, DS roles',
@@ -33,7 +29,7 @@ const TRACKS = [
   },
   {
     id: 'general',
-    icon: imgImage2,
+    icon: '/landing-v2/track-gm-v3.webp',
     label: 'General Management',
     color: '#10b981',
     desc: 'Banking, ops, MT roles',
