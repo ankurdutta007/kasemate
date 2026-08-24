@@ -55,7 +55,10 @@ export default function Nav() {
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginLeft: 'auto' }}>
-            <button onClick={toggle} title={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+            <button onClick={() => {
+              toggle()
+              posthog.capture('settings_theme_toggled', { theme: isDark ? 'light' : 'dark' })
+            }} title={`Switch to ${isDark ? 'light' : 'dark'} mode`}
               style={{ width: 32, height: 32, borderRadius: 8, border: '1px solid var(--border)', backgroundColor: 'var(--bg3)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontSize: 14, transition: 'all 0.15s' }}>
               {isDark ? '☀️' : '🌙'}
             </button>

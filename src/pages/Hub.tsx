@@ -5,6 +5,7 @@ import { useTheme } from '../context/ThemeContext'
 import { useCases } from '../context/CasesContext'
 import { useAuth } from '../context/AuthContext'
 import { supabase } from '../lib/supabase'
+import { usePostHog } from '@posthog/react'
 import { getTargetedNextCase, getWeakestDimension } from '../lib/utils'
 import { HistoryItem } from '../components/HistoryItem'
 import imgHubHero from '@/imports/hub-hero-new.webp'
@@ -138,6 +139,7 @@ export default function Hub() {
   const { theme } = useTheme()
   const isDark = theme === 'dark'
   const { cases: CASES, loading } = useCases()
+  const posthog = usePostHog()
   
   const { user } = useAuth()
   const tab = (searchParams.get('tab') as 'random' | 'browse') || 'random'
@@ -251,22 +253,31 @@ export default function Hub() {
 
   // session storage restoration removed so user always lands on "Learn by doing"
 
-  const setTab = (t: string) => setSearchParams(prev => { const next = new URLSearchParams(prev); next.set('tab', t); return next })
-  const setBrowseTrack = (t: string | null) => setSearchParams(prev => {
-    const next = new URLSearchParams(prev)
-    if (t) next.set('track', t); else next.delete('track')
-    next.delete('subtype')
-    next.delete('diff')
-    next.delete('status')
-    return next
-  })
-  const setBrowseSubtype = (s: string | null) => setSearchParams(prev => {
-    const next = new URLSearchParams(prev)
-    if (s) next.set('subtype', s); else next.delete('subtype')
-    next.delete('diff')
-    next.delete('status')
-    return next
-  })
+  const setTab = (t: string) => {
+    if (t === 'browse') posthog.capture('practice_browse_viewed')
+    setSearchParams(prev => { const next = new URLSearchParams(prev); next.set('tab', t); return next })
+  }
+  const setBrowseTrack = (t: string | null) => {
+    if (t) posthog.capture('practice_track_filtered', { track: t })
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev)
+      if (t) next.set('track', t); else next.delete('track')
+      next.delete('subtype')
+      next.delete('diff')
+      next.delete('status')
+      return next
+    })
+  }
+  const setBrowseSubtype = (s: string | null) => {
+    if (s) posthog.capture('practice_category_filtered', { track: browseTrack || 'unknown', category: s })
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev)
+      if (s) next.set('subtype', s); else next.delete('subtype')
+      next.delete('diff')
+      next.delete('status')
+      return next
+    })
+  }
   const setDiffFilter = (d: string) => setSearchParams(prev => {
     const next = new URLSearchParams(prev)
     if (d !== 'All') next.set('diff', d); else next.delete('diff')
@@ -338,6 +349,7 @@ export default function Hub() {
             ] as const).map(({ id, label, Icon }) => (
               <button key={id} onClick={() => {
                 if (id === 'browse') {
+                  posthog.capture('practice_browse_viewed')
                   setSearchParams(prev => {
                     const next = new URLSearchParams(prev)
                     next.set('tab', 'browse')
@@ -410,7 +422,12 @@ export default function Hub() {
                   <span style={{ fontSize: 12, color: 'var(--teal)', fontWeight: 700, fontFamily: 'JetBrains Mono, monospace' }}>~{nextCase ? getCaseTime(nextCase) : 0}m</span>
                 </div>
 
-                <button onClick={() => nextCase && navigate(`/case/${nextCase.id}`)}
+                <button onClick={() => {
+                  if (nextCase) {
+                    posthog.capture('practice_case_opened', { case_id: nextCase.id, track: nextCase.track })
+                    navigate(`/case/${nextCase.id}?source=learn_by_doing`)
+                  }
+                }}
                   disabled={!nextCase}
                   style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, width: '100%', padding: '15px', borderRadius: 12, border: 'none', background: 'linear-gradient(135deg, var(--primary-mid), var(--primary))', color: '#fff', fontSize: 16, fontWeight: 700, cursor: 'pointer', fontFamily: 'Inter, sans-serif', marginBottom: 24 }}
                   onMouseEnter={e => (e.currentTarget.style.opacity = '0.9')}
@@ -606,7 +623,10 @@ export default function Hub() {
                             let categoryCandidates = CASES.filter(c => c.subtype === browseSubtype && !completedCases.has(c.id))
                             if (categoryCandidates.length === 0) categoryCandidates = CASES.filter(c => c.subtype === browseSubtype)
                             const targetCase = categoryCandidates.length > 0 ? categoryCandidates[Math.floor(Math.random() * categoryCandidates.length)] : null
-                            if (targetCase) navigate(`/case/${targetCase.id}`)
+                            if (targetCase) {
+                              posthog.capture('practice_case_opened', { case_id: targetCase.id, track: targetCase.track })
+                              navigate(`/case/${targetCase.id}?source=browse`)
+                            }
                           }} style={{ padding: '10px 24px', borderRadius: 10, border: 'none', background: 'linear-gradient(135deg, #7C3AED, #6D28D9)', color: '#fff', fontSize: 14, fontWeight: 600, cursor: 'pointer', fontFamily: 'Inter, sans-serif', boxShadow: '0 4px 16px rgba(124,58,237,0.3)' }}>
                           Start a {browseSubtype} case →
                         </button>
@@ -632,7 +652,8 @@ export default function Hub() {
             ) : (
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 14 }}>
                 {filtered.map(c => <CaseCard key={c.id} c={c} completed={completedCases.has(c.id)} onStart={() => {
-                  navigate(`/case/${c.id}`)
+                  posthog.capture('practice_case_opened', { case_id: c.id, track: c.track })
+                  navigate(`/case/${c.id}?source=browse`)
                 }} />)}
               </div>
             )}

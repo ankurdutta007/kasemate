@@ -7,6 +7,9 @@ import imgStructureCase from '../imports/structure-case.webp'
 import imgSampleExchange from '../imports/sample-exchange.webp'
 import imgStrongAnswer from '../imports/strong-answer.webp'
 import imgCommonPitfall from '../imports/common-pitfall.webp'
+import { usePostHog } from '@posthog/react'
+import { useSearchParams } from 'react-router-dom'
+import { useEffect } from 'react'
 
 // ─── Solution content types ───────────────────────────────────────────────────
 interface SolutionContent {
@@ -213,6 +216,8 @@ export default function CaseSolution() {
   const navigate = useNavigate()
   const location = useLocation()
   const { cases, casesLoading } = useCases()
+  const posthog = usePostHog()
+  const [searchParams] = useSearchParams()
 
   const caseData = cases.find(c => c.id === id)
 
@@ -258,6 +263,14 @@ export default function CaseSolution() {
       navigate('/hub')
     }
   }
+
+  // Fire practice_solution_opened when the solution view mounts
+  useEffect(() => {
+    if (caseData) {
+      const source = searchParams.get('source') || 'unknown'
+      posthog.capture('practice_solution_opened', { case_id: caseData.id, source })
+    }
+  }, [caseData, posthog, searchParams])
 
   return (
     <div style={{

@@ -7,6 +7,7 @@ import { supabase } from '../../lib/supabase'
 import WeekCard from './components/WeekCard'
 import ModuleDrawer from './components/ModuleDrawer'
 import { type WeekPlan } from '../../lib/roadmap-compiler'
+import { usePostHog } from '@posthog/react'
 
 function isWeekUnlocked(weekIndex: number, weeks: WeekPlan[], completedModuleIds: Set<string>): boolean {
   if (weekIndex === 0) return true;
@@ -17,6 +18,7 @@ function isWeekUnlocked(weekIndex: number, weeks: WeekPlan[], completedModuleIds
 export default function RoadmapDashboard() {
   const { user } = useAuth()
   const navigate = useNavigate()
+  const posthog = usePostHog()
 
   const { plan, loading: planLoading } = useRoadmapPlan()
   const { completedModuleIds, loading: progressLoading, setCompletedModuleIds } = useWeekProgress()
@@ -93,6 +95,18 @@ export default function RoadmapDashboard() {
     })
 
     if (plan) {
+      let weekNumber = 0;
+      let moduleName = moduleId;
+      for (const wp of plan.weeks) {
+        const mod = wp.modules.find(m => m.id === moduleId);
+        if (mod) {
+          weekNumber = wp.week;
+          moduleName = mod.title;
+          break;
+        }
+      }
+      posthog.capture('roadmap_module_marked_done', { track: plan.tracks[0] || 'unknown', week: weekNumber, module: moduleName })
+
       // Check if this action completes the entire roadmap
       const newlyCompletedCount = [...newSet].filter(id => planModuleIds.has(id)).length;
       if (newlyCompletedCount === plan.totalModules && plan.totalModules > 0) {
@@ -106,6 +120,7 @@ export default function RoadmapDashboard() {
         if (wp.moduleIds.includes(moduleId)) {
           const allDone = wp.moduleIds.every((id) => newSet.has(id) && planModuleIds.has(id))
           if (allDone) {
+            posthog.capture('roadmap_week_completed', { track: plan.tracks[0] || 'unknown', week: wp.week })
             setExpandedWeeks((prev) => {
               const eSet = new Set(prev)
               eSet.add(wp.week + 1)

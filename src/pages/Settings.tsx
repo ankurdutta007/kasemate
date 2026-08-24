@@ -6,6 +6,7 @@ import { supabase } from '../lib/supabase'
 import logo from '../imports/logo.webp'
 import FeedbackModal from '../components/FeedbackModal'
 import { invalidateDashboardCache } from './Dashboard'
+import { usePostHog } from '@posthog/react'
 
 function SettingRow({ label, desc, children }: { label: string; desc?: string; children: React.ReactNode }) {
   return (
@@ -48,6 +49,7 @@ export default function Settings() {
   const navigate = useNavigate()
   const { theme, toggle } = useTheme()
   const { user, signOut } = useAuth()
+  const posthog = usePostHog()
 
   const trackConfig: Record<string, { label: string; bg: string; color: string; border: string; activeBg: string }> = {
     product: { label: 'Product', bg: 'rgba(124,58,237,0.08)', color: '#7C3AED', border: 'rgba(124,58,237,0.3)', activeBg: 'rgba(124,58,237,0.15)' },
@@ -100,6 +102,13 @@ export default function Settings() {
       if (selectedTracks.length === 0) {
         setSaving(false)
         return;
+      }
+
+      if (editingTracks && JSON.stringify(selectedTracks) !== JSON.stringify(roadmapData?.tracks)) {
+        posthog.capture('settings_track_changed', { track: selectedTracks })
+      }
+      if (editingWeeks && selectedWeeks !== roadmapData?.weeks) {
+        posthog.capture('settings_timeline_changed', { timeline: selectedWeeks })
       }
 
       // 1. Save new onboarding data
@@ -398,7 +407,10 @@ export default function Settings() {
 
         <div style={{ backgroundColor: 'var(--bg2)', borderRadius: 16, border: '1px solid var(--border)', padding: '0 22px', marginBottom: 16, boxShadow: 'var(--card-shadow)' }}>
           <SettingRow label="Appearance" desc="Switch between dark and light mode">
-            <button onClick={toggle}
+            <button onClick={() => {
+              toggle()
+              posthog.capture('settings_theme_toggled', { theme: theme === 'dark' ? 'light' : 'dark' })
+            }}
               style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 16px', borderRadius: 9, border: `1.5px solid ${theme === 'dark' ? 'var(--violet)' : 'var(--border-strong)'}`, backgroundColor: theme === 'dark' ? 'var(--violet-subtle)' : 'var(--bg3)', color: theme === 'dark' ? 'var(--violet)' : 'var(--text-primary)', fontSize: 13, fontWeight: 600, cursor: 'pointer', fontFamily: 'Inter, sans-serif' }}>
               {theme === 'dark' ? '🌙 Dark mode' : '☀️ Light mode'}
             </button>
