@@ -1,5 +1,6 @@
 allowBuilds:
   '@google/genai': set this to true or false
+  core-js: true
   esbuild: true
   protobufjs: true
   puppeteer: true
