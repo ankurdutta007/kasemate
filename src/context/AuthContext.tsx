@@ -33,6 +33,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           setUser(session?.user ?? null)
           if (session?.user) {
             posthog.identify(session.user.id, { email: session.user.email })
+            if (window.location.hash.includes('access_token=')) {
+              window.history.replaceState(null, '', window.location.pathname + window.location.search)
+            }
           }
         }
       } catch (error) {
@@ -50,6 +53,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setIsLoading(false)
       if (session?.user) {
         posthog.identify(session.user.id, { email: session.user.email })
+        if (window.location.hash.includes('access_token=')) {
+          window.history.replaceState(null, '', window.location.pathname + window.location.search)
+        }
       }
     })
 
