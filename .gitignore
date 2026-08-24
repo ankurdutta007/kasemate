@@ -29,3 +29,4 @@ logs/
 /mobile-results.json
 
 /trace*.json
+.DS_Store
