@@ -294,7 +294,11 @@ export default function Auth() {
             position: "relative",
           }}
         >
-          {signUpSuccess ? "Check your inbox" : mode === "signup" ? "Create your account" : "Welcome back"}
+          {signUpSuccess 
+            ? signUpAlreadyRegistered ? "Account already exists" : "Check your inbox" 
+            : mode === "signup" 
+            ? "Create your account" 
+            : "Welcome back"}
         </h1>
         <p
           style={{
@@ -306,7 +310,9 @@ export default function Auth() {
           }}
         >
           {signUpSuccess 
-            ? <>We've sent a confirmation link to <strong>{email}</strong>. Please confirm your email to continue.</>
+            ? signUpAlreadyRegistered
+              ? <><strong>{email}</strong> is already registered. Sign in instead to continue.</>
+              : <>We've sent a confirmation link to <strong>{email}</strong>. Please confirm your email to continue.</>
             : mode === "signup"
             ? "Start building your placement roadmap in minutes."
             : "Sign in to continue your practice streak."}
