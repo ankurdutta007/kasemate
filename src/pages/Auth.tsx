@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
 import img7 from "@/imports/image-7.webp";
@@ -109,6 +109,34 @@ export default function Auth() {
   const [isEmailLoading, setIsEmailLoading] = useState(false);
   const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const [signUpSuccess, setSignUpSuccess] = useState(false);
+  const [signUpAlreadyRegistered, setSignUpAlreadyRegistered] = useState(false);
+  const [resendCooldown, setResendCooldown] = useState(0);
+
+  useEffect(() => {
+    let interval: ReturnType<typeof setInterval>;
+    if (resendCooldown > 0) {
+      interval = setInterval(() => {
+        setResendCooldown((c) => c - 1);
+      }, 1000);
+    }
+    return () => clearInterval(interval);
+  }, [resendCooldown]);
+
+  const handleResendEmail = async () => {
+    if (resendCooldown > 0) return;
+    try {
+      const { error } = await supabase.auth.resend({
+        type: 'signup',
+        email: email,
+      });
+      if (error) throw error;
+      setResendCooldown(60);
+    } catch (err: any) {
+      console.error('Failed to resend:', err);
+      // Start cooldown even on error (e.g. rate limit) to prevent spamming
+      setResendCooldown(60);
+    }
+  };
 
   const handleGoogleSignIn = async (e: React.MouseEvent) => {
     e.preventDefault();
@@ -137,16 +165,28 @@ export default function Auth() {
       return;
     }
 
+    if (mode === "login" && !password) {
+      setError("Please enter your password.");
+      return;
+    }
+
     setIsEmailLoading(true);
     setError("");
 
     try {
       if (mode === "signup") {
-        const { error: signUpError } = await supabase.auth.signUp({
+        const { data, error: signUpError } = await supabase.auth.signUp({
           email,
           password,
         });
         if (signUpError) throw signUpError;
+        
+        if (data?.user?.identities && data.user.identities.length === 0) {
+          setSignUpAlreadyRegistered(true);
+        } else {
+          setSignUpAlreadyRegistered(false);
+        }
+        
         setSignUpSuccess(true);
       } else {
         const { error: signInError } = await supabase.auth.signInWithPassword({
@@ -568,11 +608,14 @@ export default function Auth() {
                marginBottom: 24,
                lineHeight: 1.6,
             }}>
-               Once you've confirmed your email, you can sign in to access your placement roadmap.
+              {signUpAlreadyRegistered 
+                ? "This email is already registered."
+                : "Once you've confirmed your email, you can sign in to access your placement roadmap."}
             </p>
             <button
               onClick={() => {
                 setSignUpSuccess(false);
+                setSignUpAlreadyRegistered(false);
                 setMode("login");
                 setPassword("");
               }}
@@ -590,8 +633,45 @@ export default function Auth() {
                 boxShadow: "0 4px 20px rgba(66,16,61,0.4)",
               }}
             >
-              Return to sign in
+              {signUpAlreadyRegistered ? "Try signing in instead" : "Return to sign in"}
             </button>
+            {!signUpAlreadyRegistered && (
+              <button
+                onClick={handleResendEmail}
+                disabled={resendCooldown > 0}
+                style={{
+                  width: "100%",
+                  padding: "12px 14px",
+                  marginTop: 16,
+                  borderRadius: 10,
+                  border: "1.5px solid transparent",
+                  backgroundColor: "transparent",
+                  color: "var(--lv2-text-muted)",
+                  fontSize: 14,
+                  fontWeight: 600,
+                  cursor: resendCooldown > 0 ? "default" : "pointer",
+                  fontFamily: "Inter, sans-serif",
+                  transition: "all 0.15s",
+                  opacity: resendCooldown > 0 ? 0.7 : 1,
+                }}
+                onMouseEnter={(e) => {
+                  if (resendCooldown === 0) {
+                    e.currentTarget.style.color = "var(--lv2-text)";
+                    e.currentTarget.style.backgroundColor = "var(--lv2-glass)";
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (resendCooldown === 0) {
+                    e.currentTarget.style.color = "var(--lv2-text-muted)";
+                    e.currentTarget.style.backgroundColor = "transparent";
+                  }
+                }}
+              >
+                {resendCooldown > 0
+                  ? `Sent — check your inbox (${resendCooldown}s)`
+                  : "Didn't get the email? Resend"}
+              </button>
+            )}
           </div>
         )}
       </div>
