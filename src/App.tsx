@@ -77,6 +77,7 @@ export default function App() {
           </BrowserRouter>
         </CasesProvider>
       </AuthProvider>
+      <Analytics />
     </ThemeProvider>
   )
 }
