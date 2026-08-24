@@ -1,8 +1,8 @@
 {
-  "title": "vantge",
-  "description": "This web application offers a modern platform for users to create and customize visually appealing websites, enhancing design flexibility and user engagement.",
+  "title": "KaseMate | Placement Prep for IIT KGP",
+  "description": "A step-by-step roadmap and 271 fully solved cases to help you prepare for placements.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,
