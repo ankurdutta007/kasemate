@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import { Session, User } from '@supabase/supabase-js'
 import { supabase } from '../lib/supabase'
+import posthog from 'posthog-js'
 
 interface AuthContextType {
   session: Session | null
@@ -30,6 +31,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         if (mounted) {
           setSession(session)
           setUser(session?.user ?? null)
+          if (session?.user) {
+            posthog.identify(session.user.id, { email: session.user.email })
+          }
         }
       } catch (error) {
         console.error('Error fetching initial session:', error)
@@ -44,6 +48,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setSession(session)
       setUser(session?.user ?? null)
       setIsLoading(false)
+      if (session?.user) {
+        posthog.identify(session.user.id, { email: session.user.email })
+      }
     })
 
     return () => {

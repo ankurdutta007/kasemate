@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext'
+import { usePostHog } from '@posthog/react'
 
 export default function Nav() {
   const location = useLocation()
+  const posthog = usePostHog()
   const { theme, toggle } = useTheme()
   const isLanding = location.pathname === '/'
   const isAuth = location.pathname === '/auth'
@@ -45,7 +47,7 @@ export default function Nav() {
           {/* Desktop nav links */}
           <div className="nav-links-desktop" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
             {navLinks.map(({ to, label }) => (
-              <NavLink key={to} to={to}
+              <NavLink key={to} to={to} onClick={() => posthog.capture('nav_tab_changed', { tab: label.toLowerCase() })}
                 style={({ isActive }) => ({ padding: '8px 16px', borderRadius: 8, textDecoration: 'none', fontSize: 15, fontWeight: isActive ? 700 : 500, fontFamily: 'Inter, sans-serif', color: isActive ? 'var(--primary)' : 'var(--text-muted)', backgroundColor: isActive ? 'var(--primary-subtle)' : 'transparent', transition: 'all 0.15s' })}>
                 {label}
               </NavLink>
@@ -135,7 +137,7 @@ export default function Nav() {
           }}
         >
           {navLinks.map(({ to, label }) => (
-            <NavLink key={to} to={to}
+            <NavLink key={to} to={to} onClick={() => posthog.capture('nav_tab_changed', { tab: label.toLowerCase() })}
               style={({ isActive }) => ({
                 padding: '12px 16px',
                 borderRadius: 10,

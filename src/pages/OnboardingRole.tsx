@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import imgHeroNew from '@/imports/onboarding-hero-new.webp'
+import { usePostHog } from '@posthog/react'
 
 const TRACKS = [
   {
@@ -39,9 +40,13 @@ const TRACKS = [
 
 export default function OnboardingRole() {
   const navigate = useNavigate()
+  const posthog = usePostHog()
   const [selected, setSelected] = useState<string[]>([])
 
   const toggleTrack = (id: string) => {
+    if (!selected.includes(id)) {
+      posthog.capture('onboarding_track_selected', { track: id })
+    }
     setSelected(prev =>
       prev.includes(id) ? prev.filter(x => x !== id) : [...prev, id]
     )

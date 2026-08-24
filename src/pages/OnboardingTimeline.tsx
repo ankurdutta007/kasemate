@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase'
 import { useAuth } from '../context/AuthContext'
 import imgLevelHero from '@/imports/onboarding-level-hero.webp'
+import { usePostHog } from '@posthog/react'
 
 const OPTIONS = [
   {
@@ -28,6 +29,7 @@ const OPTIONS = [
 export default function OnboardingTimeline() {
   const navigate = useNavigate()
   const { user } = useAuth()
+  const posthog = usePostHog()
   const [selectedWeeks, setSelectedWeeks] = useState<number>(8)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [errorMsg, setErrorMsg] = useState('')
@@ -110,7 +112,10 @@ export default function OnboardingTimeline() {
           {OPTIONS.map(opt => {
             const isSelected = selectedWeeks === opt.weeks
             return (
-              <button key={opt.weeks} onClick={() => setSelectedWeeks(opt.weeks)}
+              <button key={opt.weeks} onClick={() => {
+                posthog.capture('onboarding_timeline_selected', { timeline: opt.weeks })
+                setSelectedWeeks(opt.weeks)
+              }}
                 style={{ textAlign: 'left', padding: '16px 20px', borderRadius: 14, border: `2px solid ${isSelected ? 'var(--primary-bright)' : 'var(--border)'}`, backgroundColor: 'var(--bg2)', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 16, transition: 'all 0.15s', fontFamily: 'Inter, sans-serif', boxShadow: isSelected ? 'var(--card-shadow)' : 'none' }}>
                 <div style={{ flex: 1, display: 'flex', alignItems: 'center', gap: 16 }}>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: 4, width: 100, flexShrink: 0 }}>
