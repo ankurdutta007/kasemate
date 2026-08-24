@@ -106,11 +106,13 @@ export default function Auth() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [isEmailLoading, setIsEmailLoading] = useState(false);
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
+  const [signUpSuccess, setSignUpSuccess] = useState(false);
 
   const handleGoogleSignIn = async (e: React.MouseEvent) => {
     e.preventDefault();
-    setIsLoading(true);
+    setIsGoogleLoading(true);
     setError("");
     try {
       const { error } = await supabase.auth.signInWithOAuth({
@@ -123,7 +125,7 @@ export default function Auth() {
     } catch (err: any) {
       console.error("Google Auth Error:", err);
       setError(err.message || "Failed to sign in with Google.");
-      setIsLoading(false);
+      setIsGoogleLoading(false);
     }
   };
 
@@ -135,7 +137,7 @@ export default function Auth() {
       return;
     }
 
-    setIsLoading(true);
+    setIsEmailLoading(true);
     setError("");
 
     try {
@@ -145,7 +147,7 @@ export default function Auth() {
           password,
         });
         if (signUpError) throw signUpError;
-        navigate("/onboarding/role");
+        setSignUpSuccess(true);
       } else {
         const { error: signInError } = await supabase.auth.signInWithPassword({
           email,
@@ -157,7 +159,7 @@ export default function Auth() {
     } catch (err: any) {
       setError(err.message || "An error occurred during authentication.");
     } finally {
-      setIsLoading(false);
+      setIsEmailLoading(false);
     }
   };
 
@@ -252,7 +254,7 @@ export default function Auth() {
             position: "relative",
           }}
         >
-          {mode === "signup" ? "Create your account" : "Welcome back"}
+          {signUpSuccess ? "Check your inbox" : mode === "signup" ? "Create your account" : "Welcome back"}
         </h1>
         <p
           style={{
@@ -263,12 +265,15 @@ export default function Auth() {
             position: "relative",
           }}
         >
-          {mode === "signup"
+          {signUpSuccess 
+            ? <>We've sent a confirmation link to <strong>{email}</strong>. Please confirm your email to continue.</>
+            : mode === "signup"
             ? "Start building your placement roadmap in minutes."
             : "Sign in to continue your practice streak."}
         </p>
 
         {/* Card */}
+        {!signUpSuccess ? (
         <div
           style={{
             backgroundColor: "var(--lv2-bg-elevated)",
@@ -444,7 +449,7 @@ export default function Auth() {
             </div>
             <button
               type="submit"
-              disabled={isLoading}
+              disabled={isEmailLoading || isGoogleLoading}
               style={{
                 marginTop: 8,
                 padding: "14px",
@@ -454,19 +459,19 @@ export default function Auth() {
                 color: "#fff",
                 fontSize: 15,
                 fontWeight: 700,
-                cursor: isLoading ? "not-allowed" : "pointer",
+                cursor: (isEmailLoading || isGoogleLoading) ? "not-allowed" : "pointer",
                 fontFamily: "Inter, sans-serif",
                 boxShadow: "0 4px 20px rgba(66,16,61,0.4)",
-                opacity: isLoading ? 0.7 : 1,
+                opacity: isEmailLoading ? 0.7 : 1,
               }}
               onMouseEnter={(e) => {
-                if (!isLoading) e.currentTarget.style.opacity = "0.88";
+                if (!isEmailLoading && !isGoogleLoading) e.currentTarget.style.opacity = "0.88";
               }}
               onMouseLeave={(e) => {
-                if (!isLoading) e.currentTarget.style.opacity = "1";
+                if (!isEmailLoading && !isGoogleLoading) e.currentTarget.style.opacity = "1";
               }}
             >
-              {isLoading
+              {isEmailLoading
                 ? "Processing..."
                 : mode === "signup"
                   ? "Create account →"
@@ -512,7 +517,7 @@ export default function Auth() {
           <button
             type="button"
             onClick={handleGoogleSignIn}
-            disabled={isLoading}
+            disabled={isEmailLoading || isGoogleLoading}
             style={{
               width: "100%",
               display: "flex",
@@ -526,24 +531,69 @@ export default function Auth() {
               color: "var(--lv2-text)",
               fontSize: 14,
               fontWeight: 600,
-              cursor: isLoading ? "not-allowed" : "pointer",
+              cursor: (isEmailLoading || isGoogleLoading) ? "not-allowed" : "pointer",
               fontFamily: "Inter, sans-serif",
               transition: "all 0.15s",
+              opacity: isGoogleLoading ? 0.7 : 1,
             }}
             onMouseEnter={(e) => {
-              if (!isLoading)
+              if (!isEmailLoading && !isGoogleLoading)
                 e.currentTarget.style.backgroundColor =
                   "var(--lv2-bg-elevated)";
             }}
             onMouseLeave={(e) => {
-              if (!isLoading)
+              if (!isEmailLoading && !isGoogleLoading)
                 e.currentTarget.style.backgroundColor = "var(--lv2-glass)";
             }}
           >
             <IconGoogle />
-            Continue with Google
+            {isGoogleLoading ? "Processing..." : "Continue with Google"}
           </button>
         </div>
+        ) : (
+          <div
+            style={{
+              backgroundColor: "var(--lv2-bg-elevated)",
+              borderRadius: 20,
+              border: "1px solid var(--lv2-hairline)",
+              padding: "clamp(24px, 4vh, 32px)",
+              boxShadow: "var(--card-shadow-lg)",
+              position: "relative",
+              textAlign: "center",
+            }}
+          >
+            <p style={{
+               fontSize: 15,
+               color: "var(--lv2-text)",
+               marginBottom: 24,
+               lineHeight: 1.6,
+            }}>
+               Once you've confirmed your email, you can sign in to access your placement roadmap.
+            </p>
+            <button
+              onClick={() => {
+                setSignUpSuccess(false);
+                setMode("login");
+                setPassword("");
+              }}
+              style={{
+                width: "100%",
+                padding: "14px",
+                borderRadius: 10,
+                border: "none",
+                background: "var(--lv2-accent)",
+                color: "#fff",
+                fontSize: 15,
+                fontWeight: 700,
+                cursor: "pointer",
+                fontFamily: "Inter, sans-serif",
+                boxShadow: "0 4px 20px rgba(66,16,61,0.4)",
+              }}
+            >
+              Return to sign in
+            </button>
+          </div>
+        )}
       </div>
 
       {/* ── RIGHT: Social proof pane ── */}

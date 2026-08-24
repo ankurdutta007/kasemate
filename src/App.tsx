@@ -4,6 +4,7 @@ import { CasesProvider } from './context/CasesContext'
 import Nav from './components/Nav'
 import Landing from './pages/Landing'
 import Auth from './pages/Auth'
+import AuthConfirm from './pages/AuthConfirm'
 import OnboardingRole from './pages/OnboardingRole'
 import OnboardingTimeline from './pages/OnboardingTimeline'
 import Hub from './pages/Hub'
@@ -60,6 +61,7 @@ export default function App() {
               <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/auth" element={<Auth />} />
+                <Route path="/auth/confirm" element={<AuthConfirm />} />
                 <Route path="/onboarding/role" element={<ProtectedRoute><OnboardingRole /></ProtectedRoute>} />
                 <Route path="/onboarding/weeks" element={<ProtectedRoute><OnboardingTimeline /></ProtectedRoute>} />
                 <Route path="/hub" element={<ProtectedRoute><Hub /></ProtectedRoute>} />
