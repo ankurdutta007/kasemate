@@ -20,6 +20,9 @@ importers:
       '@vercel/node':
         specifier: ^5.9.8
         version: 5.10.0
+      '@vercel/speed-insights':
+        specifier: ^2.0.0
+        version: 2.0.0(react@19.2.4)
       dotenv:
         specifier: ^17.4.2
         version: 17.4.2
@@ -1106,6 +1109,32 @@ packages:
 
   '@vercel/python-analysis@0.13.2':
     resolution: {integrity: sha512-IEr5K2gvX143NBoQc1W4BWrdDWjZwxnIT6UrL5Y1dnyH7Cqc4AV00FIAddB1YpnIZBJwT4ZhE8QbgqBeO6C9Zw==}
+
+  '@vercel/speed-insights@2.0.0':
+    resolution: {integrity: sha512-jwkNcrTeafWxjmWq4AHBaptSqZiJkYU5adLC9QBSqeim0GcqDMgN5Ievh8OG1rJ6W3A4l1oiP7qr9CWxGuzu3w==}
+    peerDependencies:
+      '@sveltejs/kit': ^1 || ^2
+      next: '>= 13'
+      nuxt: '>= 3'
+      react: ^18 || ^19 || ^19.0.0-rc
+      svelte: '>= 4'
+      vue: ^3
+      vue-router: ^4
+    peerDependenciesMeta:
+      '@sveltejs/kit':
+        optional: true
+      next:
+        optional: true
+      nuxt:
+        optional: true
+      react:
+        optional: true
+      svelte:
+        optional: true
+      vue:
+        optional: true
+      vue-router:
+        optional: true
 
   '@vercel/static-config@3.4.1':
     resolution: {integrity: sha512-kJKTyOg25JDRgDkHEkc+vWlvURxmSQkVKyRPO4EEGD/8HpJT+4u9Z/VGxwnCZ6zZBxYPpma283qBsHwY0gXjfw==}
@@ -2972,6 +3001,10 @@ snapshots:
       minimatch: 10.1.1
       smol-toml: 1.5.2
       zod: 3.22.4
+
+  '@vercel/speed-insights@2.0.0(react@19.2.4)':
+    optionalDependencies:
+      react: 19.2.4
 
   '@vercel/static-config@3.4.1':
     dependencies:

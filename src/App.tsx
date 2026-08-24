@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import { ThemeProvider } from './context/ThemeContext'
 import { CasesProvider } from './context/CasesContext'
 import Nav from './components/Nav'
@@ -79,6 +80,7 @@ export default function App() {
         </CasesProvider>
       </AuthProvider>
       <Analytics />
+      <SpeedInsights />
     </ThemeProvider>
   )
 }
