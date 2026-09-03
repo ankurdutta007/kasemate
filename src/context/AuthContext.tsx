@@ -47,7 +47,14 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     getInitialSession()
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === 'INITIAL_SESSION') {
+        // Skip INITIAL_SESSION here because it fires synchronously (often with null)
+        // before getSession() completes its read from local storage.
+        // getInitialSession() will handle setting the initial session and loading state.
+        return
+      }
+
       setSession(session)
       setUser(session?.user ?? null)
       setIsLoading(false)
